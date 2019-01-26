@@ -56,6 +56,7 @@ ScriptedImporter:
     100102: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (27)
     100104: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (28)
     100106: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (29)
+    100108: _MapPrfab/TestLevel/Game Objects
     400000: _MapPrfab/TestLevel/Transform
     400002: _MapPrfab/TestLevel/Object Layer 1/Transform
     400004: _MapPrfab/TestLevel/Interactibles/Collision_Default/Transform
@@ -110,6 +111,7 @@ ScriptedImporter:
     400102: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (27)/Transform
     400104: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (28)/Transform
     400106: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (29)/Transform
+    400108: _MapPrfab/TestLevel/Game Objects/Transform
     5000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Rigidbody2D
     6000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon/PolygonCollider2D
@@ -203,6 +205,8 @@ ScriptedImporter:
     11400100: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (27)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400102: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (28)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400104: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (29)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400106: _MapPrfab/TestLevel/Game Objects/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400108: _MapPrfab/TestLevel/Game Objects/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)/player1Spawn/SpriteRenderer
     21200002: _MapPrfab/TestLevel/Object Layer 1/player2Spawn (TRS)/player2Spawn (CF)/player2Spawn/SpriteRenderer
     21200004: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)/player3Spawn/SpriteRenderer
