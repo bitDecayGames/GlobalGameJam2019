@@ -213,7 +213,11 @@
  <objectgroup id="3" name="Object Layer 1">
   <object id="6" name="player1Spawn" gid="137" x="784" y="1152" width="16" height="16"/>
   <object id="8" name="player2Spawn" gid="138" x="816" y="1152" width="16" height="16"/>
-  <object id="9" name="player3Spawn" gid="139" x="847.667" y="1152.33" width="16" height="16"/>
-  <object id="10" name="Player4 Spaen" gid="140" x="816.333" y="680.333" width="16" height="16"/>
+  <object id="9" name="player3Spawn" gid="139" x="847.667" y="1152.33" width="16" height="16">
+   <properties>
+    <property name="ObjectName" value="player3Spawn"/>
+   </properties>
+  </object>
+  <object id="10" name="Player4Spawn" gid="140" x="816.333" y="680.333" width="16" height="16"/>
  </objectgroup>
 </map>
