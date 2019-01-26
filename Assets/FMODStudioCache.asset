@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114035869338976018}
-  - {fileID: 114688625460040124}
-  - {fileID: 114052933379177846}
+  - {fileID: 114961339608376706}
+  - {fileID: 114537957758547680}
+  - {fileID: 114947331182986122}
   EditorEvents:
   - {fileID: 114576222630379254}
   - {fileID: 114829291809682748}
   MasterBanks:
   - {fileID: 114688625460040124}
+  - {fileID: 114537957758547680}
   StringsBanks:
   - {fileID: 114035869338976018}
-  stringsBankWriteTime: 636840489200000000
+  - {fileID: 114961339608376706}
+  stringsBankWriteTime: 636840885096208145
   cacheVersion: 3
 --- !u!114 &114035869338976018
 MonoBehaviour:
@@ -41,7 +43,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 824
-  Exists: 1
+  Exists: 0
 --- !u!114 &114052933379177846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +61,25 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 33632
+  Exists: 0
+--- !u!114 &114537957758547680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Luke\Desktop\Coding\GGJ2019\GlobalGameJam2019\FmodProject\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636840885096198153
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1475072
   Exists: 1
 --- !u!114 &114576222630379254
 MonoBehaviour:
@@ -74,7 +95,7 @@ MonoBehaviour:
   Path: event:/Music/AnotherDay
   guid: 81da7b4d568694449287f4707f79ca54
   Banks:
-  - {fileID: 114688625460040124}
+  - {fileID: 114537957758547680}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -100,7 +121,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1475072
-  Exists: 1
+  Exists: 0
 --- !u!114 &114829291809682748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +136,7 @@ MonoBehaviour:
   Path: event:/SFX/Sound
   guid: c8954e5b52578545b9895dd460098ff3
   Banks:
-  - {fileID: 114052933379177846}
+  - {fileID: 114947331182986122}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -123,3 +144,39 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3697
+--- !u!114 &114947331182986122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Luke\Desktop\Coding\GGJ2019\GlobalGameJam2019\FmodProject\Build\Desktop\SFX.bank
+  lastModified: 636840885096218147
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 33632
+  Exists: 1
+--- !u!114 &114961339608376706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FmodProject\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636840885096208145
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 824
+  Exists: 1
