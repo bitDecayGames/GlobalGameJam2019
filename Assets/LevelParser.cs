@@ -50,16 +50,18 @@ public class LevelParser : MonoBehaviour
           switch (prop.m_Value)
           {
             case "player1Spawn":
-              //break;
+              SpawnPlayer(superObject, 1);
+              break;
             case "player2Spawn":
-              //break;
+              SpawnPlayer(superObject, 2);
+              break;
             case "player3Spawn":
-              //break;
-            case "player4Spawn":
-              //break;
-            case "button":
-              Debug.Log("We maky da player frum button");
               SpawnPlayer(superObject, 3);
+              break;
+            case "player4Spawn":
+              SpawnPlayer(superObject, 4);
+              break;
+            case "button":
               break;
             default:
               throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Name + " found");
