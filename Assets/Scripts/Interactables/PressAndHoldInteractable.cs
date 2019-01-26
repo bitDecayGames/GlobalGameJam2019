@@ -42,7 +42,7 @@ namespace Interactables {
 
         protected bool IsInteractButtonBeingHeld() {
             // TODO: check if button is being pressed
-            return true;
+            return Input.GetKey(KeyCode.I);
         }
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 using Utils;
 
 namespace Interactables {
-	public class Door : PressAndHoldInteractable {
+	public class Door : ButtonMashInteractable {
 
 		private bool _isOpen;
 		public bool IsOpen {
@@ -80,6 +80,7 @@ namespace Interactables {
 		}
 
 		protected override void OnTrigger() {
+			base.OnTrigger();
 			if (blinker) Destroy(blinker);
 		}
 	}
