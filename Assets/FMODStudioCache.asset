@@ -11,9 +11,115 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  MasterBanks: []
-  StringsBanks: []
-  stringsBankWriteTime: 0
+  EditorBanks:
+  - {fileID: 114986672529927434}
+  - {fileID: 114121563358968926}
+  - {fileID: 114326270243538462}
+  EditorEvents:
+  - {fileID: 114098729496729816}
+  - {fileID: 114710029355500428}
+  MasterBanks:
+  - {fileID: 114121563358968926}
+  StringsBanks:
+  - {fileID: 114986672529927434}
+  stringsBankWriteTime: 636840479430000000
   cacheVersion: 3
+--- !u!114 &114098729496729816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AnotherDay
+  guid: 81da7b4d568694449287f4707f79ca54
+  Banks:
+  - {fileID: 114121563358968926}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 117786
+--- !u!114 &114121563358968926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/FmodProject/Build/Desktop/Master
+    Bank.bank
+  lastModified: 636840479430000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1475072
+  Exists: 1
+--- !u!114 &114326270243538462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/FmodProject/Build/Desktop/SFX.bank
+  lastModified: 636840479430000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 33632
+  Exists: 1
+--- !u!114 &114710029355500428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Sound
+  guid: c8954e5b52578545b9895dd460098ff3
+  Banks:
+  - {fileID: 114326270243538462}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3697
+--- !u!114 &114986672529927434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Build/Desktop/Master Bank.strings.bank
+  lastModified: 636840479430000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 824
+  Exists: 1
