@@ -1,8 +1,9 @@
 ﻿using System;
 using UnityEngine;
+using Utils;
 
 namespace Interactables {
-	public class Door : MonoBehaviour {
+	public class Door : PressAndHoldInteractable {
 
 		private bool _isOpen;
 		public bool IsOpen {
@@ -11,6 +12,8 @@ namespace Interactables {
 	
 		private Rigidbody2D body;
 		private SpriteRenderer sprite;
+		private Blinker blinker;
+		
 	
 		void Start () {
 			body = GetComponentInChildren<Rigidbody2D>();
@@ -60,6 +63,24 @@ namespace Interactables {
 			HORIZONTAL_RIGHT_HINGE,
 			VERTICAL_TOP_HINGE,
 			VERTICAL_BOTTOM_HINGE
+		}
+
+		public override void Trigger() {
+			if (_isOpen) Close();
+			else Open();
+			OnTrigger();
+		}
+
+		protected override void OnInteract() {
+			blinker = gameObject.AddComponent<Blinker>();
+		}
+
+		protected override void OnDisconnect() {
+			if (blinker) Destroy(blinker);
+		}
+
+		protected override void OnTrigger() {
+			if (blinker) Destroy(blinker);
 		}
 	}
 }
