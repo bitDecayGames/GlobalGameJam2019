@@ -12,19 +12,55 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114986672529927434}
-  - {fileID: 114121563358968926}
-  - {fileID: 114326270243538462}
+  - {fileID: 114035869338976018}
+  - {fileID: 114688625460040124}
+  - {fileID: 114052933379177846}
   EditorEvents:
-  - {fileID: 114098729496729816}
-  - {fileID: 114710029355500428}
+  - {fileID: 114576222630379254}
+  - {fileID: 114829291809682748}
   MasterBanks:
-  - {fileID: 114121563358968926}
+  - {fileID: 114688625460040124}
   StringsBanks:
-  - {fileID: 114986672529927434}
-  stringsBankWriteTime: 636840479430000000
+  - {fileID: 114035869338976018}
+  stringsBankWriteTime: 636840489200000000
   cacheVersion: 3
---- !u!114 &114098729496729816
+--- !u!114 &114035869338976018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Build/Desktop/Master Bank.strings.bank
+  lastModified: 636840489200000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 824
+  Exists: 1
+--- !u!114 &114052933379177846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/mwingfield/Documents/GlobalGameJam2019/FmodProject/Build/Desktop/SFX.bank
+  lastModified: 636840489200000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 33632
+  Exists: 1
+--- !u!114 &114576222630379254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,7 +74,7 @@ MonoBehaviour:
   Path: event:/Music/AnotherDay
   guid: 81da7b4d568694449287f4707f79ca54
   Banks:
-  - {fileID: 114121563358968926}
+  - {fileID: 114688625460040124}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -46,7 +82,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 117786
---- !u!114 &114121563358968926
+--- !u!114 &114688625460040124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,33 +93,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/FmodProject/Build/Desktop/Master
+  Path: /Users/mwingfield/Documents/GlobalGameJam2019/FmodProject/Build/Desktop/Master
     Bank.bank
-  lastModified: 636840479430000000
+  lastModified: 636840489200000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1475072
   Exists: 1
---- !u!114 &114326270243538462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/FmodProject/Build/Desktop/SFX.bank
-  lastModified: 636840479430000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 33632
-  Exists: 1
---- !u!114 &114710029355500428
+--- !u!114 &114829291809682748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +115,7 @@ MonoBehaviour:
   Path: event:/SFX/Sound
   guid: c8954e5b52578545b9895dd460098ff3
   Banks:
-  - {fileID: 114326270243538462}
+  - {fileID: 114052933379177846}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -105,21 +123,3 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3697
---- !u!114 &114986672529927434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: FmodProject/Build/Desktop/Master Bank.strings.bank
-  lastModified: 636840479430000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 824
-  Exists: 1
