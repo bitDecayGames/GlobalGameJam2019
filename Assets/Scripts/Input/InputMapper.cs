@@ -21,11 +21,16 @@ public abstract class InputMapper  {
 
     public float GetHorizontalMovement()
     {
+        if(playerId == 1.ToString())
+            Debug.Log(BuildHorizontalAxisString());
+
         return Input.GetAxis(BuildHorizontalAxisString());
     }
 
     public float GetVerticalMovement()
     {
+        if (playerId == 1.ToString())
+            Debug.Log(BuildVerticalAxisString());
         return Input.GetAxis(BuildVerticalAxisString());
     }
 }

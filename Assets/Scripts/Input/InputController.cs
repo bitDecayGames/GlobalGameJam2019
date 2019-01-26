@@ -5,8 +5,9 @@ using UnityEngine;
 public class InputController : MonoBehaviour {
 
     InputMapper ControllerMapper;
+    public float speed = 1.0f;
 
-	void Start () {
+    void Start () {
 
         string OS = SystemInfo.operatingSystem;
         PlayerIdComponent playerIdComp = GetComponent<PlayerIdComponent>();
@@ -37,6 +38,19 @@ public class InputController : MonoBehaviour {
         {
             //RUN!
             Debug.Log("RunPressed");
+        }
+        
+        float moveLR = ControllerMapper.GetHorizontalMovement();
+        float moveUD = ControllerMapper.GetVerticalMovement();
+        var newVelocity = new Vector2(moveLR, moveUD);
+
+        newVelocity = transform.TransformDirection(newVelocity);
+       // newVelocity = newVelocity * speed;
+
+        if (newVelocity != Vector2.zero)
+        {
+            Debug.Log("Trying to move");
+            //GetComponent<Rigidbody2D>().AddForce( newVelocity);
         }
     }   
 }

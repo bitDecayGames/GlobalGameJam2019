@@ -27,7 +27,7 @@ public class LevelParser : MonoBehaviour
 		
 		foreach (var ol in objLayers)
 		{
-			if (ol.m_TiledName == "Objects")
+			if (ol.m_TiledName == "Object Layer 1")
 			{
 				parseLevelObjects(ol);
 			}
@@ -38,28 +38,33 @@ public class LevelParser : MonoBehaviour
 	{
 		Debug.Log("We are parsing an object layer");
 		var objects = objLayer.gameObject.GetComponentsInChildren<SuperObject>();
-		foreach (var superObject in objects)
+        int playerId = 1;
+        foreach (var superObject in objects)
 		{
 			var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
+            
 			foreach (var prop in custProps.m_Properties)
 			{
 				if (prop.m_Name == "ObjectName")
 				{
 					switch (prop.m_Value)
 					{
-						case "Attacker1":
-							break;
-						case "Attacker2":
-							break;
-						case "Attacker3":
-							break;
-						case "Defender":
-							break;
+						case "player1Spawn":
+							//break;
+						case "player2Spawn":
+							//break;
+						case "player3Spawn":
+							//break;
+						case "player4Spawn":
+							//break;
 						case "button":
 							Debug.Log("We maky da player frum button");
 							var newPlayer = Instantiate(playerTemplate, superObject.transform.position, Quaternion.identity);
-							
-							newPlayer.GetComponent<PlayerSpriteSetter>().SetPlayerNumber(3);
+                            newPlayer.GetComponent<PlayerIdComponent>().setPlayerId(playerId);
+                            playerId++;
+                            							
+							newPlayer.GetComponent<PlayerSpriteSetter>().SetPlayerNumber(playerId);
+                            Destroy(superObject.gameObject);
 							break;
 						default:
 							throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Name + " found");
