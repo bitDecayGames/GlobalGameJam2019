@@ -3,6 +3,12 @@
 [Oo]bj/
 Assets/AssetStoreTools*
 
+# FMOD
+Assets/FMODStudioCache.asset
+Assets/StreamingAssets/*.bank
+fmod.log
+fmod_editor.log
+
 # Visual Studio cache directory
 .vs/
 .idea/

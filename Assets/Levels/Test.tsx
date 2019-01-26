@@ -5,6 +5,9 @@
   <properties>
    <property name="ObjectName" value=""/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
  </tile>
  <tile id="1">
   <properties>
@@ -25,5 +28,8 @@
   <properties>
    <property name="ObjectName" value="button"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="8"/>
+  </objectgroup>
  </tile>
 </tileset>
