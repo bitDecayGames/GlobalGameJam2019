@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Debug/DebugDoor.unity
     guid: 0bfb3ad681710420c85b0a7ad96fd2f6
+  - enabled: 1
+    path: Assets/Scenes/Logan.unity
+    guid: d08335b5a02c44eaaba235423e4b5a2c
   m_configObjects: {}
