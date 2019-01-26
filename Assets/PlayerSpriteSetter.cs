@@ -8,6 +8,7 @@ public class PlayerSpriteSetter : MonoBehaviour
 {
     public List<Sprite> playerSpriteChoices;
 
+   
     public void SetPlayerNumber(int n)
     {
         if (n < 1 || n > playerSpriteChoices.Count)
@@ -20,6 +21,6 @@ public class PlayerSpriteSetter : MonoBehaviour
 
     private void Start()
     {
-        SetPlayerNumber(3);
+        Debug.Log("We have " + playerSpriteChoices.Count + " different players");
     }
 }

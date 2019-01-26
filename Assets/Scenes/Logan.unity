@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 452588640}
   - component: {fileID: 452588639}
   - component: {fileID: 452588638}
+  - component: {fileID: 452588641}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -220,6 +221,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &452588641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 452588637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a28a513daff74b70a5652c2d845d94b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTemplate: {fileID: 1485957507649052, guid: f09f6e173746e44c383e0809d1d95fbb,
+    type: 2}
 --- !u!60 &634696460 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000054, guid: ff55711479d7f463db37e58682291b24,
@@ -235,77 +249,6 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000056, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 1328391236}
---- !u!1001 &845788870
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 114387792406221442, guid: f09f6e173746e44c383e0809d1d95fbb,
-        type: 2}
-      propertyPath: playerSpriteChoices.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.891
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.826
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4579450706881666, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114387792406221442, guid: f09f6e173746e44c383e0809d1d95fbb,
-        type: 2}
-      propertyPath: playerSpriteChoices.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: c7c8ca23f38b6405fbfad2933dae408f,
-        type: 3}
-    - target: {fileID: 114387792406221442, guid: f09f6e173746e44c383e0809d1d95fbb,
-        type: 2}
-      propertyPath: playerSpriteChoices.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: a02982b4083c44a69b79774813a8467a,
-        type: 3}
-    - target: {fileID: 114387792406221442, guid: f09f6e173746e44c383e0809d1d95fbb,
-        type: 2}
-      propertyPath: playerSpriteChoices.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: 2d052e84a41c84e5ea0402fde6702069,
-        type: 3}
-    - target: {fileID: 114387792406221442, guid: f09f6e173746e44c383e0809d1d95fbb,
-        type: 2}
-      propertyPath: playerSpriteChoices.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 933a0b9bee3ed48b3846cd4c4589f438,
-        type: 3}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f09f6e173746e44c383e0809d1d95fbb, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!60 &887664272 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000070, guid: ff55711479d7f463db37e58682291b24,
