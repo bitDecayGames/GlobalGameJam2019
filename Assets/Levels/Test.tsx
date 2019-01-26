@@ -16,7 +16,7 @@
  </tile>
  <tile id="2">
   <properties>
-   <property name="ObjectName" value="Ladder"/>
+   <property name="ObjectName" value="ladder"/>
   </properties>
  </tile>
  <tile id="3">
