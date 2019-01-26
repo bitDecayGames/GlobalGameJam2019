@@ -21,11 +21,10 @@ ScriptedImporter:
     100032: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)
     100034: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)
     100036: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)/player3Spawn
-    100038: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)
-    100040: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/Player4 Spaen (CF)
-    100042: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/Player4 Spaen (CF)/Player4
-      Spaen
     100044: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (5)
+    100046: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)
+    100048: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/Player4Spawn (CF)
+    100050: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/Player4Spawn (CF)/Player4Spawn
     400000: _MapPrfab/TestLevel/Transform
     400002: _MapPrfab/TestLevel/Object Layer 1/Transform
     400004: _MapPrfab/TestLevel/Interactibles/Collision_Default/Transform
@@ -45,11 +44,10 @@ ScriptedImporter:
     400032: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/Transform
     400034: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)/Transform
     400036: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)/player3Spawn/Transform
-    400038: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/Transform
-    400040: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/Player4 Spaen (CF)/Transform
-    400042: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/Player4 Spaen (CF)/Player4
-      Spaen/Transform
     400044: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (5)/Transform
+    400046: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/Transform
+    400048: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/Player4Spawn (CF)/Transform
+    400050: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/Player4Spawn (CF)/Player4Spawn/Transform
     5000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Rigidbody2D
     6000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon/PolygonCollider2D
     6000002: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (1)/PolygonCollider2D
@@ -68,6 +66,8 @@ ScriptedImporter:
     11400014: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400016: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400018: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400020: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400022: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400032: _superAsset
     11400034: _MapPrfab/TestLevel/FloorWalls/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400036: _MapPrfab/TestLevel/FloorWalls/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -79,13 +79,10 @@ ScriptedImporter:
     11400048: _MapPrfab/TestLevel/Object Layer 1/player2Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400050: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400052: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400054: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400056: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     21200000: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)/player1Spawn/SpriteRenderer
     21200002: _MapPrfab/TestLevel/Object Layer 1/player2Spawn (TRS)/player2Spawn (CF)/player2Spawn/SpriteRenderer
     21200004: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)/player3Spawn/SpriteRenderer
-    21200006: _MapPrfab/TestLevel/Object Layer 1/Player4 Spaen (TRS)/Player4 Spaen
-      (CF)/Player4 Spaen/SpriteRenderer
+    21200008: _MapPrfab/TestLevel/Object Layer 1/Player4Spawn (TRS)/Player4Spawn (CF)/Player4Spawn/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/TestLevel/Grid
     3664157343022684180: _MapPrfab/TestLevel/FloorWalls/TilemapRenderer
