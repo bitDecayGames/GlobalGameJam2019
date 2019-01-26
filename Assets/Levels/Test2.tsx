@@ -13,7 +13,7 @@
  </tile>
  <tile id="38">
   <properties>
-   <property name="ObjectName" value="Player3Spawn"/>
+   <property name="ObjectName" value="player3Spawn"/>
   </properties>
  </tile>
  <tile id="39">
