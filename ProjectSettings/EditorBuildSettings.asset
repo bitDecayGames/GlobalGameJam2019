@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Debug/DebugJiggle.unity
     guid: 556e52529da024b47a80a62a7aac7941
   - enabled: 1
-    path: Assets/Scenes/Logan.unity
-    guid: d08335b5a02c44eaaba235423e4b5a2c
+    path: Assets/Scenes/Debug/DebugDash.unity
+    guid: be7846ce8316b4172be8e6a5e2010951
   m_configObjects: {}
