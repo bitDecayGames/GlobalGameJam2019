@@ -15,7 +15,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     public Sprite YButton;
     public Sprite BButton;
 
-    private bool hasSkippedFirstFrame;
+    protected bool _hasSkippedFirstFrame;
     private const int DefaultSuccessesRequired = 3;
     private int _successesRequired;
 
@@ -138,13 +138,6 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     }
 
     protected void Update() {
-
-        // Give the controller a one frame buffer to avoid the initial interact button from failing the door
-        if (!hasSkippedFirstFrame)
-        {
-            hasSkippedFirstFrame = true;
-            return;
-        }
         
         if (_cooldown > 0)
         {
@@ -167,6 +160,12 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         
         if (_isInteracting)
         {
+            // Give the controller a one frame buffer to avoid the initial interact button from failing the door
+            if (!_hasSkippedFirstFrame)
+            {
+                _hasSkippedFirstFrame = true;
+                return;
+            }
             
             if (IsCorrectButtonPressed())
             {
@@ -194,6 +193,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         if (_isInteracting) {
             _isInteracting = false;
             _interactee = null;
+            _hasSkippedFirstFrame = false;
 
             _cooldown = DefaultCooldown;
             
@@ -218,6 +218,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     }
 
     protected bool IsCorrectButtonPressed() {
+        
         switch (_currentQuicktimeButton)
         {
             case _controllerButtons.A:
