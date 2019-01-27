@@ -5630,6 +5630,11 @@ Prefab:
       propertyPath: m_Name
       value: GoalsObjective
       objectReference: {fileID: 0}
+    - target: {fileID: 223288481751796444, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c9e7d51d8b4b947805a2b8f114d1db, type: 2}
   m_IsPrefabAsset: 0

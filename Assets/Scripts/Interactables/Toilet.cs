@@ -18,8 +18,8 @@ public class Toilet : PressAndHoldInteractable, IObjective
     private Collider2D body;
     private SpriteRenderer sprite;
     private Blinker blinker;
-    public Sprite offSprite;
-    private Sprite onSprite;
+    public Sprite fullToilet;
+    private Sprite emptyToilet;
 
 
     void Start()
@@ -30,7 +30,7 @@ public class Toilet : PressAndHoldInteractable, IObjective
         sprite = GetComponentInChildren<SpriteRenderer>();
         if (!sprite) throw new Exception("Sprite is missing on this object");
 
-        onSprite = sprite.sprite;
+        emptyToilet = sprite.sprite;
         GameStateManager.getLocalReference().Register(this);
     }
 
@@ -39,7 +39,7 @@ public class Toilet : PressAndHoldInteractable, IObjective
         if (!_isFull)
         {
             FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Fart);
-            sprite.sprite = onSprite;
+            sprite.sprite = fullToilet;
             _isFull = true;
         }
     }
@@ -49,7 +49,7 @@ public class Toilet : PressAndHoldInteractable, IObjective
         if (_isFull)
         {
             FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Flush);
-            sprite.sprite = offSprite;
+            sprite.sprite = emptyToilet;
             _isFull = false;
         }
     }
