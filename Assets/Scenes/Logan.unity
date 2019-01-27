@@ -336,6 +336,8 @@ MonoBehaviour:
     type: 2}
   buttonTemplate: {fileID: 1822299263779578, guid: 060a278236935f24dbd06cda7229645c,
     type: 2}
+  ladderTemplate: {fileID: 1030339076870038, guid: d0d27cd19d6bc44c98ca6928af9712b3,
+    type: 2}
 --- !u!60 &470577669 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000148, guid: ff55711479d7f463db37e58682291b24,
