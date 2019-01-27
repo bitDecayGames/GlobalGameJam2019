@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114093465877495696}
-  - {fileID: 114475946585279864}
+  - {fileID: 114040765747568750}
+  - {fileID: 114941590295376432}
   EditorEvents:
   - {fileID: 114218767921092042}
   - {fileID: 114393422783879378}
@@ -28,16 +28,41 @@ MonoBehaviour:
   - {fileID: 114223041432566254}
   - {fileID: 114881503281772268}
   - {fileID: 114234544573434344}
+  - {fileID: 114098715693389936}
+  - {fileID: 114001176279749486}
   MasterBanks:
   - {fileID: 114537341699953466}
   - {fileID: 114510055240323080}
   - {fileID: 114705976993675090}
   - {fileID: 114454503399685424}
+  - {fileID: 114040765747568750}
   StringsBanks:
   - {fileID: 114091636918460612}
   - {fileID: 114121173807994186}
-  stringsBankWriteTime: 636841363320000000
+  stringsBankWriteTime: 636841718330000000
   cacheVersion: 3
+--- !u!114 &114001176279749486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButtonSuccess
+  guid: a391f6b3a9df744baf440e1b9497e28e
+  Banks:
+  - {fileID: 114941590295376432}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1044
 --- !u!114 &114017931522971246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +84,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &114028315073764490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114035869338976018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +117,47 @@ MonoBehaviour:
   - Name: Desktop
     Value: 824
   Exists: 1
+--- !u!114 &114040765747568750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/Assets/FmodBanks/Desktop/Master
+    Bank.bank
+  lastModified: 636841417150000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 640672
+  Exists: 1
+--- !u!114 &114047428290901496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButtonSuccess
+  guid: a391f6b3a9df744baf440e1b9497e28e
+  Banks:
+  - {fileID: 114846653268040346}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1044
 --- !u!114 &114052933379177846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +228,28 @@ MonoBehaviour:
   - Name: 
     Value: 640672
   Exists: 1
+--- !u!114 &114098715693389936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButtonFailure
+  guid: 863b5bc6cf9a4248a5647af358b11365
+  Banks:
+  - {fileID: 114941590295376432}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1436
 --- !u!114 &114113063641848924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +264,7 @@ MonoBehaviour:
   Path: event:/SFX/Ladder
   guid: c22ca38cc1a9684cbd296cb05fafe20e
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -181,11 +284,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets/FmodBanks/Desktop/Master Bank.strings.bank
-  lastModified: 636841363320000000
+  lastModified: 636841718330000000
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 1286
+    Value: 1390
   Exists: 1
 --- !u!114 &114218767921092042
 MonoBehaviour:
@@ -201,12 +304,12 @@ MonoBehaviour:
   Path: event:/Music/JustHavingFun
   guid: 96a1d111314d9c4f94dd5dd33ca03fa8
   Banks:
-  - {fileID: 114093465877495696}
+  - {fileID: 114040765747568750}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114452296009460116}
+  - {fileID: 114028315073764490}
   MinDistance: 0
   MaxDistance: 0
   Length: 51330
@@ -224,7 +327,7 @@ MonoBehaviour:
   Path: event:/SFX/Smack
   guid: dc64eda261c56d47abd08a83334e305d
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -232,6 +335,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &114230122137958272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114234544573434344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,7 +364,7 @@ MonoBehaviour:
   Path: event:/SFX/FartFlush
   guid: 2bda1065f647e04bb9d1ff82bec3e623
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -268,7 +386,7 @@ MonoBehaviour:
   Path: event:/SFX/Thud
   guid: c2e317897669054fac82afed4110d1f3
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -311,7 +429,7 @@ MonoBehaviour:
   Path: event:/SFX/Dash
   guid: 9eaccd21301490469dcf24c820496d08
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -354,7 +472,7 @@ MonoBehaviour:
   Path: event:/SFX/Footstep
   guid: 971e8bcd848c9e47ae4d57a7ed82968a
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -396,6 +514,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114348672849133310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ButtonFailure
+  guid: 863b5bc6cf9a4248a5647af358b11365
+  Banks:
+  - {fileID: 114846653268040346}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1436
 --- !u!114 &114379443326497964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +605,7 @@ MonoBehaviour:
   Path: event:/SFX/Bush
   guid: 4502b00170d3914cacf979d48b06f28b
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -680,7 +820,7 @@ MonoBehaviour:
   Path: event:/SFX/OpenDoor
   guid: 54efff641977574fadea0ba800988911
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -833,7 +973,7 @@ MonoBehaviour:
   Path: event:/SFX/Lever
   guid: b823cc31c271cc4ab3051aa2a4cede37
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -841,6 +981,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 679
+--- !u!114 &114718561595503060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/Assets/FmodBanks/Desktop/Master
+    Bank.bank
+  lastModified: 636841417150000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 640672
+  Exists: 1
 --- !u!114 &114729112501888904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,6 +1076,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3697
+--- !u!114 &114846653268040346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/Assets/FmodBanks/Desktop/SFX.bank
+  lastModified: 636841718330000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 545984
+  Exists: 1
 --- !u!114 &114848725852554258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,7 +1150,7 @@ MonoBehaviour:
   Path: event:/SFX/CloseDoor
   guid: 946c2cc3b66bf6488db4354ca4c3bcc3
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1034,7 +1211,7 @@ MonoBehaviour:
   Path: event:/SFX/PickLock
   guid: b6852ea4edd33e40b6d700feeca19909
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1075,7 +1252,7 @@ MonoBehaviour:
   Path: event:/SFX/Teleport
   guid: fa5fa0f542b16549ad582208fd35ca6a
   Banks:
-  - {fileID: 114475946585279864}
+  - {fileID: 114941590295376432}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1102,6 +1279,24 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1475072
   Exists: 0
+--- !u!114 &114941590295376432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: /Users/logan.moore/gamejam/GlobalGameJam2019/Assets/FmodBanks/Desktop/SFX.bank
+  lastModified: 636841718330000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 545984
+  Exists: 1
 --- !u!114 &114958065451379894
 MonoBehaviour:
   m_ObjectHideFlags: 0
