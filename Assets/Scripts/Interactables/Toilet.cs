@@ -62,11 +62,13 @@ public class Toilet : PressAndHoldInteractable, IObjective
 
     protected override void OnInteract()
     {
+        base.OnInteract();
         blinker = gameObject.AddComponent<Blinker>();
     }
 
     protected override void OnDisconnect()
     {
+        base.OnDisconnect();
         if (blinker) Destroy(blinker);
     }
 
