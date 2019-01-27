@@ -1,3 +1,4 @@
+using GameInput;
 using UnityEngine;
 
 namespace Interactables {
@@ -10,13 +11,13 @@ namespace Interactables {
             get { return _isInteracting; }
         }
 
-        protected GameObject _interactee;
+        protected InputController _interactee;
 
-        public GameObject Interactee {
+        public InputController Interactee {
             get { return _interactee; }
         }
 
-        public abstract void Interact(GameObject interactee);
+        public abstract void Interact(InputController interactee);
         public abstract void Disconnect();
         public abstract void Trigger();
         

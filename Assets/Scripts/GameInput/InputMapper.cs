@@ -2,6 +2,7 @@
 
 namespace GameInput {
     public abstract class InputMapper  {
+        
         public string playerId;
 
         abstract public bool InteractPressed();
@@ -11,6 +12,22 @@ namespace GameInput {
         abstract public bool InteractDown();
 
         abstract public bool RunDown();
+
+        protected bool KeyboardInteractPressed() {
+            return Input.GetKeyDown(KeyCode.Space);
+        }
+        
+        protected bool KeyboardRunPressed() {
+            return Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift);
+        }
+        
+        protected bool KeyboardInteractDown() {
+            return Input.GetKey(KeyCode.Space);
+        }
+        
+        protected bool KeyboardRunDown() {
+            return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+        }
 
         string BuildHorizontalAxisString()
         {

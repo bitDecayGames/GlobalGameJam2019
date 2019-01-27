@@ -1,3 +1,4 @@
+using GameInput;
 using UnityEngine;
 
 namespace Interactables {
@@ -9,7 +10,7 @@ namespace Interactables {
             set { _timeToComplete = value; }
         }
 
-        public override void Interact(GameObject interactee) {
+        public override void Interact(InputController interactee) {
             if (!_isInteracting) {
                 _isInteracting = true;
                 time = _timeToComplete;
@@ -41,8 +42,7 @@ namespace Interactables {
         }
 
         protected bool IsInteractButtonBeingHeld() {
-            // TODO: check if button is being pressed
-            return Input.GetKey(KeyCode.I);
+            return _interactee.ControllerMapper.InteractDown();
         }
     }
 }

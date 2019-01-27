@@ -1,3 +1,4 @@
+using GameInput;
 using UnityEngine;
 
 namespace Interactables {
@@ -21,7 +22,7 @@ namespace Interactables {
             set { _cooldown = value; }
         }
 
-        public override void Interact(GameObject interactee) {
+        public override void Interact(InputController interactee) {
             if (!_isInteracting && _time <= 0) {
                 _isInteracting = true;
                 currentHitpoints = _buttonMashHitpoints * .1f;
@@ -49,8 +50,7 @@ namespace Interactables {
         }
 
         protected bool IsInteractButtonPressed() {
-            // TODO: check if button has been pressed on this frame
-            return Input.GetKeyDown(KeyCode.I);
+            return _interactee.ControllerMapper.InteractPressed();
         }
 
         protected override void OnTrigger() {
