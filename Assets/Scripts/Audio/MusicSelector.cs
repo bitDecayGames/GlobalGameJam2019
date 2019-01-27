@@ -2,10 +2,14 @@ using UnityEngine;
 
 public class MusicSelector : MonoBehaviour
 {
+    public bool Enabled = true;
     public Songs.SongName Song;
     
     private void Awake()
     {
-        FMODMusicPlayer.Instance.PlaySongIfNoneAreCurrentlyPlaying(Song);
+        if (Enabled)
+        {
+            FMODMusicPlayer.Instance.PlaySongIfNoneAreCurrentlyPlaying(Song);    
+        }
     }
 }
