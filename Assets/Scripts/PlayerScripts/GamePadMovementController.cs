@@ -5,12 +5,15 @@ using UnityEngine;
 namespace PlayerScripts {
     public class GamePadMovementController : MonoBehaviour {
         private InputController input;
+        private Rigidbody2D body;
 
         public float MovementSpeed = 0.2f;
 
         private void Start() {
             input = GetComponent<InputController>();
             if (!input) throw new Exception("InputController is missing from GamePadMovementController object");
+            body = GetComponent<Rigidbody2D>();
+            if (!body) throw new Exception("Rigidbody2D is missing from GamePadMovementController object");
         }
 
         private void Update() {
@@ -18,10 +21,13 @@ namespace PlayerScripts {
             float moveUD = input.ControllerMapper.GetVerticalMovement();
 
             float newFacing = FindDegree(moveLR, moveUD);
-            var newPosition = new Vector3(moveLR, moveUD);
-            if(newPosition.magnitude > input.deadzone) {
+            var dir = new Vector3(moveLR, moveUD);
+            
+            if(dir.magnitude > input.deadzone) {
                 transform.rotation = Quaternion.AngleAxis(newFacing, Vector3.forward);
-                transform.Translate(newPosition.magnitude * MovementSpeed * Time.deltaTime, 0, 0);
+                
+                var vel = dir * MovementSpeed * Time.deltaTime;
+                body.AddForce(vel, ForceMode2D.Impulse);
             }
         }
 
