@@ -49,9 +49,11 @@ namespace PlayerScripts {
         }
 
         private void SetAlpha(float alpha) {
-            var c = sprite.color;
-            c.a = alpha;
-            sprite.color = c;
+            if (sprite) {
+                var c = sprite.color;
+                c.a = alpha;
+                sprite.color = c;
+            }
         }
 
         private void OnDestroy() {

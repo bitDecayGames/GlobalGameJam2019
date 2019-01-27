@@ -405,6 +405,11 @@ Prefab:
       propertyPath: Song
       value: 44
       objectReference: {fileID: 0}
+    - target: {fileID: 114292457556940940, guid: 87a91b0b00012b349a8b6ad91d8c6b6c,
+        type: 2}
+      propertyPath: Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
   m_IsPrefabAsset: 0
