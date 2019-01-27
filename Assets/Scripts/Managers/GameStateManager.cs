@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PlayerScripts;
+using Utils;
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour {
     public int winThreshold = 4;
-    public float gameTime = 60.0f;
+    public bool isGameOver = false;
+    public float gameTime = 30.0f;
     private const string gameObjectName = "GameStateManagerGameObject";
     private List<IObjective> winObjectives = new List<IObjective>();
     public HudController HUD;
@@ -20,7 +24,7 @@ public class GameStateManager : MonoBehaviour {
 
         if (gameTime < 0)
         {
-            GameOver(); //Seeker Wins
+            GameOver(true); //Seeker Wins
         }
 
         foreach(IObjective obj in winObjectives)
@@ -34,11 +38,18 @@ public class GameStateManager : MonoBehaviour {
 
         if(completedObjectives >= winThreshold)
         {
-            GameOver(); //Hiders Win
+            GameOver(false); //Hiders Win
         }
 
         HUD.SetLabel(completedObjectives,winThreshold);
-        HUD.SetTimer(gameTime);
+        if (!isGameOver) {
+            HUD.SetTimer(gameTime);
+        }
+        else {
+            if (gameTime < -5) {
+                SceneManager.LoadScene("Logan");
+            }
+        }
     }
 
     public void Register(IObjective comp)
@@ -56,8 +67,23 @@ public class GameStateManager : MonoBehaviour {
         return gameObj.GetComponent<GameStateManager>();
     }
     
-    private void GameOver()
+    private void GameOver(bool isOwnerTheWinner)
     {
+        if (isGameOver) {
+            return;
+        }
+
+        HUD.SetTimer(0);
+        var players = GameObject.FindGameObjectsWithTag("player");
+        foreach (var player in players) {
+            player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            player.GetComponent<GamePadMovementController>().IsFrozen = true;
+        }
+        this.isGameOver = true;
+        var blinkers = GameObject.FindGameObjectsWithTag("blinker");
+        foreach (var blinker in blinkers) {
+            blinker.AddComponent<CanvasBlinker>();
+        }
 
     }
 }

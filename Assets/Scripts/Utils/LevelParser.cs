@@ -1,18 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Boo.Lang.Runtime;
 using Interactables;
 using PlayerScripts;
+using PolishElements;
 using SuperTiled2Unity;
 using UnityEngine;
-using PolishElements;
-using PlayerScripts;
 
 public class LevelParser : MonoBehaviour {
     public GameObject playerTemplate;
     public GameObject buttonTemplate;
     public GameObject ladderTemplate;
+    public GameObject toiletTemplate;
     public Door doorTemplate;
     public RedDoor redDoorTemplate;
 
@@ -79,6 +76,12 @@ public class LevelParser : MonoBehaviour {
                             break;
                         case "button":
                             SpawnButton(superObject, map);
+                            break;
+                        case "toilet":
+                            SpawnToilet(superObject);
+                            break;
+                        case "Spawner":
+                            superObject.gameObject.tag = Tags.Respawn;
                             break;
                         default:
                             Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
@@ -176,6 +179,14 @@ public class LevelParser : MonoBehaviour {
             }
         }
 
+        Destroy(superObject.gameObject);
+    }
+
+    void SpawnToilet(SuperObject superObject)
+    {
+        var newToilet = Instantiate(toiletTemplate, superObject.transform.position, superObject.transform.localRotation);
+        newToilet.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
+        
         Destroy(superObject.gameObject);
     }
 
