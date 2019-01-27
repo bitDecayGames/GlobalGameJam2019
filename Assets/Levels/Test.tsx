@@ -266,6 +266,9 @@
   </objectgroup>
  </tile>
  <tile id="85">
+  <properties>
+   <property name="ObjectName" value="toilet"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" x="2" y="0" width="11" height="16"/>
   </objectgroup>
