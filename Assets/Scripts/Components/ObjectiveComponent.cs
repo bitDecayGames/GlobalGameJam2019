@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Interactables;
+using GameInput;
 
 public class ObjectiveComponent : AbstractInteractable {
     public bool isComplete = false;
@@ -15,7 +16,7 @@ public class ObjectiveComponent : AbstractInteractable {
 		
 	}
 
-    public override void Interact(GameObject interactee)
+    public override void Interact(InputController interactee)
     {
         //todo: check to see if this is the defender or attacker
         isComplete = true;
