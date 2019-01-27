@@ -68,7 +68,7 @@ public class LevelParser : MonoBehaviour
                         case "button":
                             break;
                         default:
-                            throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Name + " found");
+                            throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Value + " found");
                     }
                 }
             }
