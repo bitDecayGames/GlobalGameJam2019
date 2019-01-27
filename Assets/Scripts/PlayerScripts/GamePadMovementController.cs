@@ -26,12 +26,17 @@ namespace PlayerScripts {
 
                 float newFacing = FindDegree(moveLR, moveUD);
                 var dir = new Vector3(moveLR, moveUD);
-
+                Debug.Log("some dir : " + dir);
                 if (dir.magnitude > input.deadzone) {
                     transform.rotation = Quaternion.AngleAxis(newFacing, Vector3.forward);
 
                     var vel = dir * MovementSpeed * Time.deltaTime;
+                    
                     body.AddForce(vel, ForceMode2D.Impulse);
+                }
+                else
+                {                    
+                    body.AddForce(-body.velocity, ForceMode2D.Impulse);
                 }
             }
         }
