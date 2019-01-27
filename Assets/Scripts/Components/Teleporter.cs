@@ -45,7 +45,9 @@ public class Teleporter : MonoBehaviour {
                 i++;
             }
             nextTeleporter.GetComponent<Teleporter>().Active = false;
-            player.transform.position = nextTeleporter.transform.position;
+            var offset = nextTeleporter.GetComponent<CircleCollider2D>().offset;
+            var newOffset = new Vector3(offset.x, offset.y, player.transform.position.z);
+            player.transform.position = nextTeleporter.transform.position + newOffset; 
         } 
     }
 
