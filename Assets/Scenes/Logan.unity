@@ -163,11 +163,6 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000184, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 1379705173}
---- !u!60 &160522704 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6000208, guid: ff55711479d7f463db37e58682291b24,
-    type: 3}
-  m_PrefabInternal: {fileID: 1379705173}
 --- !u!60 &171203137 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000166, guid: ff55711479d7f463db37e58682291b24,
@@ -655,6 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LightOffStatusLabel: {fileID: 355828845}
+  CopTimerText: {fileID: 1240505264}
 --- !u!60 &512308298 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000154, guid: ff55711479d7f463db37e58682291b24,
@@ -678,11 +674,6 @@ PolygonCollider2D:
 --- !u!60 &657786264 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000078, guid: ff55711479d7f463db37e58682291b24,
-    type: 3}
-  m_PrefabInternal: {fileID: 1379705173}
---- !u!60 &678117021 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6000198, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 1379705173}
 --- !u!60 &685893976 stripped
@@ -743,11 +734,6 @@ PolygonCollider2D:
 --- !u!60 &910572123 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000128, guid: ff55711479d7f463db37e58682291b24,
-    type: 3}
-  m_PrefabInternal: {fileID: 1379705173}
---- !u!60 &921071287 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6000196, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 1379705173}
 --- !u!60 &921865835 stripped
@@ -6064,7 +6050,7 @@ Prefab:
     - target: {fileID: 6600002, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[102].m_Collider
       value: 
-      objectReference: {fileID: 160522704}
+      objectReference: {fileID: 0}
     - target: {fileID: 6600002, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[102].m_ColliderPaths.Array.data[0].Array.data[0].X
       value: 79990232
@@ -6116,7 +6102,7 @@ Prefab:
     - target: {fileID: 6600000, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_Collider
       value: 
-      objectReference: {fileID: 921071287}
+      objectReference: {fileID: 0}
     - target: {fileID: 6600000, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[0].Array.data[0].X
       value: 49599608
@@ -6152,7 +6138,7 @@ Prefab:
     - target: {fileID: 6600000, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_Collider
       value: 
-      objectReference: {fileID: 678117021}
+      objectReference: {fileID: 0}
     - target: {fileID: 6600000, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_ColliderPaths.Array.data[0].Array.data[0].X
       value: 49599608
