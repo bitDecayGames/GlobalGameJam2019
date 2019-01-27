@@ -6,7 +6,7 @@ public class GameStateManager : MonoBehaviour {
     public int winThreshold = 2;
     public float gameTime = 60.0f;
     private const string gameObjectName = "GameStateManagerGameObject";
-    private List<Component> winObjectives = new List<Component>();
+    private List<IObjective> winObjectives = new List<IObjective>();
     [SerializeField]
     private int registeredGameObjects = 0;
     [SerializeField]
@@ -14,6 +14,7 @@ public class GameStateManager : MonoBehaviour {
 
     void Update () {        
         int completedObjectives = 0;
+        activatedGameObjects = 0;
         gameTime -= Time.deltaTime;
 
         if (gameTime < 0)
@@ -21,9 +22,9 @@ public class GameStateManager : MonoBehaviour {
             GameOver(); //Seeker Wins
         }
 
-        foreach(ObjectiveComponent comp in winObjectives)
+        foreach(IObjective obj in winObjectives)
         {
-            if (comp.isComplete)
+            if (obj.isComplete())
             {
                 completedObjectives++;
                 activatedGameObjects++;
@@ -36,7 +37,7 @@ public class GameStateManager : MonoBehaviour {
         }
     }
 
-    public void Register(Component comp)
+    public void Register(IObjective comp)
     {
         winObjectives.Add(comp);
         registeredGameObjects = winObjectives.Count;
