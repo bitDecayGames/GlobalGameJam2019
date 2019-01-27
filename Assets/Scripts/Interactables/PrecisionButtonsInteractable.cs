@@ -34,6 +34,11 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     private void OnGUI()
     {
+        if (!_isInteracting)
+        {
+            return;
+        }
+        
         StringBuilder currentQueue = new StringBuilder();
 
         foreach (_controllerButtons button in _buttonsToPress)
@@ -53,11 +58,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         _currentQuicktimeButtonSpriteGameObject = new GameObject();
         _currentQuicktimeButtonSpriteGameObject.transform.position = transform.position + Vector3.up / 2f;
         _currentQuicktimeButtonSpriteRenderer = _currentQuicktimeButtonSpriteGameObject.AddComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
-        SetupQuicktimeQueue();
+        _currentQuicktimeButtonSpriteRenderer.enabled = false;
     }
 
     private void SetupQuicktimeQueue()
@@ -112,7 +113,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     }
 
     public override void Interact(InputController interactee) {
-        if (!_isInteracting) {
+        if (!_isInteracting && !_isUnlocked) {
             if (_cooldown > 0)
             {
                 FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonFailure);
@@ -120,7 +121,8 @@ public class PrecisionButtonsInteractable : AbstractInteractable
             else
             {
                 _isInteracting = true;
-                _interactee = interactee;   
+                _interactee = interactee;
+                SetupQuicktimeQueue();
             }
         }
     }
@@ -131,8 +133,19 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         {
             _cooldown -= Time.deltaTime;
         }
+
+        if (!_isUnlocked && _isInteracting)
+        {
+            _currentQuicktimeButtonSpriteRenderer.enabled = true;
+        }
+        else 
+        {
+            _currentQuicktimeButtonSpriteRenderer.enabled = false;
+        }
         
-        if (_isInteracting) {
+        if (_isInteracting)
+        {
+            
             if (IsCorrectButtonPressed())
             {
                 FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonSuccess);
@@ -169,7 +182,6 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     public override void Trigger()
     {
         _isUnlocked = true;
-        Destroy(_currentQuicktimeButtonSpriteGameObject);
     }
 
     protected bool IsCorrectButtonPressed() {
