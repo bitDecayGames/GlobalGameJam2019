@@ -16,6 +16,7 @@ namespace Interactables {
 		private SpriteRenderer sprite;
 		private Blinker blinker;
 		private int seekerLayer = -1;
+		private int intruderLayer = -1;
 	
 		void Start () {
 			body = GetComponentInChildren<Collider2D>();
@@ -30,6 +31,7 @@ namespace Interactables {
 			if (!sprite) throw new Exception("Sprite is missing on this object");
 
 			seekerLayer = LayerMask.NameToLayer("Seeker");
+			intruderLayer = LayerMask.NameToLayer("Intruder");
 		}
 
 		protected new void Update() {
@@ -124,7 +126,7 @@ namespace Interactables {
 		}
 
 		private void OnCollisionExit2D(Collision2D other) {
-			if (other.gameObject.layer == seekerLayer) {
+			if (other.gameObject.layer == seekerLayer || other.gameObject.layer == intruderLayer) {
 				Close();
 			}
 		}
@@ -136,7 +138,7 @@ namespace Interactables {
 		}
 
 		private void OnTriggerExit2D(Collider2D other) {
-			if (other.gameObject.layer == seekerLayer) {
+			if (other.gameObject.layer == seekerLayer || other.gameObject.layer == intruderLayer) {
 				Close();
 			}
 		}
