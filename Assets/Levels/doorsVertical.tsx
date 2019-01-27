@@ -37,20 +37,32 @@
   <properties>
    <property name="ObjectName" value="verticalHingeBottom"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="5" y="0" width="6" height="32"/>
+  </objectgroup>
  </tile>
  <tile id="5">
   <properties>
    <property name="ObjectName" value="verticalHingeTop"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="5" y="0" width="6" height="32"/>
+  </objectgroup>
  </tile>
  <tile id="6">
   <properties>
    <property name="ObjectName" value="verticalHingeBottom"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="5" y="0" width="6" height="32"/>
+  </objectgroup>
  </tile>
  <tile id="7">
   <properties>
    <property name="ObjectName" value="verticalHingeTop"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="5" y="0" width="6" height="32"/>
+  </objectgroup>
  </tile>
 </tileset>

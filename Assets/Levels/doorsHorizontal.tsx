@@ -37,20 +37,32 @@
   <properties>
    <property name="ObjectName" value="horizontalHingeLeft"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="5" width="32" height="6"/>
+  </objectgroup>
  </tile>
  <tile id="5">
   <properties>
    <property name="ObjectName" value="horizontalHingeRight"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="5" width="32" height="6"/>
+  </objectgroup>
  </tile>
  <tile id="6">
   <properties>
    <property name="ObjectName" value="horizontalHingeLeft"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="5" width="32" height="6"/>
+  </objectgroup>
  </tile>
  <tile id="7">
   <properties>
    <property name="ObjectName" value="horizontalHingeRight"/>
   </properties>
+  <objectgroup draworder="index">
+   <object id="3" x="0" y="5" width="32" height="6"/>
+  </objectgroup>
  </tile>
 </tileset>

@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 using Utils;
 
 namespace Interactables {
-	public class Door : ButtonMashInteractable {
+	public class RedDoor : PrecisionButtonsInteractable {
 
 		private bool _isOpen;
 		public bool IsOpen {
