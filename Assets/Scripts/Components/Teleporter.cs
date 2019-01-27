@@ -23,7 +23,6 @@ public class Teleporter : MonoBehaviour {
         }
 
         var player = col.gameObject;
-        Debug.Log("Oh! Don't touch me there");
         if (player.GetComponents<Teleportable>().Length > 0) 
         {
             Debug.Log("Get your hands off my PENIS!");
@@ -37,9 +36,8 @@ public class Teleporter : MonoBehaviour {
             {       
                 if (otherTeleporter == this.gameObject)
                 {
-                    Debug.Log("I found myself!");
-                    int nextTeleporterIndex = allTeleporters.Length - i - 1;
-                    nextTeleporter = allTeleporters[nextTeleporterIndex];
+                    nextTeleporter = GetNextTeleporter(allTeleporters, i);
+                    break;
                 }         
                 i++;
             }
@@ -50,8 +48,29 @@ public class Teleporter : MonoBehaviour {
         } 
     }
 
+    private GameObject GetNextTeleporter(GameObject[] allTeleporters, int i)
+    {
+        var mapTeleporters = new Dictionary<int, int> {
+            { 0, 4 },
+            { 4, 0 },
+            { 3, 2 },
+            { 2, 3 },
+            { 1, 5 },
+            { 5, 1 }
+        };
+
+        int nextTeleporterIndex;
+        if (mapTeleporters.ContainsKey(i)) {
+            nextTeleporterIndex = mapTeleporters[i];
+        }
+        else {
+            throw new System.Exception("I don't know where this teleporter goes");
+        }
+
+        var nextTeleporter = allTeleporters[nextTeleporterIndex];
+        return nextTeleporter;
+    }
     void OnTriggerExit2D(Collider2D col) {
-        Debug.Log("exit!");
         var player = col.gameObject;
         if (player.GetComponents<Teleportable>().Length > 0) 
         {
