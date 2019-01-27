@@ -4,20 +4,21 @@ using System.Collections.Generic;
 using System.Text;
 using GameInput;
 using Interactables;
+using Interactables.Progress;
 using UnityEngine;
 
 public class PrecisionButtonsInteractable : AbstractInteractable
 {
-    public Sprite ProgerssBarSprite;
-    public Sprite ProgerssBarSpriteSuccess;
+    public GameObject ProgressBarPrefab;
+    private GameObject _progressBarGameObject;
+    private ProgressBarController _progressBarController;
     public Sprite AButton;
     public Sprite XButton;
     public Sprite YButton;
     public Sprite BButton;
 
     protected bool _hasSkippedFirstFrame;
-    private const int DefaultSuccessesRequired = 3;
-    private int _successesRequired;
+    private const int SuccessesRequired = 4;
 
     private enum _controllerButtons
     {
@@ -29,8 +30,6 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     private Queue<_controllerButtons> _buttonsToPress;
     private _controllerButtons _currentQuicktimeButton;
-    private GameObject _progressBarGameObject;
-    private SpriteRenderer _progressBarSpriteRenderer;
     private GameObject _currentQuicktimeButtonSpriteGameObject;
     private SpriteRenderer _currentQuicktimeButtonSpriteRenderer;
     protected bool _isUnlocked;
@@ -63,23 +62,69 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     {
         _currentQuicktimeButtonSpriteGameObject = new GameObject();
         _currentQuicktimeButtonSpriteRenderer = _currentQuicktimeButtonSpriteGameObject.AddComponent<SpriteRenderer>();
-        _currentQuicktimeButtonSpriteRenderer.sortingOrder = 100;
+        _currentQuicktimeButtonSpriteRenderer.sortingOrder = 10000;
         _currentQuicktimeButtonSpriteRenderer.enabled = false;
 
-        _progressBarGameObject = new GameObject();
-        _progressBarSpriteRenderer = _progressBarGameObject.AddComponent<SpriteRenderer>();
-        _progressBarSpriteRenderer.sprite = ProgerssBarSprite;
-        _progressBarSpriteRenderer.sortingOrder = 100;
-        _progressBarSpriteRenderer.enabled = false;
+        _progressBarGameObject = Instantiate(ProgressBarPrefab);
+        _progressBarController = _progressBarGameObject.GetComponent<ProgressBarController>();
+        if (_progressBarController == null) throw new Exception("Could not find progress bar controller");
+        _progressBarController.SetSuccessesRequired(SuccessesRequired);
+    }
+    
+    protected void Update() {
+        
+        if (_cooldown > 0)
+        {
+            _cooldown -= Time.deltaTime;
+        }
+
+        if (!_isUnlocked && _isInteracting)
+        {
+            _currentQuicktimeButtonSpriteRenderer.enabled = true;
+        }
+        else if (!_isUnlocked && !_isInteracting)
+        {
+            _currentQuicktimeButtonSpriteRenderer.enabled = false;
+            _progressBarController.Disable();
+        }
+        
+        if (_isInteracting)
+        {
+            // Give the controller a one frame buffer to avoid the initial interact button from failing the door
+            if (!_hasSkippedFirstFrame)
+            {
+                _hasSkippedFirstFrame = true;
+                return;
+            }
+            
+            if (IsCorrectButtonPressed())
+            {
+                _progressBarController.IncrementSuccesses();
+                if (_buttonsToPress.Count > 0)
+                {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonSuccess);
+                    SetupNextQuicktimeButton();
+                }
+                else
+                {
+                    Trigger();
+                    Disconnect();
+                }
+            }
+            else if (IsIncorrectButtonPressed())
+            {
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonFailure);
+                Disconnect();
+            }
+        }
     }
 
     private void SetupQuicktimeQueue()
     {
-        _successesRequired = DefaultSuccessesRequired;
         _buttonsToPress = new Queue<_controllerButtons>();
         System.Random random = new System.Random();
         int previousButtonIndex = -1;
-        for (int i = 0; i < _successesRequired; i++)
+        for (int i = 0; i < SuccessesRequired; i++)
         {
             int buttonIndex;
             do
@@ -130,61 +175,8 @@ public class PrecisionButtonsInteractable : AbstractInteractable
             _interactee = interactee;
             
             _currentQuicktimeButtonSpriteGameObject.transform.position = _interactee.transform.position + Vector3.up * .25f;
-            _progressBarGameObject.transform.position = _interactee.transform.position + new Vector3(-ProgerssBarSprite.bounds.extents.x, .4f, 0);
-            
+            _progressBarController.Activate(_interactee.transform.position);
             SetupQuicktimeQueue();
-        }
-    }
-
-    protected void Update() {
-        
-        if (_cooldown > 0)
-        {
-            _cooldown -= Time.deltaTime;
-        }
-
-        if (!_isUnlocked && _isInteracting)
-        {
-            _progressBarSpriteRenderer.transform.localScale =
-                new Vector3(1 - ((float) _successesRequired / (float) DefaultSuccessesRequired),
-                    _progressBarSpriteRenderer.transform.localScale.y);
-            _currentQuicktimeButtonSpriteRenderer.enabled = true;
-            _progressBarSpriteRenderer.enabled = true;
-        }
-        else if (!_isUnlocked)
-        {
-            _currentQuicktimeButtonSpriteRenderer.enabled = false;
-            _progressBarSpriteRenderer.enabled = false;
-        }
-        
-        if (_isInteracting)
-        {
-            // Give the controller a one frame buffer to avoid the initial interact button from failing the door
-            if (!_hasSkippedFirstFrame)
-            {
-                _hasSkippedFirstFrame = true;
-                return;
-            }
-            
-            if (IsCorrectButtonPressed())
-            {
-                _successesRequired--;
-                if (_buttonsToPress.Count > 0)
-                {
-                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonSuccess);
-                    SetupNextQuicktimeButton();
-                }
-                else
-                {
-                    Trigger();
-                    Disconnect();
-                }
-            }
-            else if (IsIncorrectButtonPressed())
-            {
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonFailure);
-                Disconnect();
-            }
         }
     }
 
@@ -193,6 +185,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
             _isInteracting = false;
             _interactee = null;
             _hasSkippedFirstFrame = false;
+            _progressBarController.Reset();
 
             _cooldown = DefaultCooldown;
             
@@ -202,18 +195,9 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     public override void Trigger()
     {
-        _isUnlocked = true;        
-        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonComplete);
-        _progressBarSpriteRenderer.transform.localScale = new Vector3(1, _progressBarSpriteRenderer.transform.localScale.y);
+        _isUnlocked = true;
+        _progressBarController.Complete();
         _currentQuicktimeButtonSpriteRenderer.enabled = false;
-        _progressBarSpriteRenderer.sprite = ProgerssBarSpriteSuccess;
-        StartCoroutine(DisableSuccessProgressBar());
-    }
-
-    private IEnumerator DisableSuccessProgressBar()
-    {
-        yield return new WaitForSeconds(1f);
-        _progressBarSpriteRenderer.enabled = false;
     }
 
     protected bool IsCorrectButtonPressed() {

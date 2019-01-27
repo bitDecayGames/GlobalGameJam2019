@@ -1,13 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Boo.Lang.Runtime;
 using Interactables;
 using PlayerScripts;
+using PolishElements;
 using SuperTiled2Unity;
 using UnityEngine;
-using PolishElements;
-using PlayerScripts;
 
 public class LevelParser : MonoBehaviour {
     public GameObject playerTemplate;
@@ -83,6 +79,9 @@ public class LevelParser : MonoBehaviour {
                             break;
                         case "toilet":
                             SpawnToilet(superObject);
+                            break;
+                        case "Spawner":
+                            superObject.gameObject.tag = Tags.Respawn;
                             break;
                         default:
                             Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
