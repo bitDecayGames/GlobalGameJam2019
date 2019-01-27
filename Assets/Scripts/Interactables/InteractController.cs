@@ -21,9 +21,10 @@ public class InteractController : MonoBehaviour {
 	void Update () {
 		if(collidee != null)
         {
+            InputController inputCont = this.GetComponent<InputController>();
             if (this.GetComponent<InputController>().ControllerMapper.InteractPressed())
             {
-                collidee.GetComponent<AbstractInteractable>().Trigger();
+                collidee.GetComponent<AbstractInteractable>().Interact(inputCont);
             }
         }
 	}

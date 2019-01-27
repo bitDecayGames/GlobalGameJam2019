@@ -2,15 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Boo.Lang.Runtime;
+using Interactables;
 using PlayerScripts;
 using SuperTiled2Unity;
 using UnityEngine;
 using PolishElements;
 using PlayerScripts;
 
-public class LevelParser : MonoBehaviour
-{
-
+public class LevelParser : MonoBehaviour {
     public GameObject playerTemplate;
     public GameObject buttonTemplate;
     public GameObject ladderTemplate;
@@ -22,46 +21,39 @@ public class LevelParser : MonoBehaviour
     void Start() {
         intruderLayer = LayerMask.NameToLayer("Intruder");
         seekerLayer = LayerMask.NameToLayer("Seeker");
-        
+
         var mapScript = FindObjectOfType<SuperMap>();
-        if (mapScript == null)
-        {
+        if (mapScript == null) {
             throw new RuntimeException("There is no map in the scene");
         }
 
         var objLayers = mapScript.gameObject.GetComponentsInChildren<SuperObjectLayer>();
-        if (objLayers == null || objLayers.Length < 1)
-        {
+        if (objLayers == null || objLayers.Length < 1) {
             throw new RuntimeException("No object layers found in map object");
         }
 
-        foreach (var ol in objLayers)
-        {
-            if (ol.m_TiledName == "Object Layer 1")
-            {
+        Debug.Log("Parse " + objLayers.Length + " layer(s)");
+        foreach (var ol in objLayers) {
+            Debug.Log("Got layer: " + ol.m_TiledName + ", attempting to parse");
+            if (ol.m_TiledName == "Object Layer 1") {
                 parseLevelObjects(ol);
-            }
-            if (ol.m_TiledName == "Game Objects")
-            {
+            } else if (ol.m_TiledName == "Game Objects") {
                 parseGameObjects(ol);
+            } else {
+                Debug.Log("Ignored parsing the layer: " + ol.m_TiledName);
             }
         }
     }
 
-    void parseLevelObjects(SuperObjectLayer objLayer)
-    {
-        Debug.Log("We are parsing an object layer");
+    void parseLevelObjects(SuperObjectLayer objLayer) {
         var objects = objLayer.gameObject.GetComponentsInChildren<SuperObject>();
-        foreach (var superObject in objects)
-        {
+        Debug.Log("Parsing " + objects.Length + " object(s)");
+        foreach (var superObject in objects) {
             var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
-
-            foreach (var prop in custProps.m_Properties)
-            {
-                if (prop.m_Name == "ObjectName")
-                {
-                    switch (prop.m_Value)
-                    {
+            foreach (var prop in custProps.m_Properties) {
+                if (prop.m_Name == "ObjectName") {
+//                    Debug.Log("Got: " + prop.m_Value);
+                    switch (prop.m_Value) {
                         case "player1Spawn":
                             SpawnPlayer(superObject, 1, false);
                             break;
@@ -78,40 +70,62 @@ public class LevelParser : MonoBehaviour
                             var newLadder = Instantiate(ladderTemplate, superObject.transform.position, Quaternion.identity);
                             newLadder.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
                             Destroy(superObject.gameObject);
-                            break;  
+                            break;
                         case "button":
                             SpawnButton(superObject);
                             break;
                         default:
-                            //throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Value + " found");
+                            Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
                             break;
-
                     }
+                } else {
+                    Debug.Log("Didn't understand prop name: " + prop.m_Name);
                 }
             }
         }
     }
 
-    void parseGameObjects(SuperObjectLayer objectLayer)
-    {
-        Debug.Log("We are parsing an object layer");
+    void parseGameObjects(SuperObjectLayer objectLayer) {
         var objects = objectLayer.gameObject.GetComponentsInChildren<SuperObject>();
-        foreach (var superObject in objects)
-        {
+//        Debug.Log("Parsing " + objects.Length + " object(s)");
+        foreach (var superObject in objects) {
             superObject.gameObject.AddComponent<Shaker>();
+            
+            var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
+            foreach (var prop in custProps.m_Properties) {
+                if (prop.m_Name == "ObjectName") {
+//                    Debug.Log("Got: " + prop.m_Value);
+                    switch (prop.m_Value) {
+                        case "horizontalHingeLeft":
+                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.HORIZONTAL_LEFT_HINGE);
+                            break;
+                        case "horizontalHingeRight":
+                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.HORIZONTAL_RIGHT_HINGE);
+                            break;
+                        case "verticalHingeTop":
+                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.VERTICAL_TOP_HINGE);
+                            break;
+                        case "verticalHingeBottom":
+                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.VERTICAL_BOTTOM_HINGE);
+                            break;
+                        default:
+                            Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
+                            break;
+                    }
+                } else {
+                    Debug.Log("Didn't understand prop name: " + prop.m_Name);
+                }
+            }
         }
-
     }
 
-    void SpawnButton(SuperObject superObject)
-    {
+    void SpawnButton(SuperObject superObject) {
         var newButton = Instantiate(buttonTemplate, superObject.transform.position, Quaternion.identity);
         newButton.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
         Destroy(superObject.gameObject);
     }
 
-    void SpawnPlayer(SuperObject superObject, int playerNumber, bool isOwner)
-    {
+    void SpawnPlayer(SuperObject superObject, int playerNumber, bool isOwner) {
         var newPlayer = Instantiate(playerTemplate, superObject.transform.position, Quaternion.identity);
         newPlayer.GetComponent<PlayerSpriteSetter>().SetPlayerNumber(playerNumber);
         newPlayer.GetComponent<PlayerIdComponent>().setPlayerId(playerNumber);
@@ -130,8 +144,5 @@ public class LevelParser : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
-    }
+    void Update() { }
 }

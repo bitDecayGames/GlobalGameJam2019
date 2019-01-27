@@ -6,14 +6,13 @@ using Utils;
 
 namespace Interactables
 {
-    public class Switch : PressAndHoldInteractable
+    public class Switch : PressAndHoldInteractable, IObjective
     {
         private bool _isOn;
         public bool IsOn
         {
             get { return _isOn; }
         }
-
 
         private Rigidbody2D body;
         private SpriteRenderer sprite;
@@ -32,6 +31,7 @@ namespace Interactables
 
             onSprite = sprite.sprite;
             this.On();
+            GameStateManager.getLocalReference().Register(this);
         }
 
         public void On()
@@ -76,5 +76,11 @@ namespace Interactables
             base.OnTrigger();
             if (blinker) Destroy(blinker);
         }
+
+        public bool isComplete()
+        {
+            return !IsOn;
+        }
+
     }
 }
