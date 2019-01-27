@@ -67,7 +67,6 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         _currentQuicktimeButtonSpriteRenderer.enabled = false;
 
         _progressBarGameObject = new GameObject();
-        _progressBarGameObject.transform.SetParent(transform);
         _progressBarSpriteRenderer = _progressBarGameObject.AddComponent<SpriteRenderer>();
         _progressBarSpriteRenderer.sprite = ProgerssBarSprite;
         _progressBarSpriteRenderer.sortingOrder = 100;
