@@ -19,7 +19,7 @@ namespace Interactables {
             }
         }
 
-        private void Update() {
+        protected void Update() {
             if (_isInteracting) {
                 if (IsInteractButtonBeingHeld()) {
                     time -= Time.deltaTime;

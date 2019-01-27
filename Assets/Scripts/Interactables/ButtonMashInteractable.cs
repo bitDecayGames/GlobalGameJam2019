@@ -31,7 +31,7 @@ namespace Interactables {
             }
         }
 
-        private void Update() {
+        protected void Update() {
             if (_isInteracting) {
                 currentHitpoints -= Time.deltaTime * HITPOINT_DECAY_SCALAR;
                 if (IsInteractButtonPressed()) currentHitpoints += HITPOINT_PER_BUTTON_PRESS;
