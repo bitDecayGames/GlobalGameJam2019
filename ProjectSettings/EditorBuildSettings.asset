@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Debug/DebugPlayerMovement.unity
     guid: 1f83b058651614e4e81533ca7755e92c
+  - enabled: 1
+    path: Assets/Scenes/Debug/DebugQuicktime.unity
+    guid: 9476bb0864f7876489b59735c46a7ca2
   m_configObjects: {}

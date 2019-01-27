@@ -11,6 +11,8 @@
     "Dash",
     "CloseDoor",
     "Bush",
-    "FartFlush"
+    "FartFlush",
+    "ButtonSuccess",
+    "ButtonFailure"
   ]
 }

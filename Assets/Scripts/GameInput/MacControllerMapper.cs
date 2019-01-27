@@ -18,6 +18,26 @@ namespace GameInput {
             return false;
         }
 
+        public override bool APressed()
+        {
+            return Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "16"));
+        }
+
+        public override bool XPressed()
+        {
+            return Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "18"));
+        }
+
+        public override bool YPressed()
+        {
+            return Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "19"));
+        }
+
+        public override bool BPressed()
+        {
+            return Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "17"));
+        }
+
         override public bool RunPressed() {
             //Any bumper buttons pressed
             if (Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "13")) ||

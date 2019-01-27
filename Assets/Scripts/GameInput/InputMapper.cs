@@ -6,6 +6,11 @@ namespace GameInput {
         public string playerId;
 
         abstract public bool InteractPressed();
+        
+        abstract public bool APressed();
+        abstract public bool XPressed();
+        abstract public bool YPressed();
+        abstract public bool BPressed();
 
         abstract public bool RunPressed();
         
