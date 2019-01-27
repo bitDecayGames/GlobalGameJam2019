@@ -9,4 +9,5 @@ public class Tags
 	public const string GameController = "GameController";
 	public const string teleporter = "teleporter";
 	public const string player = "player";
+	public const string blinker = "blinker";
 }

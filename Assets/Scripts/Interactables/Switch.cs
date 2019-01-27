@@ -21,8 +21,7 @@ namespace Interactables
         private Blinker blinker;
         public Sprite offSprite;
         private Sprite onSprite;
-
-
+        
         void Start()
         {
             body = GetComponentInChildren<Collider2D>();
@@ -65,11 +64,13 @@ namespace Interactables
 
         protected override void OnInteract()
         {
+            base.OnInteract();
             blinker = gameObject.AddComponent<Blinker>();
         }
 
         protected override void OnDisconnect()
         {
+            base.OnDisconnect();
             if (blinker) Destroy(blinker);
         }
 

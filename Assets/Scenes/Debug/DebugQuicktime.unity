@@ -190,6 +190,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &246307686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246307688}
+  - component: {fileID: 246307687}
+  m_Layer: 0
+  m_Name: TimeFreezerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &246307687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246307686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 829b65adabc3497992e8b2fca1892f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &246307688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 246307686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03877657, y: -0.39405227, z: -0.16796875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548972053
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,8 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d02b59292b544da28554ccf5fd2421fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProgressBarPrefab: {fileID: 1985389929382422, guid: 03c3a062a44934d49af11a68a2504e06,
-    type: 2}
+  ProgressBarGameObject: {fileID: 0}
+  ProgressBarController: {fileID: 0}
+  SuccessThreshold: 0
   AButton: {fileID: 21300000, guid: d60f8b38c5dda07438133c7f1533cf54, type: 3}
   XButton: {fileID: 21300000, guid: c5ab0ff3cd8a3bb4da62f522e3784900, type: 3}
   YButton: {fileID: 21300000, guid: 606cc49b14169fc41b8acb151434c769, type: 3}

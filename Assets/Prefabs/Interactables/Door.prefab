@@ -253,6 +253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5368a45aaf641a7b021473b2607324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _progressBarGameObject: {fileID: 0}
+  _progressBarController: {fileID: 0}
+  SuccessThreshold: 0
 --- !u!212 &212129484117606962
 SpriteRenderer:
   m_ObjectHideFlags: 1

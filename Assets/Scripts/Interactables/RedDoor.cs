@@ -103,16 +103,19 @@ namespace Interactables {
 		}
 
 		protected override void OnInteract() {
+			base.OnInteract();
 			blinker = gameObject.AddComponent<Blinker>();
 		}
 
 		protected override void OnDisconnect() {
+			base.OnDisconnect();
 			if (blinker) Destroy(blinker);
 		}
 
 		protected override void OnTrigger() {
 			base.OnTrigger();
 			if (blinker) Destroy(blinker);
+			
 		}
 
 		private void OnCollisionEnter2D(Collision2D other) {
@@ -122,7 +125,7 @@ namespace Interactables {
 		}
 
 		private void OnCollisionExit2D(Collision2D other) {
-			if (other.gameObject.layer == seekerLayer || other.gameObject.layer == intruderLayer) {
+			if (other.gameObject.layer == seekerLayer) {
 				Close();
 			}
 		}
@@ -134,7 +137,7 @@ namespace Interactables {
 		}
 
 		private void OnTriggerExit2D(Collider2D other) {
-			if (other.gameObject.layer == seekerLayer || other.gameObject.layer == intruderLayer) {
+			if (other.gameObject.layer == seekerLayer) {
 				Close();
 			}
 		}
