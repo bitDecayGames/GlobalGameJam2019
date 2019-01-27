@@ -50,6 +50,7 @@ namespace PlayerScripts
 
         public void KnockOut()
         {
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Smack);
             TimeFreezer.GetLocalReference().TriggerHitStun();
             rotation = transform.localRotation.eulerAngles.z;
             time = KnockoutTime;
