@@ -242,9 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc9aa689ffc4a23a5659a1b37a3623d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProgerssBarSprite: {fileID: 21300000, guid: 8170840193f07404cbae98028605af2e, type: 3}
-  ProgerssBarSpriteSuccess: {fileID: 21300000, guid: fc212f0827adba64380e733ea3093d4f,
-    type: 3}
+  ProgressBarPrefab: {fileID: 1985389929382422, guid: 03c3a062a44934d49af11a68a2504e06,
+    type: 2}
   AButton: {fileID: 21300000, guid: d60f8b38c5dda07438133c7f1533cf54, type: 3}
   XButton: {fileID: 21300000, guid: c5ab0ff3cd8a3bb4da62f522e3784900, type: 3}
   YButton: {fileID: 21300000, guid: 606cc49b14169fc41b8acb151434c769, type: 3}
