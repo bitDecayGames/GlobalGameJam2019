@@ -2,21 +2,33 @@
 <tileset version="1.2" tiledversion="1.2.1" name="doorsHorizontal" tilewidth="32" tileheight="16" tilecount="4" columns="2">
  <image source="Sprites/doorsHorizontal.png" width="64" height="32"/>
  <tile id="0">
+  <properties>
+   <property name="ObjectName" value="horizontalHingeLeft"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" x="0" y="5" width="32" height="5"/>
   </objectgroup>
  </tile>
  <tile id="1">
+  <properties>
+   <property name="ObjectName" value="horizontalHingeRight"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" x="0" y="5" width="32" height="5"/>
   </objectgroup>
  </tile>
  <tile id="2">
+  <properties>
+   <property name="ObjectName" value="horizontalHingeLeft"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" x="0" y="5" width="32" height="5"/>
   </objectgroup>
  </tile>
  <tile id="3">
+  <properties>
+   <property name="ObjectName" value="horizontalHingeRight"/>
+  </properties>
   <objectgroup draworder="index">
    <object id="1" x="0" y="5" width="32" height="5"/>
   </objectgroup>
