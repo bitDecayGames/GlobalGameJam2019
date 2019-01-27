@@ -98,7 +98,7 @@ public class LevelParser : MonoBehaviour {
         Shuffle(players);
         for (int i = 0; i < players.Count; i++) {
             var playerObj = players[i];
-            SpawnPlayer(playerObj.obj, i, playerObj.isOwner);
+            SpawnPlayer(playerObj.obj, i+1, playerObj.isOwner);
         }
     }
 
