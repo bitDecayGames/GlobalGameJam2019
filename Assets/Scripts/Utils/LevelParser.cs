@@ -13,6 +13,7 @@ public class LevelParser : MonoBehaviour {
     public GameObject playerTemplate;
     public GameObject buttonTemplate;
     public GameObject ladderTemplate;
+    public Door doorTemplate;
 
     private int intruderLayer = -1;
     private int seekerLayer = -1;
@@ -97,16 +98,16 @@ public class LevelParser : MonoBehaviour {
 //                    Debug.Log("Got: " + prop.m_Value);
                     switch (prop.m_Value) {
                         case "horizontalHingeLeft":
-                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.HORIZONTAL_LEFT_HINGE);
+                            SpawnDoor(superObject, Door.DoorType.HORIZONTAL_LEFT_HINGE);
                             break;
                         case "horizontalHingeRight":
-                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.HORIZONTAL_RIGHT_HINGE);
+                            SpawnDoor(superObject, Door.DoorType.HORIZONTAL_RIGHT_HINGE);
                             break;
                         case "verticalHingeTop":
-                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.VERTICAL_TOP_HINGE);
+                            SpawnDoor(superObject, Door.DoorType.VERTICAL_TOP_HINGE);
                             break;
                         case "verticalHingeBottom":
-                            superObject.gameObject.AddComponent<Door>().SetDoorType(Door.DoorType.VERTICAL_BOTTOM_HINGE);
+                            SpawnDoor(superObject, Door.DoorType.VERTICAL_BOTTOM_HINGE);
                             break;
                         default:
                             Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
@@ -141,6 +142,15 @@ public class LevelParser : MonoBehaviour {
             newPlayer.AddComponent<InvisibilityCloak>();
             newPlayer.AddComponent<Knockoutable>();
         }
+    }
+
+    void SpawnDoor(SuperObject superObject, Door.DoorType doorType) {
+        var door = Instantiate(doorTemplate, superObject.transform.parent);
+        door.transform.localScale = superObject.transform.localScale;
+        door.transform.localPosition = superObject.transform.localPosition;
+        door.transform.localRotation = superObject.transform.localRotation;
+        door.SetDoorType(doorType);
+        Destroy(superObject.gameObject);
     }
 
     // Update is called once per frame

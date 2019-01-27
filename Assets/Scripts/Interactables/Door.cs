@@ -16,7 +16,6 @@ namespace Interactables {
 		private SpriteRenderer sprite;
 		private Blinker blinker;
 		private int seekerLayer = -1;
-		
 	
 		void Start () {
 			body = GetComponentInChildren<Collider2D>();
@@ -24,6 +23,8 @@ namespace Interactables {
 			var passthrough = body.gameObject.AddComponent<ColliderPassthrough>();
 			passthrough.OnCollisionEnter2DEvent.AddListener(OnCollisionEnter2D);
 			passthrough.OnCollisionExit2DEvent.AddListener(OnCollisionExit2D);
+			passthrough.OnTriggerEnter2DEvent.AddListener(OnTriggerEnter2D);
+			passthrough.OnTriggerExit2DEvent.AddListener(OnTriggerExit2D);
 		
 			sprite = GetComponentInChildren<SpriteRenderer>();
 			if (!sprite) throw new Exception("Sprite is missing on this object");
@@ -39,24 +40,36 @@ namespace Interactables {
 			}
 		}
 
+		// TODO: MW this method is extremely hard-coded, messing with the doors at all will require this logic to be redone
 		public void SetDoorType(DoorType doorType) {
 			var rot = 0f;
+			Vector3 pos;
 			switch (doorType) {
 				case DoorType.HORIZONTAL_LEFT_HINGE:
-					// This is to move the door sprite into the correct position for rotation stuff
-//					var pos = sprite.transform.parent.localPosition;
-//					pos.y = 0;
-//					sprite.transform.parent.localPosition = pos;
+					pos = transform.localPosition;
+					pos.y += 0.05f;
+					transform.localPosition = pos;
 					
 					break; 
 				case DoorType.HORIZONTAL_RIGHT_HINGE:
 					rot = 180f;
+					pos = transform.localPosition;
+					pos.x += 0.32f;
+					pos.y += 0.05f;
+					transform.localPosition = pos;
 					break;
 				case DoorType.VERTICAL_BOTTOM_HINGE:
 					rot = 90;
+					pos = transform.localPosition;
+					pos.x += 0.1f;
+					transform.localPosition = pos;
 					break;
 				case DoorType.VERTICAL_TOP_HINGE:
 					rot = -90;
+					pos = transform.localPosition;
+					pos.y += 0.32f;
+					pos.x += 0.05f;
+					transform.localPosition = pos;
 					break;
 			}
 			transform.rotation = Quaternion.Euler(0, 0, rot);
@@ -64,7 +77,7 @@ namespace Interactables {
 
 		public void Open() {
 			if (!_isOpen) {
-				sprite.transform.parent.parent.localRotation = Quaternion.Euler(0, 0, 90);
+				sprite.transform.parent.localRotation = Quaternion.Euler(0, 0, -80);
 				body.isTrigger = true;
 				_isOpen = true;
 			}
@@ -72,7 +85,7 @@ namespace Interactables {
 
 		public void Close() {
 			if (_isOpen) {
-				sprite.transform.parent.parent.localRotation = Quaternion.Euler(0, 0, 0);
+				sprite.transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
 				body.isTrigger = false;
 				_isOpen = false;
 			}
@@ -105,14 +118,24 @@ namespace Interactables {
 		}
 
 		private void OnCollisionEnter2D(Collision2D other) {
-			Debug.Log("Door entered collision: " + other.gameObject.layer);
 			if (other.gameObject.layer == seekerLayer) {
 				Open();
 			}
 		}
 
 		private void OnCollisionExit2D(Collision2D other) {
-			Debug.Log("Door exit collision: " + other.gameObject.layer);
+			if (other.gameObject.layer == seekerLayer) {
+				Close();
+			}
+		}
+
+		private void OnTriggerEnter2D(Collider2D other) {
+			if (other.gameObject.layer == seekerLayer) {
+				Open();
+			}
+		}
+
+		private void OnTriggerExit2D(Collider2D other) {
 			if (other.gameObject.layer == seekerLayer) {
 				Close();
 			}

@@ -343,6 +343,8 @@ MonoBehaviour:
     type: 2}
   ladderTemplate: {fileID: 1030339076870038, guid: d0d27cd19d6bc44c98ca6928af9712b3,
     type: 2}
+  doorTemplate: {fileID: 114979203406203166, guid: a1b43577b9cb240e08469a80b212476b,
+    type: 2}
 --- !u!60 &470577669 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000148, guid: ff55711479d7f463db37e58682291b24,
@@ -353,6 +355,53 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000030, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 1323852439}
+--- !u!1001 &525495328
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.257
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691901248601264, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50979046579418342, guid: a1b43577b9cb240e08469a80b212476b,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1b43577b9cb240e08469a80b212476b, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!60 &531652422 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000146, guid: ff55711479d7f463db37e58682291b24,
