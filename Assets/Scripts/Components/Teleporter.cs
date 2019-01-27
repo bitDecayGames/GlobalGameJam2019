@@ -28,6 +28,9 @@ public class Teleporter : MonoBehaviour {
         {
             Debug.Log("Get your hands off my PENIS!");
             var allTeleporters = GameObject.FindGameObjectsWithTag("teleporter");
+            if (allTeleporters.Length % 2 != 0) {
+                throw new System.Exception("There must be an even number of transporters");
+            }
             int i = 0;
             GameObject nextTeleporter = null;
             foreach(var otherTeleporter in allTeleporters)
@@ -35,11 +38,7 @@ public class Teleporter : MonoBehaviour {
                 if (otherTeleporter == this.gameObject)
                 {
                     Debug.Log("I found myself!");
-                    int nextTeleporterIndex = i + 1;
-                    if (nextTeleporterIndex > allTeleporters.Length - 1) 
-                    {
-                        nextTeleporterIndex = 0;
-                    }
+                    int nextTeleporterIndex = allTeleporters.Length - i - 1;
                     nextTeleporter = allTeleporters[nextTeleporterIndex];
                 }         
                 i++;
