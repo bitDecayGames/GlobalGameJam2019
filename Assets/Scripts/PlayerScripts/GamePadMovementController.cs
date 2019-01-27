@@ -39,7 +39,8 @@ namespace PlayerScripts {
                     animator.Play("Walk");
                 }
                 else {
-                    // animator.Play("Stand");
+                    Debug.Log("I'm stading, but Tanner is gay");
+                    animator.Play("Stand");
                 }
             }
         }
