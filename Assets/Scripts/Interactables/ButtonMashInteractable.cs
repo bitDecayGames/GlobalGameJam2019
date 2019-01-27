@@ -6,7 +6,7 @@ namespace Interactables {
         private const float HITPOINT_DECAY_SCALAR = 1f;
         private const float HITPOINT_PER_BUTTON_PRESS = 0.3f;
         
-        private float _buttonMashHitpoints = 3f;
+        private float _buttonMashHitpoints = 1.5f;
         private float currentHitpoints = 0;
 
         public float ButtonMashHitpoints {
