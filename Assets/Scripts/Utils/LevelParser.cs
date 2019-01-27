@@ -14,6 +14,7 @@ public class LevelParser : MonoBehaviour {
     public GameObject buttonTemplate;
     public GameObject ladderTemplate;
     public Door doorTemplate;
+    public RedDoorTemplate redDoorTemplate;
 
     private int intruderLayer = -1;
     private int seekerLayer = -1;
@@ -40,6 +41,10 @@ public class LevelParser : MonoBehaviour {
                 parseLevelObjects(ol, mapScript);
             } else if (ol.m_TiledName == "Game Objects") {
                 parseGameObjects(ol);
+            } else if (ol.m_TiledName == "Doors") {
+                parseDoorLayer(ol, false);
+            } else if (ol.m_TiledName == "RedDoors") {
+                parseDoorLayer(ol, true);
             } else {
                 Debug.Log("Ignored parsing the layer: " + ol.m_TiledName);
             }
@@ -88,7 +93,6 @@ public class LevelParser : MonoBehaviour {
 
     void parseGameObjects(SuperObjectLayer objectLayer) {
         var objects = objectLayer.gameObject.GetComponentsInChildren<SuperObject>();
-//        Debug.Log("Parsing " + objects.Length + " object(s)");
         foreach (var superObject in objects) {
             superObject.gameObject.AddComponent<Shaker>();
             superObject.gameObject.layer = LayerMask.NameToLayer("Interactable");
@@ -96,20 +100,7 @@ public class LevelParser : MonoBehaviour {
             var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
             foreach (var prop in custProps.m_Properties) {
                 if (prop.m_Name == "ObjectName") {
-//                    Debug.Log("Got: " + prop.m_Value);
                     switch (prop.m_Value) {
-                        case "horizontalHingeLeft":
-                            SpawnDoor(superObject, Door.DoorType.HORIZONTAL_LEFT_HINGE);
-                            break;
-                        case "horizontalHingeRight":
-                            SpawnDoor(superObject, Door.DoorType.HORIZONTAL_RIGHT_HINGE);
-                            break;
-                        case "verticalHingeTop":
-                            SpawnDoor(superObject, Door.DoorType.VERTICAL_TOP_HINGE);
-                            break;
-                        case "verticalHingeBottom":
-                            SpawnDoor(superObject, Door.DoorType.VERTICAL_BOTTOM_HINGE);
-                            break;
                         default:
                             Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
                             break;
@@ -121,6 +112,39 @@ public class LevelParser : MonoBehaviour {
         }
     }
 
+    void parseDoorLayer(SuperObjectLayer doorLayer, bool isRed)
+    {
+        var objects = doorLayer.gameObject.GetComponentsInChildren<SuperObject>();
+        foreach (var superObject in objects) {
+            superObject.gameObject.AddComponent<Shaker>();
+            superObject.gameObject.layer = LayerMask.NameToLayer("Interactable");
+            
+            var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
+            foreach (var prop in custProps.m_Properties) {
+                if (prop.m_Name == "ObjectName") {
+                    switch (prop.m_Value) {
+                        case "horizontalHingeLeft":
+                            SpawnDoor(superObject, Door.DoorType.HORIZONTAL_LEFT_HINGE, isRed);
+                            break;
+                        case "horizontalHingeRight":
+                            SpawnDoor(superObject, Door.DoorType.HORIZONTAL_RIGHT_HINGE, isRed);
+                            break;
+                        case "verticalHingeTop":
+                            SpawnDoor(superObject, Door.DoorType.VERTICAL_TOP_HINGE, isRed);
+                            break;
+                        case "verticalHingeBottom":
+                            SpawnDoor(superObject, Door.DoorType.VERTICAL_BOTTOM_HINGE, isRed);
+                            break;
+                        default:
+                            Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in door layer");
+                            break;
+                    }
+                } else {
+                    Debug.Log("Didn't understand prop name: " + prop.m_Name);
+                }
+            }
+        }
+    }
     void SpawnButton(SuperObject superObject, SuperMap map) {
         var newButton = Instantiate(buttonTemplate, superObject.transform.position, Quaternion.identity);
         newButton.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
@@ -172,8 +196,8 @@ public class LevelParser : MonoBehaviour {
         }
     }
 
-    void SpawnDoor(SuperObject superObject, Door.DoorType doorType) {
-        var door = Instantiate(doorTemplate, superObject.transform.parent);
+    void SpawnDoor(SuperObject superObject, Door.DoorType doorType, bool isRed) {
+        var door = Instantiate(isRed ? redDoorTemplate : doorTemplate, superObject.transform.parent);
         door.transform.localScale = superObject.transform.localScale;
         door.transform.localPosition = superObject.transform.localPosition;
         door.transform.localRotation = superObject.transform.localRotation;
