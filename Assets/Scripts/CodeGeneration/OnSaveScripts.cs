@@ -47,9 +47,11 @@ public class OnSaveScripts : UnityEditor.AssetModificationProcessor
         }
         
         var newSettings = new EditorBuildSettingsScene[original.Length + 1]; 
-        System.Array.Copy(original, newSettings, original.Length); 
-        var sceneToAdd = new EditorBuildSettingsScene(Path.Combine(scenePath, sceneName) + ".unity", true); 
-        newSettings[newSettings.Length - 1] = sceneToAdd; 
-        EditorBuildSettings.scenes = newSettings;
+        System.Array.Copy(original, newSettings, original.Length);
+        if (!sceneName.Contains("Debug")) {
+            var sceneToAdd = new EditorBuildSettingsScene(Path.Combine(scenePath, sceneName) + ".unity", true);
+            newSettings[newSettings.Length - 1] = sceneToAdd;
+            EditorBuildSettings.scenes = newSettings;
+        }
     }
 }
