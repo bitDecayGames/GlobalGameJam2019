@@ -86,7 +86,9 @@ namespace Interactables {
 		}
 
 		public void Close() {
-			if (_isOpen) {
+			if (_isOpen)
+			{
+				_isUnlocked = false;
 				sprite.transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
 				body.isTrigger = false;
 				_isOpen = false;

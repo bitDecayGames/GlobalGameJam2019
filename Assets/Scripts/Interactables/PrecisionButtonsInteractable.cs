@@ -15,6 +15,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     public Sprite YButton;
     public Sprite BButton;
 
+    private bool hasSkippedFirstFrame;
     private const int DefaultSuccessesRequired = 3;
     private int _successesRequired;
 
@@ -32,7 +33,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     private SpriteRenderer _progressBarSpriteRenderer;
     private GameObject _currentQuicktimeButtonSpriteGameObject;
     private SpriteRenderer _currentQuicktimeButtonSpriteRenderer;
-    private bool _isUnlocked;
+    protected bool _isUnlocked;
 
     private static float DefaultCooldown = 1f;
     private float _cooldown;
@@ -138,6 +139,13 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     protected void Update() {
 
+        // Give the controller a one frame buffer to avoid the initial interact button from failing the door
+        if (!hasSkippedFirstFrame)
+        {
+            hasSkippedFirstFrame = true;
+            return;
+        }
+        
         if (_cooldown > 0)
         {
             _cooldown -= Time.deltaTime;
@@ -195,7 +203,6 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     public override void Trigger()
     {
-        Debug.Log("Trigger called");
         _isUnlocked = true;        
         FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonComplete);
         _progressBarSpriteRenderer.transform.localScale = new Vector3(1, _progressBarSpriteRenderer.transform.localScale.y);
