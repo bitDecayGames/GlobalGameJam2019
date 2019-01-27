@@ -5596,22 +5596,22 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114644183718393052, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+    - target: {fileID: 114409870751434632, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114644183718393052, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+    - target: {fileID: 114409870751434632, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114409870751434632, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+    - target: {fileID: 114644183718393052, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114409870751434632, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+    - target: {fileID: 114644183718393052, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -5626,14 +5626,55 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1067126965277478, guid: 80c9e7d51d8b4b947805a2b8f114d1db, type: 2}
-      propertyPath: m_Name
-      value: GoalsObjective
-      objectReference: {fileID: 0}
-    - target: {fileID: 223288481751796444, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
         type: 2}
-      propertyPath: m_RenderMode
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 24.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224757396571863188, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -35.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c9e7d51d8b4b947805a2b8f114d1db, type: 2}
