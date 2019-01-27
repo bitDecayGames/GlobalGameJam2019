@@ -33,7 +33,7 @@ public class TimeFreezer : MonoBehaviour
     IEnumerator PauseBriefly() 
     {
         Time.timeScale = 0;   
-        yield return new WaitForSecondsRealtime(.3f);
+        yield return new WaitForSecondsRealtime(.15f);
         Time.timeScale = 1;     
     }
 }
