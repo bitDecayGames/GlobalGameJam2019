@@ -27,14 +27,14 @@ namespace GameInput {
 //            if(playerId == 1.ToString())
 //                Debug.Log(BuildHorizontalAxisString());
 
-            return Input.GetAxis(BuildHorizontalAxisString());
+            return Input.GetAxis(BuildHorizontalAxisString()) + (Input.GetKey(KeyCode.A) ? -1 : 0) + (Input.GetKey(KeyCode.D) ? 1 : 0);
         }
 
         public virtual float GetVerticalMovement()
         {
 //            if (playerId == 1.ToString())
 //                Debug.Log(BuildVerticalAxisString());
-            return Input.GetAxis(BuildVerticalAxisString());
+            return Input.GetAxis(BuildVerticalAxisString()) + (Input.GetKey(KeyCode.S) ? -1 : 0) + (Input.GetKey(KeyCode.W) ? 1 : 0);
         }
     }
 }
