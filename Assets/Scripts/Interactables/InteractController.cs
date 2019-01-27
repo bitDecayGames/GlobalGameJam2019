@@ -1,31 +1,59 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
 using GameInput;
 using Interactables;
+using PolishElements;
+using UnityEngine;
 
 public class InteractController : MonoBehaviour {
+    private InputController input;
+    private AbstractInteractable interactable;
+    private Shaker shaker;
 
-    GameObject collidee;
+    private int interactableLayer = -1;
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        collidee = other.gameObject;
+    private void Start() {
+        input = GetComponentInChildren<InputController>();
+        if (!input) throw new Exception("Missing InputController on the InteractController object");
+
+        interactableLayer = LayerMask.NameToLayer("Interactable");
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        collidee = null;
+    private void OnTriggerEnter2D(Collider2D potentialInteractable) {
+        interactable = potentialInteractable.gameObject.GetComponentInChildren<AbstractInteractable>();
+        if (!interactable) interactable = potentialInteractable.gameObject.GetComponentInParent<AbstractInteractable>();
+
+        ShakeShakers(potentialInteractable.gameObject);
     }
-    	
-	void Update () {
-		if(collidee != null)
-        {
-            InputController inputCont = this.GetComponent<InputController>();
-            if (this.GetComponent<InputController>().ControllerMapper.InteractPressed())
-            {
-                collidee.GetComponent<AbstractInteractable>().Interact(inputCont);
+
+    private void OnCollisionEnter2D(Collision2D potentialInteractable) {
+        ShakeShakers(potentialInteractable.gameObject);
+    }
+
+    private void OnTriggerExit2D(Collider2D potentialInteractable) {
+        if (interactable) {
+            interactable.Disconnect();
+            interactable = null;
+        }
+    }
+
+    void Update() {
+        if (interactable) {
+            if (input.ControllerMapper.InteractPressed()) {
+                interactable.Interact(input);
             }
         }
-	}
+    }
+    
+    private void ShakeShakers(GameObject potentialInteractable) {
+        shaker = FindShaker(potentialInteractable.transform, interactableLayer);
+        if (shaker) shaker.Shake();
+    }
+
+    private Shaker FindShaker(Transform go, int layer) {
+        if (!go) return null;
+        if (go.gameObject.layer == layer && (!go.parent || go.parent.gameObject.layer != layer)) {
+            return go.GetComponentInChildren<Shaker>();
+        }
+        return FindShaker(go.parent, layer);
+    }
 }

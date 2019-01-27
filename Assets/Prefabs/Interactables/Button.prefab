@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 50376155359260380}
   - component: {fileID: 61142828748849346}
   - component: {fileID: 212812109959674718}
-  m_Layer: 0
+  - component: {fileID: 114902190201576092}
+  m_Layer: 10
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +100,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcfa0b43c70d2524d99f3c5f047a70bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offSprite: {fileID: 21300450, guid: 28ab63655fc26f245b3526f40d569f26, type: 3}
+  offSprite: {fileID: 21300010, guid: 4483cc3a09d764981ac892ce0871a38a, type: 3}
+--- !u!114 &114902190201576092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1822299263779578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c84147f8bcb04952aaf1753aa8dd079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212812109959674718
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -134,7 +146,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1000
   m_Sprite: {fileID: 21300000, guid: a602f206f9cb31f439c79a2fe23687c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
