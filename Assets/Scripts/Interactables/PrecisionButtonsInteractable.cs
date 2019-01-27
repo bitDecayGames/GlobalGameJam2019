@@ -9,9 +9,6 @@ using UnityEngine;
 
 public class PrecisionButtonsInteractable : AbstractInteractable
 {
-    public GameObject ProgressBarPrefab;
-    private GameObject _progressBarGameObject;
-    private ProgressBarController _progressBarController;
     public Sprite AButton;
     public Sprite XButton;
     public Sprite YButton;
@@ -36,39 +33,47 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     private static float DefaultCooldown = 1f;
     private float _cooldown;
-
-    private void OnGUI()
-    {
-        if (!_isInteracting)
-        {
-            return;
+    
+//    private void OnGUI()
+//    {
+//        if (!_isInteracting)
+//        {
+//            return;
+//        }
+//        
+//        StringBuilder currentQueue = new StringBuilder();
+//
+//        foreach (_controllerButtons button in _buttonsToPress)
+//        {
+//            currentQueue.Append(string.Format("{0} ", button));
+//        }
+//        
+//        GUI.Label(new Rect(0, 0, 1000, 1000), string.Format("Queue size: {0}", _buttonsToPress.Count));   
+//        GUI.Label(new Rect(0, 20, 1000, 1000), string.Format("Current dequeued button: {0}", _currentQuicktimeButton));   
+//        GUI.Label(new Rect(0, 40, 1000, 1000), string.Format("Remaining queue contents: {0}", currentQueue));   
+//        GUI.Label(new Rect(0, 60, 1000, 1000), string.Format("Is interacting: {0}", _isInteracting.ToString()));   
+//        GUI.Label(new Rect(0, 80, 1000, 1000), string.Format("Is unlocked: {0}", _isUnlocked.ToString()));   
+//    }
+    
+    public override void Interact(InputController interactee) {
+        if (!_isInteracting && !_isUnlocked) {
+            _isInteracting = true;
+            _interactee = interactee;
+            
+            _currentQuicktimeButtonSpriteGameObject.transform.position = _interactee.transform.position + Vector3.up * .25f;
+            SetupQuicktimeQueue();
+            OnInteract();
         }
-        
-        StringBuilder currentQueue = new StringBuilder();
-
-        foreach (_controllerButtons button in _buttonsToPress)
-        {
-            currentQueue.Append(string.Format("{0} ", button));
-        }
-        
-        GUI.Label(new Rect(0, 0, 1000, 1000), string.Format("Queue size: {0}", _buttonsToPress.Count));   
-        GUI.Label(new Rect(0, 20, 1000, 1000), string.Format("Current dequeued button: {0}", _currentQuicktimeButton));   
-        GUI.Label(new Rect(0, 40, 1000, 1000), string.Format("Remaining queue contents: {0}", currentQueue));   
-        GUI.Label(new Rect(0, 60, 1000, 1000), string.Format("Is interacting: {0}", _isInteracting.ToString()));   
-        GUI.Label(new Rect(0, 80, 1000, 1000), string.Format("Is unlocked: {0}", _isUnlocked.ToString()));   
     }
 
     private void Awake()
     {
+        SuccessThreshold = SuccessesRequired;
+        
         _currentQuicktimeButtonSpriteGameObject = new GameObject();
         _currentQuicktimeButtonSpriteRenderer = _currentQuicktimeButtonSpriteGameObject.AddComponent<SpriteRenderer>();
         _currentQuicktimeButtonSpriteRenderer.sortingOrder = 10000;
         _currentQuicktimeButtonSpriteRenderer.enabled = false;
-
-        _progressBarGameObject = Instantiate(ProgressBarPrefab);
-        _progressBarController = _progressBarGameObject.GetComponent<ProgressBarController>();
-        if (_progressBarController == null) throw new Exception("Could not find progress bar controller");
-        _progressBarController.SetSuccessesRequired(SuccessesRequired);
     }
     
     protected void Update() {
@@ -85,7 +90,6 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         else if (!_isUnlocked && !_isInteracting)
         {
             _currentQuicktimeButtonSpriteRenderer.enabled = false;
-            _progressBarController.Disable();
         }
         
         if (_isInteracting)
@@ -99,7 +103,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
             
             if (IsCorrectButtonPressed())
             {
-                _progressBarController.IncrementSuccesses();
+                ProgressBarController.AddToSuccesses(1);
                 if (_buttonsToPress.Count > 0)
                 {
                     FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonSuccess);
@@ -169,35 +173,24 @@ public class PrecisionButtonsInteractable : AbstractInteractable
         }
     }
 
-    public override void Interact(InputController interactee) {
-        if (!_isInteracting && !_isUnlocked) {
-            _isInteracting = true;
-            _interactee = interactee;
-            
-            _currentQuicktimeButtonSpriteGameObject.transform.position = _interactee.transform.position + Vector3.up * .25f;
-            _progressBarController.Activate(_interactee.transform.position);
-            SetupQuicktimeQueue();
-        }
-    }
-
     public override void Disconnect() {
         if (_isInteracting) {
             _isInteracting = false;
             _interactee = null;
             _hasSkippedFirstFrame = false;
-            _progressBarController.Reset();
 
             _cooldown = DefaultCooldown;
             
             SetupQuicktimeQueue();
+            OnDisconnect();
         }
     }
 
     public override void Trigger()
     {
         _isUnlocked = true;
-        _progressBarController.Complete();
         _currentQuicktimeButtonSpriteRenderer.enabled = false;
+        OnTrigger();
     }
 
     protected bool IsCorrectButtonPressed() {

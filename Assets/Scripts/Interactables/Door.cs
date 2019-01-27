@@ -107,10 +107,12 @@ namespace Interactables {
 		}
 
 		protected override void OnInteract() {
+			base.OnInteract();
 			blinker = gameObject.AddComponent<Blinker>();
 		}
 
 		protected override void OnDisconnect() {
+			base.OnDisconnect();
 			if (blinker) Destroy(blinker);
 		}
 
