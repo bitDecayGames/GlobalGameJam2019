@@ -49,16 +49,16 @@ public class LevelParser : MonoBehaviour
                     switch (prop.m_Value)
                     {
                         case "player1Spawn":
-                            SpawnPlayer(superObject, 1);
+                            SpawnPlayer(superObject, 1, true);
                             break;
                         case "player2Spawn":
-                            SpawnPlayer(superObject, 2);
+                            SpawnPlayer(superObject, 2, false);
                             break;
                         case "player3Spawn":
-                            SpawnPlayer(superObject, 3);
+                            SpawnPlayer(superObject, 3, false);
                             break;
                         case "player4Spawn":
-                            SpawnPlayer(superObject, 4);
+                            SpawnPlayer(superObject, 4, false);
                             break;
                         case "button":
                             break;
@@ -70,11 +70,16 @@ public class LevelParser : MonoBehaviour
         }
     }
 
-    void SpawnPlayer(SuperObject superObject, int playerNumber)
+    void SpawnPlayer(SuperObject superObject, int playerNumber, bool isOwner)
     {
         var newPlayer = Instantiate(playerTemplate, superObject.transform.position, Quaternion.identity);
         newPlayer.GetComponent<PlayerSpriteSetter>().SetPlayerNumber(playerNumber);
         newPlayer.GetComponent<PlayerIdComponent>().setPlayerId(playerNumber);
+        if (isOwner)
+        {
+            newPlayer.AddComponent<Teleportable>();
+        }
+       
         Destroy(superObject.gameObject);
     }
 

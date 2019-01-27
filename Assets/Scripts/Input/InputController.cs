@@ -50,7 +50,6 @@ public class InputController : MonoBehaviour {
         var newPosition = new Vector3(moveLR, moveUD);
         if(newPosition.magnitude > deadzone)
         {
-            Debug.Log("magnitude: " + newPosition);
             transform.rotation = Quaternion.AngleAxis(newFacing, Vector3.forward);
             transform.Translate(newPosition.magnitude * speed * Time.deltaTime, 0, 0);
         }
