@@ -49,12 +49,10 @@ namespace PlayerScripts {
         }
 
         public bool Dash() {
-            Debug.Log("Dash");
             if (currentDashes > 0) {
                 var vel = body.velocity;
                 var velMag = vel.magnitude;
                 if (velMag < 0.01f && velMag > -0.01f) {
-                    Debug.Log("Velocity was too low to dash: " + vel);
                     return false; // if the player isn't moving, they can't dash
                 }
 
