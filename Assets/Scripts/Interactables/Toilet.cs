@@ -31,7 +31,6 @@ public class Toilet : PressAndHoldInteractable, IObjective
         if (!sprite) throw new Exception("Sprite is missing on this object");
 
         onSprite = sprite.sprite;
-        Poop();
         GameStateManager.getLocalReference().Register(this);
     }
 
@@ -39,6 +38,7 @@ public class Toilet : PressAndHoldInteractable, IObjective
     {
         if (!_isFull)
         {
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Fart);
             sprite.sprite = onSprite;
             _isFull = true;
         }
@@ -48,6 +48,7 @@ public class Toilet : PressAndHoldInteractable, IObjective
     {
         if (_isFull)
         {
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Flush);
             sprite.sprite = offSprite;
             _isFull = false;
         }

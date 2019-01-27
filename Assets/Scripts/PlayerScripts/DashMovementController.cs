@@ -56,6 +56,7 @@ namespace PlayerScripts {
                     return false; // if the player isn't moving, they can't dash
                 }
 
+                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Dash);
                 var dir = vel.normalized;
                 dir *= Intensity;
                 body.AddForce(dir, ForceMode2D.Impulse);

@@ -361,6 +361,53 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000142, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 701981121}
+--- !u!1001 &613798587
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4895055220965354, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292457556940940, guid: 87a91b0b00012b349a8b6ad91d8c6b6c,
+        type: 2}
+      propertyPath: Song
+      value: 44
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!60 &635406976 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000108, guid: ff55711479d7f463db37e58682291b24,

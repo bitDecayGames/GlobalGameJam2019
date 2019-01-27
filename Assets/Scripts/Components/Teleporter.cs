@@ -45,6 +45,7 @@ public class Teleporter : MonoBehaviour {
             nextTeleporter.GetComponent<Teleporter>().Active = false;
             var offset = nextTeleporter.GetComponent<CircleCollider2D>().offset;
             var newOffset = new Vector3(offset.x, offset.y, player.transform.position.z);
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Ladder);
             player.transform.position = nextTeleporter.transform.position + newOffset;
             var indicator = Instantiate(TeleporterIndicatorPrefab);
             indicator.position = player.transform.position;

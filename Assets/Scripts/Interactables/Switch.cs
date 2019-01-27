@@ -59,6 +59,7 @@ namespace Interactables
         {
             if (_isOn) Off();
             else On();
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Lever);
             OnTrigger();
         }
 

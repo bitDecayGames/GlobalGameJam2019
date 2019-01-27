@@ -12,6 +12,8 @@ public class SFX
 	public const string CloseDoor = "CloseDoor";
 	public const string Bush = "Bush";
 	public const string FartFlush = "FartFlush";
+	public const string Fart = "Fart";
+	public const string Flush = "Flush";
 	public const string ButtonSuccess = "ButtonSuccess";
 	public const string ButtonFailure = "ButtonFailure";
 	public const string ButtonComplete = "ButtonComplete";

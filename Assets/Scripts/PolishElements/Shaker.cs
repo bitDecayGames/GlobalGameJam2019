@@ -23,6 +23,7 @@ namespace PolishElements {
 		
 		public void Shake(float seconds = 0.1f, float intensity = 0.05f) {
 			if (!isJiggling) {
+				FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Thud);
 				curPos = transform.position;
 				isJiggling = true;
 				time = seconds;
