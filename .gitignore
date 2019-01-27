@@ -51,3 +51,6 @@ Assets/StreamingAssets
 .vscode/
 
 build/
+Assets/FMODStudioCache.asset
+Assets/FMODStudioCache.asset.meta
+Assets/Resources/FMODStudioSettings.asset
