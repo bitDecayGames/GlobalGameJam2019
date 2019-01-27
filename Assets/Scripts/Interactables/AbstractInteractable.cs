@@ -7,7 +7,8 @@ namespace Interactables {
     public abstract class AbstractInteractable : MonoBehaviour {
 
         protected bool _isInteracting;
-        
+
+        public float AdditionalVerticalOffset;
         public GameObject ProgressBarGameObject;
         public ProgressBarController ProgressBarController;
         public float SuccessThreshold;
@@ -38,7 +39,7 @@ namespace Interactables {
                 if (ProgressBarController == null) throw new Exception("Could not find progress bar controller");
                 ProgressBarController.SetSuccessesRequired(SuccessThreshold);   
             }
-            ProgressBarController.Activate(_interactee.transform.position);
+            ProgressBarController.Activate(_interactee.transform.position + Vector3.up * AdditionalVerticalOffset);
         }
         
         protected virtual void OnDisconnect() {

@@ -69,6 +69,7 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     private void Awake()
     {
         SuccessThreshold = SuccessesRequired;
+        AdditionalVerticalOffset = .3f;
         
         _currentQuicktimeButtonSpriteGameObject = new GameObject();
         _currentQuicktimeButtonSpriteRenderer = _currentQuicktimeButtonSpriteGameObject.AddComponent<SpriteRenderer>();

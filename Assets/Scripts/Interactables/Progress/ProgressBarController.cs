@@ -75,7 +75,7 @@ namespace Interactables.Progress
         {
             _complete = false;
             _progressBarGameObject.name = "Active Progress Bar";
-            _progressBarGameObject.transform.position = position + new Vector3(-ProgerssBarSprite.bounds.extents.x, .5f, 0);
+            _progressBarGameObject.transform.position = position + new Vector3(-ProgerssBarSprite.bounds.extents.x, .20f, 0);
             _progressBarSpriteRenderer.enabled = true;
         }
         
