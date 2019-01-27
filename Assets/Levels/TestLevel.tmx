@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="115">
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="151">
  <tileset firstgid="1" source="Test.tsx"/>
  <tileset firstgid="193" source="Test2.tsx"/>
  <layer id="1" name="FloorWalls" width="100" height="100">
@@ -234,6 +234,7 @@
   <object id="55" gid="233" x="1056" y="592" width="16" height="16"/>
   <object id="56" gid="233" x="1248" y="1024" width="16" height="16"/>
   <object id="57" gid="233" x="592" y="768" width="16" height="16"/>
+  <object id="150" gid="1073741829" x="1104" y="848" width="16" height="16"/>
  </objectgroup>
  <objectgroup id="5" name="Game Objects">
   <object id="11" gid="89" x="768" y="1056" width="16" height="16"/>
@@ -265,11 +266,8 @@
   <object id="40" gid="77" x="400" y="1168" width="16" height="16"/>
   <object id="41" gid="77" x="400" y="1184" width="16" height="16"/>
   <object id="42" gid="79" x="400" y="1136" width="16" height="16"/>
-  <object id="58" gid="65" x="1136" y="800" width="16" height="16"/>
-  <object id="59" gid="66" x="1152" y="800" width="16" height="16"/>
-  <object id="60" gid="64" x="1120" y="816" width="16" height="16" rotation="-90"/>
-  <object id="61" gid="65" x="1184" y="800" width="16" height="16" rotation="90"/>
-  <object id="62" gid="66" x="1184" y="816" width="16" height="16" rotation="90"/>
+  <object id="58" gid="65" x="1136" y="793" width="16" height="16"/>
+  <object id="59" gid="66" x="1152" y="793" width="16" height="16"/>
   <object id="63" gid="78" x="1088" y="848" width="16" height="16"/>
   <object id="64" gid="78" x="1248" y="1200" width="16" height="16"/>
   <object id="65" gid="78" x="592" y="928" width="16" height="16"/>
@@ -315,5 +313,31 @@
   <object id="112" gid="109" x="1264" y="928" width="16" height="16" rotation="180"/>
   <object id="113" gid="73" x="1216" y="960" width="16" height="16" rotation="-90"/>
   <object id="114" gid="97" x="1248" y="944" width="16" height="16" rotation="90"/>
+  <object id="115" gid="20" x="1168" y="608" width="16" height="16"/>
+  <object id="116" gid="21" x="1184" y="608" width="16" height="16"/>
+  <object id="117" gid="22" x="1200" y="608" width="16" height="16"/>
+  <object id="118" gid="23" x="1216" y="608" width="16" height="16"/>
+  <object id="119" gid="32" x="1168" y="624" width="16" height="16"/>
+  <object id="120" gid="32" x="1168" y="640" width="16" height="16"/>
+  <object id="121" gid="33" x="1184" y="640" width="16" height="16"/>
+  <object id="122" gid="33" x="1184" y="624" width="16" height="16"/>
+  <object id="123" gid="33" x="1200" y="624" width="16" height="16"/>
+  <object id="124" gid="33" x="1200" y="640" width="16" height="16"/>
+  <object id="125" gid="35" x="1216" y="624" width="16" height="16"/>
+  <object id="126" gid="35" x="1216" y="640" width="16" height="16"/>
+  <object id="127" gid="47" x="1216" y="656" width="16" height="16"/>
+  <object id="128" gid="44" x="1168" y="656" width="16" height="16"/>
+  <object id="129" gid="45" x="1184" y="656" width="16" height="16"/>
+  <object id="130" gid="45" x="1200" y="656" width="16" height="16"/>
+  <object id="131" gid="51" x="1120" y="848" width="16" height="16"/>
+  <object id="132" gid="52" x="1136" y="848" width="16" height="16"/>
+  <object id="133" gid="52" x="1152" y="848" width="16" height="16"/>
+  <object id="134" gid="53" x="1168" y="848" width="16" height="16"/>
+  <object id="135" gid="64" x="1184" y="793" width="16" height="16" rotation="53.9805"/>
+  <object id="136" gid="78" x="1200" y="848" width="16" height="16"/>
+  <object id="138" gid="1073741887" x="1110.35" y="805.941" width="16" height="16" rotation="216.019"/>
+  <object id="139" gid="1073741888" x="1106.82" y="783.591" width="16" height="16" rotation="126.019"/>
+  <object id="141" gid="18" x="1091" y="816" width="16" height="16"/>
+  <object id="145" gid="63" x="1202.82" y="818.882" width="16" height="16" rotation="-36.0195"/>
  </objectgroup>
 </map>
