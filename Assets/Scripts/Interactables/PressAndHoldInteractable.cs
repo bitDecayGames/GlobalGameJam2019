@@ -20,7 +20,6 @@ namespace Interactables {
 
         public override void Interact(InputController interactee) {
             if (!_isInteracting) {
-                soundId = FMODSoundEffectsPlayer.Instance.PlaySustainedSoundEffect(SFX.PickLock);
                 _isInteracting = true;
                 time = _timeToComplete;
                 _interactee = interactee;
@@ -36,13 +35,11 @@ namespace Interactables {
                     if (time < 0) {
                         _isInteracting = false;
                         time = 0;
-                        FMODSoundEffectsPlayer.Instance.StopSustainedSoundEffect(soundId);
                         Trigger();
                     }
                 }
                 else
                 {
-                    FMODSoundEffectsPlayer.Instance.StopSustainedSoundEffect(soundId);
                     Disconnect();
                 }
             }
@@ -59,14 +56,6 @@ namespace Interactables {
 
         protected bool IsInteractButtonBeingHeld() {
             return _interactee.ControllerMapper.InteractDown();
-        }
-
-        private void OnDestroy()
-        {
-            if (soundId == 0)
-            {
-                FMODSoundEffectsPlayer.Instance.StopSustainedSoundEffect(soundId);   
-            }
         }
     }
 }
