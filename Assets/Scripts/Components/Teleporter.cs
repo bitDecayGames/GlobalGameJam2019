@@ -5,6 +5,8 @@ using UnityEngine;
 public class Teleporter : MonoBehaviour {
 
     public bool Active = true;
+
+    public Transform TeleporterIndicatorPrefab;
 	// Use this for initialization
 	void Start () {
 		
@@ -25,7 +27,6 @@ public class Teleporter : MonoBehaviour {
         var player = col.gameObject;
         if (player.GetComponents<Teleportable>().Length > 0) 
         {
-            Debug.Log("Get your hands off my PENIS!");
             var allTeleporters = GameObject.FindGameObjectsWithTag("teleporter");
             if (allTeleporters.Length % 2 != 0) {
                 throw new System.Exception("There must be an even number of transporters");
@@ -44,7 +45,9 @@ public class Teleporter : MonoBehaviour {
             nextTeleporter.GetComponent<Teleporter>().Active = false;
             var offset = nextTeleporter.GetComponent<CircleCollider2D>().offset;
             var newOffset = new Vector3(offset.x, offset.y, player.transform.position.z);
-            player.transform.position = nextTeleporter.transform.position + newOffset; 
+            player.transform.position = nextTeleporter.transform.position + newOffset;
+            var indicator = Instantiate(TeleporterIndicatorPrefab);
+            indicator.position = player.transform.position;
         } 
     }
 
