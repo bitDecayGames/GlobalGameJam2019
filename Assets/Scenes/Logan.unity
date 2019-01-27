@@ -348,6 +348,8 @@ MonoBehaviour:
     type: 2}
   ladderTemplate: {fileID: 1030339076870038, guid: d0d27cd19d6bc44c98ca6928af9712b3,
     type: 2}
+  toiletTemplate: {fileID: 1372263048361210, guid: b65f97cef36615a46b6072b8a13cb67a,
+    type: 2}
   doorTemplate: {fileID: 114979203406203166, guid: a1b43577b9cb240e08469a80b212476b,
     type: 2}
   redDoorTemplate: {fileID: 114336186678119726, guid: 04f365f27968b4a1687b5635aeaad6eb,
