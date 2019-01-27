@@ -81,7 +81,7 @@ public class Toilet : PressAndHoldInteractable, IObjective
 
     public bool isComplete()
     {
-        return !IsFull;
+        return IsFull;
     }
 
 }
