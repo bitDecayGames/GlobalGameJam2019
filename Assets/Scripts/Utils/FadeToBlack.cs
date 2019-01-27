@@ -21,8 +21,8 @@ namespace Utils {
                     GameObject gameObject = new GameObject();
                     instance = gameObject.AddComponent<FadeToBlack>();
                     instance.spriteRenderer = gameObject.AddComponent<SpriteRenderer>();
-                    instance.spriteRenderer.sprite = Resources.Load<Sprite>("Images/white_pixel");
                     instance.spriteRenderer.color = new Color(0,0,0,0);
+                    instance.spriteRenderer.sortingOrder = 1000;
                     gameObject.name = "FadeToBlack";
                 }
 
@@ -42,7 +42,7 @@ namespace Utils {
             SetAlpha(0);
             transform.position = new Vector3(100000, 100000, 0);
             transform.localScale = new Vector3(1, 1, 1);
-            spriteRenderer.sortingOrder = 8000;
+            if (spriteRenderer) spriteRenderer.sortingOrder = 8000;
             var camPos = Camera.main.transform.position;
             camPos.z = 0;
             transform.position = camPos;
@@ -79,9 +79,11 @@ namespace Utils {
         }
 
         private void SetAlpha(float a) {
-            var c = spriteRenderer.color;
-            c.a = a;
-            spriteRenderer.color = c;
+            if (spriteRenderer) {
+                var c = spriteRenderer.color;
+                c.a = a;
+                spriteRenderer.color = c;
+            }
         }
     }
 }
