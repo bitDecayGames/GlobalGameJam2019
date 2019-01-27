@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Splash Screen/BitdecaySplash.unity
+    guid: ba92940fb9202ac48a5b013179d2cf92
+  - enabled: 1
+    path: Assets/Scenes/Splash Screen/GameJamSplash.unity
+    guid: 907c37ab556c5064ea3a14dee3e5f853
+  - enabled: 1
+    path: Assets/Scenes/Menus/TitleScreen.unity
+    guid: 358ba7203b34a2f4e8edcab9c1cad88c
+  - enabled: 1
     path: Assets/Scenes/Logan.unity
     guid: d08335b5a02c44eaaba235423e4b5a2c
   - enabled: 1
     path: Assets/Scenes/Menus/Credits.unity
     guid: 7743121c791ff02489f423b474567c28
   - enabled: 1
-    path: Assets/Scenes/Menus/TitleScreen.unity
-    guid: 358ba7203b34a2f4e8edcab9c1cad88c
-  - enabled: 1
     path: Assets/Scenes/DefenderLoses.unity
     guid: 808c82909e45144d7b2f74e01fb20773
   - enabled: 1
     path: Assets/Scenes/DefenderWins.unity
     guid: c45492ae1cb424439b438405b57b58a9
-  - enabled: 1
-    path: Assets/Scenes/Splash Screen/BitdecaySplash.unity
-    guid: ba92940fb9202ac48a5b013179d2cf92
-  - enabled: 1
-    path: Assets/Scenes/Splash Screen/GameJamSplash.unity
-    guid: 907c37ab556c5064ea3a14dee3e5f853
   m_configObjects: {}
