@@ -1,5 +1,15 @@
 {
   "SFX":[
-    "Sound"
+    "Thud",
+    "Teleport",
+    "Smack",
+    "PickLock",
+    "OpenDoor",
+    "Lever",
+    "Ladder",
+    "Footstep",
+    "Dash",
+    "CloseDoor",
+    "Bush"
   ]
 }

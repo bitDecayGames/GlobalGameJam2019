@@ -11,6 +11,7 @@ public class LevelParser : MonoBehaviour
 
     public GameObject playerTemplate;
     public GameObject buttonTemplate;
+    public GameObject ladderTemplate;
 
     // Use this for initialization
     void Start()
@@ -66,12 +67,18 @@ public class LevelParser : MonoBehaviour
                         case "player4Spawn":
                             SpawnPlayer(superObject, 4, true);
                             break;
+                        case "ladder":
+                            var newLadder = Instantiate(ladderTemplate, superObject.transform.position, Quaternion.identity);
+                            newLadder.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
+                            Destroy(superObject.gameObject);
+                            break;  
                         case "button":
                             SpawnButton(superObject);
                             break;
                         default:
                             //throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Value + " found");
                             break;
+
                     }
                 }
             }
