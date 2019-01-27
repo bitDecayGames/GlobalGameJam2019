@@ -97,21 +97,6 @@ public partial class FMODMusicPlayer
             throw new Exception("Unable to unmute song: " + result);
         }
     }
-    
-    public void SetParameter(ParametersListEnum.Parameters parameter, float parameterValue)
-    {
-        ParameterInstance parameterInstance;
-        RESULT result = _eventInstance.getParameter(parameter.ToString(), out parameterInstance);
-        if (result != RESULT.OK)
-        {
-            throw new Exception(string.Format("Error returned when GETTING parameter of FMOD EventInstance: {0}", result));
-        }
-        result = _eventInstance.setParameterValue(parameter.ToString(), parameterValue);
-        if (result != RESULT.OK)
-        {
-            throw new Exception(string.Format("Error returned when SETTING parameter of FMOD EventInstance: {0}", result));
-        }
-    }
 
     public void SetVolume(float volumeLevel)
     {
