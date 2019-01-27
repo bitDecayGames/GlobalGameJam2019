@@ -16,6 +16,16 @@
    <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
+ <tile id="19">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="20">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
  <tile id="21">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="16" height="16"/>
@@ -27,6 +37,21 @@
   </objectgroup>
  </tile>
  <tile id="23">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="30">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="31">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="32">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
@@ -70,6 +95,21 @@
   <properties>
    <property name="ObjectName" value="ladder"/>
   </properties>
+ </tile>
+ <tile id="42">
+  <objectgroup draworder="index">
+   <object id="2" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="43">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="44">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
  </tile>
  <tile id="45">
   <objectgroup draworder="index">
