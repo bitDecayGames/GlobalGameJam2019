@@ -72,8 +72,11 @@ public class GameStateManager : MonoBehaviour {
         if (isGameOver) {
             return;
         }
+        
+        if (isOwnerTheWinner) {
+            HUD.SetTimer(0);
+        }
 
-        //HUD.SetTimer(0);
         var players = GameObject.FindGameObjectsWithTag("player");
         foreach (var player in players) {
             player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
