@@ -23,24 +23,21 @@ public class Teleporter : MonoBehaviour {
         }
 
         var player = col.gameObject;
-        Debug.Log("Oh! Don't touch me there");
         if (player.GetComponents<Teleportable>().Length > 0) 
         {
             Debug.Log("Get your hands off my PENIS!");
             var allTeleporters = GameObject.FindGameObjectsWithTag("teleporter");
+            if (allTeleporters.Length % 2 != 0) {
+                throw new System.Exception("There must be an even number of transporters");
+            }
             int i = 0;
             GameObject nextTeleporter = null;
             foreach(var otherTeleporter in allTeleporters)
             {       
                 if (otherTeleporter == this.gameObject)
                 {
-                    Debug.Log("I found myself!");
-                    int nextTeleporterIndex = i + 1;
-                    if (nextTeleporterIndex > allTeleporters.Length - 1) 
-                    {
-                        nextTeleporterIndex = 0;
-                    }
-                    nextTeleporter = allTeleporters[nextTeleporterIndex];
+                    nextTeleporter = GetNextTeleporter(allTeleporters, i);
+                    break;
                 }         
                 i++;
             }
@@ -51,8 +48,29 @@ public class Teleporter : MonoBehaviour {
         } 
     }
 
+    private GameObject GetNextTeleporter(GameObject[] allTeleporters, int i)
+    {
+        var mapTeleporters = new Dictionary<int, int> {
+            { 0, 4 },
+            { 4, 0 },
+            { 3, 2 },
+            { 2, 3 },
+            { 1, 5 },
+            { 5, 1 }
+        };
+
+        int nextTeleporterIndex;
+        if (mapTeleporters.ContainsKey(i)) {
+            nextTeleporterIndex = mapTeleporters[i];
+        }
+        else {
+            throw new System.Exception("I don't know where this teleporter goes");
+        }
+
+        var nextTeleporter = allTeleporters[nextTeleporterIndex];
+        return nextTeleporter;
+    }
     void OnTriggerExit2D(Collider2D col) {
-        Debug.Log("exit!");
         var player = col.gameObject;
         if (player.GetComponents<Teleportable>().Length > 0) 
         {
