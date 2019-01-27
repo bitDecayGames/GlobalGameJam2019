@@ -11,7 +11,7 @@ namespace GameInput {
             if (Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "0")) ||
                 Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "1")) ||
                 Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "2")) ||
-                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "3"))) {
+                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "3")) || KeyboardInteractPressed()) {
                 return true;
             }
 
@@ -21,7 +21,7 @@ namespace GameInput {
         override public bool RunPressed() {
             //Any bumper buttons pressed
             if (Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "4")) ||
-                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "5"))) {
+                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "5")) || KeyboardRunPressed()) {
                 return true;
             }
 
@@ -33,7 +33,7 @@ namespace GameInput {
             if (Input.GetKey(string.Format("joystick {0} button {1}", playerId, "0")) ||
                 Input.GetKey(string.Format("joystick {0} button {1}", playerId, "1")) ||
                 Input.GetKey(string.Format("joystick {0} button {1}", playerId, "2")) ||
-                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "3"))) {
+                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "3")) || KeyboardInteractDown()) {
                 return true;
             }
 
@@ -43,7 +43,7 @@ namespace GameInput {
         public override bool RunDown() {
             //Any bumper buttons pressed
             if (Input.GetKey(string.Format("joystick {0} button {1}", playerId, "4")) ||
-                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "5"))) {
+                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "5")) || KeyboardRunDown()) {
                 return true;
             }
 

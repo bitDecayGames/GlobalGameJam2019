@@ -11,7 +11,7 @@ namespace GameInput {
             if (Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "16")) ||
                 Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "17")) ||
                 Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "18")) ||
-                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "19"))) {
+                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "19")) || KeyboardInteractPressed()) {
                 return true;
             }
 
@@ -21,7 +21,7 @@ namespace GameInput {
         override public bool RunPressed() {
             //Any bumper buttons pressed
             if (Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "13")) ||
-                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "14"))) {
+                Input.GetKeyDown(string.Format("joystick {0} button {1}", playerId, "14")) || KeyboardRunPressed()) {
                 return true;
             }
 
@@ -33,7 +33,7 @@ namespace GameInput {
             if (Input.GetKey(string.Format("joystick {0} button {1}", playerId, "16")) ||
                 Input.GetKey(string.Format("joystick {0} button {1}", playerId, "17")) ||
                 Input.GetKey(string.Format("joystick {0} button {1}", playerId, "18")) ||
-                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "19"))) {
+                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "19")) || KeyboardInteractDown()) {
                 return true;
             }
 
@@ -43,7 +43,7 @@ namespace GameInput {
         public override bool RunDown() {
             //Any bumper buttons pressed
             if (Input.GetKey(string.Format("joystick {0} button {1}", playerId, "13")) ||
-                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "14"))) {
+                Input.GetKey(string.Format("joystick {0} button {1}", playerId, "14")) || KeyboardRunDown()) {
                 return true;
             }
 
