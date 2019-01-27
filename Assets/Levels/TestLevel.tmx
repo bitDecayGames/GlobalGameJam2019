@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="28" nextobjectid="770">
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="28" nextobjectid="776">
  <tileset firstgid="1" source="Test.tsx"/>
  <tileset firstgid="241" source="Test2.tsx"/>
  <tileset firstgid="481" source="doorsHorizontal.tsx"/>
@@ -473,13 +473,7 @@
   <object id="439" gid="111" x="672" y="768" width="16" height="16"/>
   <object id="440" gid="111" x="656" y="768" width="16" height="16"/>
   <object id="442" gid="113" x="640" y="768" width="16" height="16"/>
-  <object id="443" gid="20" x="464" y="832" width="16" height="16" rotation="-90"/>
-  <object id="444" gid="32" x="480" y="832" width="16" height="16" rotation="-90"/>
-  <object id="445" gid="44" x="496" y="832" width="16" height="16" rotation="-90"/>
   <object id="451" gid="17" x="560" y="808" width="16" height="16"/>
-  <object id="452" gid="23" x="464" y="816" width="16" height="16" rotation="-90"/>
-  <object id="453" gid="35" x="480" y="816" width="16" height="16" rotation="-90"/>
-  <object id="454" gid="47" x="496" y="816" width="16" height="16" rotation="-90"/>
   <object id="455" gid="63" x="448" y="848" width="16" height="16"/>
   <object id="459" gid="110" x="1184" y="1056" width="16" height="16"/>
   <object id="460" gid="111" x="1200" y="1056" width="16" height="16"/>
@@ -589,6 +583,12 @@
   <object id="754" gid="112" x="448.327" y="985.978" width="7" height="7" rotation="-317.324"/>
   <object id="763" gid="157" x="1056" y="816" width="16" height="16"/>
   <object id="764" gid="169" x="1056" y="832" width="16" height="16"/>
+  <object id="770" gid="158" x="464" y="832" width="16" height="16" rotation="-90"/>
+  <object id="771" gid="159" x="464" y="816" width="16" height="16" rotation="-90"/>
+  <object id="772" gid="170" x="480" y="832" width="16" height="16" rotation="-90"/>
+  <object id="773" gid="171" x="480" y="816" width="16" height="16" rotation="-90"/>
+  <object id="774" gid="182" x="496" y="832" width="16" height="16" rotation="-90"/>
+  <object id="775" gid="183" x="496" y="816" width="16" height="16" rotation="-90"/>
  </objectgroup>
  <objectgroup id="9" name="Decorations">
   <object id="401" gid="18" x="1086" y="825.75" width="16" height="16"/>
