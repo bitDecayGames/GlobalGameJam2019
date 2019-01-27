@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 222042349433720250}
   - component: {fileID: 114409870751434632}
   m_Layer: 5
-  m_Name: LightsOffStatusLabel
+  m_Name: GoalsStatusLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -696,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 177.59998, y: -202.7}
+  m_AnchoredPosition: {x: 24.559998, y: -173.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!224 &224435714421879816

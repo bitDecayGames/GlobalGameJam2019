@@ -5579,19 +5579,9 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1586178317118628, guid: 80c9e7d51d8b4b947805a2b8f114d1db, type: 2}
+    - target: {fileID: 1067126965277478, guid: 80c9e7d51d8b4b947805a2b8f114d1db, type: 2}
       propertyPath: m_Name
-      value: GoalsStatusLabel
-      objectReference: {fileID: 0}
-    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 24.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 224274209984123298, guid: 80c9e7d51d8b4b947805a2b8f114d1db,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -173.9
+      value: GoalsObjective
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c9e7d51d8b4b947805a2b8f114d1db, type: 2}
