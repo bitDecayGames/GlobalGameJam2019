@@ -16,7 +16,6 @@ public partial class FMODMusicPlayer : MonoBehaviour
 	public PLAYBACK_STATE CurrentSongState;
 	public bool TriggerSongToStart;
 	public bool TriggerSongToStop;
-	public ParametersListEnum.Parameters Parameter;
 	public float Value;
 	public bool SendParameterUpdate;
 	public float CurrentVolumeReadOnly;
@@ -79,12 +78,6 @@ public partial class FMODMusicPlayer : MonoBehaviour
 		{
 			SetPlaybackState(FMODSongState.Stop);
 			TriggerSongToStop = false;
-		}
-
-		if (SendParameterUpdate)
-		{
-			SetParameter(Parameter, Value);
-			SendParameterUpdate = false;
 		}
 
 		if (_destroyWhenStopped && CurrentSongState == PLAYBACK_STATE.STOPPED)

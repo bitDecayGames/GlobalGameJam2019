@@ -11,4 +11,5 @@ public class SFX
 	public const string Dash = "Dash";
 	public const string CloseDoor = "CloseDoor";
 	public const string Bush = "Bush";
+	public const string FartFlush = "FartFlush";
 }
