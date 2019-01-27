@@ -7,7 +7,7 @@ namespace PlayerScripts {
         private GamePadMovementController mover;
         private InputController input;
         private InvisibilityCloak cloak;
-        public float SprintSpeed = 0.2f;
+        public float SprintSpeed = 30f;
         private float initialMovementSpeed;
 
         private void Start() {
