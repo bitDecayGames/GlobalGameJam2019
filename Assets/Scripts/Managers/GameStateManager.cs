@@ -7,11 +7,12 @@ public class GameStateManager : MonoBehaviour {
     public float gameTime = 60.0f;
     private const string gameObjectName = "GameStateManagerGameObject";
     private List<IObjective> winObjectives = new List<IObjective>();
+    public HudController HUD;
     [SerializeField]
     private int registeredGameObjects = 0;
     [SerializeField]
     private int activatedGameObjects = 0;
-
+        
     void Update () {        
         int completedObjectives = 0;
         activatedGameObjects = 0;
@@ -35,6 +36,9 @@ public class GameStateManager : MonoBehaviour {
         {
             GameOver(); //Hiders Win
         }
+
+        HUD.SetLabel(completedObjectives,winThreshold);
+        HUD.SetTimer(gameTime);
     }
 
     public void Register(IObjective comp)
@@ -51,7 +55,7 @@ public class GameStateManager : MonoBehaviour {
             
         return gameObj.GetComponent<GameStateManager>();
     }
-
+    
     private void GameOver()
     {
 
