@@ -21,7 +21,13 @@ public class GameStateManager : MonoBehaviour
 
     private bool defenderWins;
         
-    void Update () {        
+    void Update () {
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Zip);
+        }
+        
         int completedObjectives = 0;
         activatedGameObjects = 0;
         gameTime -= Time.deltaTime;
