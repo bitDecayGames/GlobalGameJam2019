@@ -48,12 +48,15 @@ namespace PlayerScripts
             }
         }
 
-        public void KnockOut() {
+        public void KnockOut()
+        {
+            TimeFreezer.GetLocalReference().TriggerHitStun();
             rotation = transform.localRotation.eulerAngles.z;
             time = KnockoutTime;
             cloak.IsActive = false;
             mover.IsFrozen = true;
-            
+            var indicator = Instantiate(KnockoutIndicatorPrefab);
+            indicator.position = transform.position;
             Respawn();
         }
 

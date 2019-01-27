@@ -15,10 +15,13 @@ namespace Interactables.Progress
         private GameObject _progressBarGameObject;
         private SpriteRenderer _progressBarSpriteRenderer;
         
-        private void Start()
+        private void Awake()
         {
             _progressBarGameObject = new GameObject();
             _progressBarGameObject.name = "Unused Progress Bar";
+            _progressBarGameObject.transform.localScale = new Vector3(0,
+                _progressBarGameObject.transform.localScale.y, 
+                _progressBarGameObject.transform.localScale.z);
             _progressBarSpriteRenderer = _progressBarGameObject.AddComponent<SpriteRenderer>();
             _progressBarSpriteRenderer.sprite = ProgerssBarSprite;
             _progressBarSpriteRenderer.sortingOrder = 10000;
@@ -31,17 +34,18 @@ namespace Interactables.Progress
             {
                 _progressBarSpriteRenderer.transform.localScale =
                     new Vector3(_successes / _successesRequired,
-                        _progressBarSpriteRenderer.transform.localScale.y);
+                        _progressBarSpriteRenderer.transform.localScale.y,
+                        _progressBarGameObject.transform.localScale.z);
             }
         }
 
-        private void OnGUI()
-        {
-            if (_progressBarSpriteRenderer.enabled)
-            {
-                GUI.Label(new Rect(0, 160, 1000, 1000), string.Format("Successes: {0}, Required: {1}", _successes, _successesRequired));
-            }
-        }
+//        private void OnGUI()
+//        {
+//            if (_progressBarSpriteRenderer.enabled)
+//            {
+//                GUI.Label(new Rect(0, 160, 1000, 1000), string.Format("Successes: {0}, Required: {1}", _successes, _successesRequired));
+//            }
+//        }
 
         public void Reset()
         {
@@ -80,9 +84,9 @@ namespace Interactables.Progress
             _progressBarSpriteRenderer.enabled = false;
         }
 
-        public void IncrementSuccesses()
+        public void AddToSuccesses(float successes)
         {
-            _successes++;
+            _successes += successes;
         }
         
         public void SetSuccessesRequired(float successesRequired)

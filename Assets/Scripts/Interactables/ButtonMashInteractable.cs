@@ -22,6 +22,11 @@ namespace Interactables {
             set { _cooldown = value; }
         }
 
+        private void Awake()
+        {
+            SuccessThreshold = _buttonMashHitpoints;
+        }
+
         public override void Interact(InputController interactee) {
             if (!_isInteracting && _time <= 0) {
                 _isInteracting = true;
@@ -34,7 +39,11 @@ namespace Interactables {
         protected void Update() {
             if (_isInteracting) {
                 currentHitpoints -= Time.deltaTime * HITPOINT_DECAY_SCALAR;
-                if (IsInteractButtonPressed()) currentHitpoints += HITPOINT_PER_BUTTON_PRESS;
+                if (IsInteractButtonPressed())
+                {
+                    currentHitpoints += HITPOINT_PER_BUTTON_PRESS;
+                    ProgressBarController.AddToSuccesses(HITPOINT_PER_BUTTON_PRESS);
+                }
                 if (currentHitpoints < 0) Disconnect();
                 else if (currentHitpoints >= _buttonMashHitpoints) Trigger();
             } else if (_time > 0) _time -= Time.deltaTime;
