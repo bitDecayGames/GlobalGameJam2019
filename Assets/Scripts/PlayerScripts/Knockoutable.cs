@@ -48,7 +48,9 @@ namespace PlayerScripts
             }
         }
 
-        public void KnockOut() {
+        public void KnockOut()
+        {
+            TimeFreezer.GetLocalReference().TriggerHitStun();
             rotation = transform.localRotation.eulerAngles.z;
             time = KnockoutTime;
             cloak.IsActive = false;
