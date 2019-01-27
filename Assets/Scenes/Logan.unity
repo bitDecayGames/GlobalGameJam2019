@@ -3116,7 +3116,7 @@ Prefab:
     - target: {fileID: 6600002, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[43].m_Collider
       value: 
-      objectReference: {fileID: 1357981429}
+      objectReference: {fileID: 0}
     - target: {fileID: 6600002, guid: ff55711479d7f463db37e58682291b24, type: 3}
       propertyPath: m_ColliderPaths.Array.data[43].m_ColliderPaths.Array.data[0].Array.data[0].X
       value: 79990232
@@ -5880,11 +5880,6 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000096, guid: ff55711479d7f463db37e58682291b24,
     type: 3}
   m_PrefabInternal: {fileID: 701981121}
---- !u!60 &1357981429 stripped
-PolygonCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6000196, guid: ff55711479d7f463db37e58682291b24,
-    type: 3}
-  m_PrefabInternal: {fileID: 701981121}
 --- !u!60 &1376302909 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000114, guid: ff55711479d7f463db37e58682291b24,
@@ -6101,6 +6096,11 @@ Prefab:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 760789714}
+    - target: {fileID: 114732011846897638, guid: 9b20c2ccc0ff8b04db172340b64d0f90,
+        type: 2}
+      propertyPath: gameTime
+      value: 180
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b20c2ccc0ff8b04db172340b64d0f90, type: 2}
   m_IsPrefabAsset: 0

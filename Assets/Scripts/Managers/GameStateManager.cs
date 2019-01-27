@@ -16,6 +16,8 @@ public class GameStateManager : MonoBehaviour {
     private int registeredGameObjects = 0;
     [SerializeField]
     private int activatedGameObjects = 0;
+
+    private bool defenderWins;
         
     void Update () {        
         int completedObjectives = 0;
@@ -47,7 +49,14 @@ public class GameStateManager : MonoBehaviour {
         }
         else {
             if (gameTime < -5) {
-                SceneManager.LoadScene("Logan");
+                if (defenderWins)
+                {
+                    SceneManager.LoadScene("DefenderWins");                    
+                }
+                else
+                {
+                    SceneManager.LoadScene("DefenderLoses");
+                }
             }
         }
     }
@@ -72,6 +81,8 @@ public class GameStateManager : MonoBehaviour {
         if (isGameOver) {
             return;
         }
+
+        defenderWins = isOwnerTheWinner;
         
         if (isOwnerTheWinner) {
             HUD.SetTimer(0);

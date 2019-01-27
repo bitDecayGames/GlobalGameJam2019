@@ -16,6 +16,7 @@
     "Flush",
     "ButtonSuccess",
     "ButtonFailure",
-    "ButtonComplete"
+    "ButtonComplete",
+    "Zip"
   ]
 }

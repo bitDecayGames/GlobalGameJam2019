@@ -2,16 +2,20 @@ using System;
 public class Scenes
 {
 	public const string DontDestroyOnLoad = "DontDestroyOnLoad";
+	public const string BitdecaySplash = "BitdecaySplash";
+	public const string GameJamSplash = "GameJamSplash";
 	public const string TitleScreen = "TitleScreen";
-	public const string Credits = "Credits";
 	public const string Logan = "Logan";
+	public const string Credits = "Credits";
 	public const string DefenderLoses = "DefenderLoses";
 	public const string DefenderWins = "DefenderWins";
 	public enum SceneEnum
 	{
+		BitdecaySplash = 144,
+		GameJamSplash = 253,
 		TitleScreen = 98,
-		Credits = 206,
 		Logan = 241,
+		Credits = 206,
 		DefenderLoses = 35,
 		DefenderWins = 190,
 	}
@@ -19,12 +23,16 @@ public class Scenes
 	{
 		switch (sceneEnum)
 		{
+			case SceneEnum.BitdecaySplash:
+				return BitdecaySplash;
+			case SceneEnum.GameJamSplash:
+				return GameJamSplash;
 			case SceneEnum.TitleScreen:
 				return TitleScreen;
-			case SceneEnum.Credits:
-				return Credits;
 			case SceneEnum.Logan:
 				return Logan;
+			case SceneEnum.Credits:
+				return Credits;
 			case SceneEnum.DefenderLoses:
 				return DefenderLoses;
 			case SceneEnum.DefenderWins:

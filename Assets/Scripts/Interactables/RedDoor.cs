@@ -79,6 +79,7 @@ namespace Interactables {
 
 		public void Open() {
 			if (!_isOpen) {
+				FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.OpenDoor);
 				sprite.transform.parent.localRotation = Quaternion.Euler(0, 0, -80);
 				body.isTrigger = true;
 				_isOpen = true;
@@ -88,6 +89,7 @@ namespace Interactables {
 		public void Close() {
 			if (_isOpen)
 			{
+				FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.CloseDoor);
 				_isUnlocked = false;
 				sprite.transform.parent.localRotation = Quaternion.Euler(0, 0, 0);
 				body.isTrigger = false;
