@@ -5,7 +5,9 @@ using PlayerScripts;
 using Utils;
 using UnityEngine.SceneManagement;
 
-public class GameStateManager : MonoBehaviour {
+public class GameStateManager : MonoBehaviour
+{
+    public EasyNavigator Navigator;
     public int winThreshold = 4;
     public bool isGameOver = false;
     public float gameTime = 30.0f;
@@ -81,6 +83,9 @@ public class GameStateManager : MonoBehaviour {
         if (isGameOver) {
             return;
         }
+        
+        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.Whistle);
+        FMODMusicPlayer.Instance.SetParameter(FmodParameters.FmodParameterEnum.Lowpass.ToString(), 1);
 
         defenderWins = isOwnerTheWinner;
         

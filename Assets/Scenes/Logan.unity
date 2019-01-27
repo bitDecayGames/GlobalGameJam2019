@@ -410,6 +410,16 @@ Prefab:
       propertyPath: Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114292457556940940, guid: 87a91b0b00012b349a8b6ad91d8c6b6c,
+        type: 2}
+      propertyPath: Parameter
+      value: 234
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292457556940940, guid: 87a91b0b00012b349a8b6ad91d8c6b6c,
+        type: 2}
+      propertyPath: SendParameterAtSceneStart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87a91b0b00012b349a8b6ad91d8c6b6c, type: 2}
   m_IsPrefabAsset: 0
@@ -6099,6 +6109,11 @@ Prefab:
     - target: {fileID: 114732011846897638, guid: 9b20c2ccc0ff8b04db172340b64d0f90,
         type: 2}
       propertyPath: gameTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114732011846897638, guid: 9b20c2ccc0ff8b04db172340b64d0f90,
+        type: 2}
+      propertyPath: winThreshold
       value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []

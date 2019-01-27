@@ -17,6 +17,7 @@
     "ButtonSuccess",
     "ButtonFailure",
     "ButtonComplete",
-    "Zip"
+    "Zip",
+    "Whistle"
   ]
 }

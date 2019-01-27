@@ -18,4 +18,5 @@ public class SFX
 	public const string ButtonFailure = "ButtonFailure";
 	public const string ButtonComplete = "ButtonComplete";
 	public const string Zip = "Zip";
+	public const string Whistle = "Whistle";
 }
