@@ -60,5 +60,13 @@ namespace Interactables {
         protected bool IsInteractButtonBeingHeld() {
             return _interactee.ControllerMapper.InteractDown();
         }
+
+        private void OnDestroy()
+        {
+            if (soundId == 0)
+            {
+                FMODSoundEffectsPlayer.Instance.StopSustainedSoundEffect(soundId);   
+            }
+        }
     }
 }
