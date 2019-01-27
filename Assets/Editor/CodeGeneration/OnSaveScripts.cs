@@ -1,6 +1,6 @@
+using System;
 using System.IO;
 using UnityEditor;
-using UnityEngine;
 
 public class OnSaveScripts : UnityEditor.AssetModificationProcessor
 {
@@ -47,7 +47,7 @@ public class OnSaveScripts : UnityEditor.AssetModificationProcessor
         }
         
         var newSettings = new EditorBuildSettingsScene[original.Length + 1]; 
-        System.Array.Copy(original, newSettings, original.Length);
+        Array.Copy(original, newSettings, original.Length);
         if (!sceneName.Contains("Debug")) {
             var sceneToAdd = new EditorBuildSettingsScene(Path.Combine(scenePath, sceneName) + ".unity", true);
             newSettings[newSettings.Length - 1] = sceneToAdd;
