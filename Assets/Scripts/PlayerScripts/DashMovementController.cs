@@ -22,8 +22,8 @@ namespace PlayerScripts {
             if (!mover) throw new Exception("GamePadMovementController is missing from DashMovementController object");
             input = GetComponentInChildren<InputController>();
             if (!input) throw new Exception("InputController is missing from DashMovementController object");
-            cloak = GetComponentInChildren<InvisibilityCloak>();
-            if (!cloak) throw new Exception("InivisibilityCloak is missing from DashMovementController object");
+            // cloak = GetComponentInChildren<InvisibilityCloak>();
+            // if (!cloak) throw new Exception("InivisibilityCloak is missing from DashMovementController object");
             body = GetComponentInChildren<Rigidbody2D>();
             if (!body) throw new Exception("RigidBody2D could not be found on the DashMovementController object");
 
@@ -33,7 +33,7 @@ namespace PlayerScripts {
         private void Update() {
             if (input.ControllerMapper.RunPressed()) {
                 if (Dash()) {
-                    cloak.Ping();
+                    // cloak.Ping();
                 }
             }
 

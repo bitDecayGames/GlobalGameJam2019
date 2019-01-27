@@ -106,6 +106,7 @@ public class LevelParser : MonoBehaviour
     void SpawnButton(SuperObject superObject)
     {
         var newButton = Instantiate(buttonTemplate, superObject.transform.position, Quaternion.identity);
+        newButton.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
         Destroy(superObject.gameObject);
     }
 
