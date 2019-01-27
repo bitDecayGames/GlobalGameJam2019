@@ -14,7 +14,7 @@ public class LevelParser : MonoBehaviour {
     public GameObject buttonTemplate;
     public GameObject ladderTemplate;
     public Door doorTemplate;
-    public RedDoorTemplate redDoorTemplate;
+    public RedDoor redDoorTemplate;
 
     private int intruderLayer = -1;
     private int seekerLayer = -1;
@@ -197,11 +197,23 @@ public class LevelParser : MonoBehaviour {
     }
 
     void SpawnDoor(SuperObject superObject, Door.DoorType doorType, bool isRed) {
-        var door = Instantiate(isRed ? redDoorTemplate : doorTemplate, superObject.transform.parent);
-        door.transform.localScale = superObject.transform.localScale;
-        door.transform.localPosition = superObject.transform.localPosition;
-        door.transform.localRotation = superObject.transform.localRotation;
-        door.SetDoorType(doorType);
+        if (isRed)
+        {
+            var door = Instantiate(redDoorTemplate, superObject.transform.parent);
+            door.transform.localScale = superObject.transform.localScale;
+            door.transform.localPosition = superObject.transform.localPosition;
+            door.transform.localRotation = superObject.transform.localRotation;
+            door.SetDoorType(doorType);
+        }
+        else
+        {
+            var door = Instantiate(doorTemplate, superObject.transform.parent);
+            door.transform.localScale = superObject.transform.localScale;
+            door.transform.localPosition = superObject.transform.localPosition;
+            door.transform.localRotation = superObject.transform.localRotation;
+            door.SetDoorType(doorType);
+        }
+
         Destroy(superObject.gameObject);
     }
 

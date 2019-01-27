@@ -43,30 +43,30 @@ namespace Interactables {
 		}
 
 		// TODO: MW this method is extremely hard-coded, messing with the doors at all will require this logic to be redone
-		public void SetDoorType(DoorType doorType) {
+		public void SetDoorType(Door.DoorType doorType) {
 			var rot = 0f;
 			Vector3 pos;
 			switch (doorType) {
-				case DoorType.HORIZONTAL_LEFT_HINGE:
+				case Door.DoorType.HORIZONTAL_LEFT_HINGE:
 					pos = transform.localPosition;
 					pos.y += 0.05f;
 					transform.localPosition = pos;
 					
 					break; 
-				case DoorType.HORIZONTAL_RIGHT_HINGE:
+				case Door.DoorType.HORIZONTAL_RIGHT_HINGE:
 					rot = 180f;
 					pos = transform.localPosition;
 					pos.x += 0.32f;
 					pos.y += 0.05f;
 					transform.localPosition = pos;
 					break;
-				case DoorType.VERTICAL_BOTTOM_HINGE:
+				case Door.DoorType.VERTICAL_BOTTOM_HINGE:
 					rot = 90;
 					pos = transform.localPosition;
 					pos.x += 0.1f;
 					transform.localPosition = pos;
 					break;
-				case DoorType.VERTICAL_TOP_HINGE:
+				case Door.DoorType.VERTICAL_TOP_HINGE:
 					rot = -90;
 					pos = transform.localPosition;
 					pos.y += 0.32f;
@@ -91,13 +91,6 @@ namespace Interactables {
 				body.isTrigger = false;
 				_isOpen = false;
 			}
-		}
-
-		public enum DoorType {
-			HORIZONTAL_LEFT_HINGE,
-			HORIZONTAL_RIGHT_HINGE,
-			VERTICAL_TOP_HINGE,
-			VERTICAL_BOTTOM_HINGE
 		}
 
 		public override void Trigger() {
