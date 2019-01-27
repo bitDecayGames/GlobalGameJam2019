@@ -14,4 +14,5 @@ public class SFX
 	public const string FartFlush = "FartFlush";
 	public const string ButtonSuccess = "ButtonSuccess";
 	public const string ButtonFailure = "ButtonFailure";
+	public const string ButtonComplete = "ButtonComplete";
 }

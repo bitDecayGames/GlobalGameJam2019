@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using GameInput;
@@ -7,11 +8,13 @@ using UnityEngine;
 
 public class PrecisionButtonsInteractable : AbstractInteractable
 {
+    public Sprite ProgerssBarSprite;
+    public Sprite ProgerssBarSpriteSuccess;
     public Sprite AButton;
     public Sprite XButton;
     public Sprite YButton;
     public Sprite BButton;
-    
+
     private const int DefaultSuccessesRequired = 6;
     private int _successesRequired;
 
@@ -25,6 +28,8 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     private Queue<_controllerButtons> _buttonsToPress;
     private _controllerButtons _currentQuicktimeButton;
+    private GameObject _progressBarGameObject;
+    private SpriteRenderer _progressBarSpriteRenderer;
     private GameObject _currentQuicktimeButtonSpriteGameObject;
     private SpriteRenderer _currentQuicktimeButtonSpriteRenderer;
     private bool _isUnlocked;
@@ -56,9 +61,17 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     private void Awake()
     {
         _currentQuicktimeButtonSpriteGameObject = new GameObject();
-        _currentQuicktimeButtonSpriteGameObject.transform.position = transform.position + Vector3.up / 2f;
+        _currentQuicktimeButtonSpriteGameObject.transform.position = transform.position + Vector3.up * .25f;
+        _currentQuicktimeButtonSpriteGameObject.transform.SetParent(transform);
         _currentQuicktimeButtonSpriteRenderer = _currentQuicktimeButtonSpriteGameObject.AddComponent<SpriteRenderer>();
         _currentQuicktimeButtonSpriteRenderer.enabled = false;
+
+        _progressBarGameObject = new GameObject();
+        _progressBarGameObject.transform.SetParent(transform);
+        _progressBarGameObject.transform.position = transform.position + new Vector3(-ProgerssBarSprite.bounds.extents.x, .4f, 0);
+        _progressBarSpriteRenderer = _progressBarGameObject.AddComponent<SpriteRenderer>();
+        _progressBarSpriteRenderer.sprite = ProgerssBarSprite;
+        _progressBarSpriteRenderer.enabled = false;
     }
 
     private void SetupQuicktimeQueue()
@@ -114,11 +127,11 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
     public override void Interact(InputController interactee) {
         if (!_isInteracting && !_isUnlocked) {
-            if (_cooldown > 0)
-            {
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonFailure);
-            }
-            else
+//            if (_cooldown > 0)
+//            {
+//                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonFailure);
+//            }
+//            else
             {
                 _isInteracting = true;
                 _interactee = interactee;
@@ -136,11 +149,16 @@ public class PrecisionButtonsInteractable : AbstractInteractable
 
         if (!_isUnlocked && _isInteracting)
         {
+            _progressBarSpriteRenderer.transform.localScale =
+                new Vector3(1 - ((float) _successesRequired / (float) DefaultSuccessesRequired),
+                    _progressBarSpriteRenderer.transform.localScale.y);
             _currentQuicktimeButtonSpriteRenderer.enabled = true;
+            _progressBarSpriteRenderer.enabled = true;
         }
-        else 
+        else if (!_isUnlocked)
         {
             _currentQuicktimeButtonSpriteRenderer.enabled = false;
+            _progressBarSpriteRenderer.enabled = false;
         }
         
         if (_isInteracting)
@@ -148,10 +166,10 @@ public class PrecisionButtonsInteractable : AbstractInteractable
             
             if (IsCorrectButtonPressed())
             {
-                FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonSuccess);
                 _successesRequired--;
                 if (_buttonsToPress.Count > 0)
                 {
+                    FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonSuccess);
                     SetupNextQuicktimeButton();
                 }
                 else
@@ -182,6 +200,17 @@ public class PrecisionButtonsInteractable : AbstractInteractable
     public override void Trigger()
     {
         _isUnlocked = true;
+        FMODSoundEffectsPlayer.Instance.PlaySoundEffect(SFX.ButtonComplete);
+        _progressBarSpriteRenderer.transform.localScale = new Vector3(1, _progressBarSpriteRenderer.transform.localScale.y);
+        _currentQuicktimeButtonSpriteRenderer.enabled = false;
+        _progressBarSpriteRenderer.sprite = ProgerssBarSpriteSuccess;
+        StartCoroutine(DisableSuccessProgressBar());
+    }
+
+    private IEnumerator DisableSuccessProgressBar()
+    {
+        yield return new WaitForSeconds(1f);
+        _progressBarSpriteRenderer.enabled = false;
     }
 
     protected bool IsCorrectButtonPressed() {
