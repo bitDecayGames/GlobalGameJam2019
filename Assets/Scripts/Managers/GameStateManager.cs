@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameStateManager : MonoBehaviour {
-    public int winThreshold = 2;
+    public int winThreshold = 4;
     public float gameTime = 60.0f;
     private const string gameObjectName = "GameStateManagerGameObject";
     private List<IObjective> winObjectives = new List<IObjective>();

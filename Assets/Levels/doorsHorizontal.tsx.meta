@@ -9,10 +9,18 @@ ScriptedImporter:
     11400006: Tile_doorsHorizontal_2
     11400008: Tile_doorsHorizontal_3
     11400010: Tile_doorsHorizontal_4
+    11400012: Tile_doorsHorizontal_5
+    11400014: Tile_doorsHorizontal_6
+    11400016: Tile_doorsHorizontal_7
+    11400018: Tile_doorsHorizontal_8
     21300000: Sprite_doorsHorizontal_1
     21300002: Sprite_doorsHorizontal_2
     21300004: Sprite_doorsHorizontal_3
     21300006: Sprite_doorsHorizontal_4
+    21300008: Sprite_doorsHorizontal_5
+    21300010: Sprite_doorsHorizontal_6
+    21300012: Sprite_doorsHorizontal_7
+    21300014: Sprite_doorsHorizontal_8
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -24,7 +32,7 @@ ScriptedImporter:
   missingLayers: []
   pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 11
+  numberOfObjectsImported: 19
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048

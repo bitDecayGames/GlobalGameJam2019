@@ -37,7 +37,7 @@ public class LevelParser : MonoBehaviour {
         foreach (var ol in objLayers) {
             Debug.Log("Got layer: " + ol.m_TiledName + ", attempting to parse");
             if (ol.m_TiledName == "Object Layer 1") {
-                parseLevelObjects(ol);
+                parseLevelObjects(ol, mapScript);
             } else if (ol.m_TiledName == "Game Objects") {
                 parseGameObjects(ol);
             } else {
@@ -46,7 +46,7 @@ public class LevelParser : MonoBehaviour {
         }
     }
 
-    void parseLevelObjects(SuperObjectLayer objLayer) {
+    void parseLevelObjects(SuperObjectLayer objLayer, SuperMap map) {
         var objects = objLayer.gameObject.GetComponentsInChildren<SuperObject>();
         Debug.Log("Parsing " + objects.Length + " object(s)");
         foreach (var superObject in objects) {
@@ -73,7 +73,7 @@ public class LevelParser : MonoBehaviour {
                             Destroy(superObject.gameObject);
                             break;
                         case "button":
-                            SpawnButton(superObject);
+                            SpawnButton(superObject, map);
                             break;
                         default:
                             Debug.Log("Unrecognized 'ObjectName' " + prop.m_Value + " found in level map");
@@ -121,9 +121,36 @@ public class LevelParser : MonoBehaviour {
         }
     }
 
-    void SpawnButton(SuperObject superObject) {
+    void SpawnButton(SuperObject superObject, SuperMap map) {
         var newButton = Instantiate(buttonTemplate, superObject.transform.position, Quaternion.identity);
         newButton.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
+        
+        var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
+        foreach (var prop in custProps.m_Properties)
+        {
+            switch (prop.m_Name)
+            {
+                case "Room":
+                    var tileLayers = map.gameObject.GetComponentsInChildren<SuperTileLayer>();
+                    GameObject toggleLayer = null;
+                    foreach (var layer in tileLayers)
+                    {
+                        if (prop.m_Value == layer.name)
+                        {
+                            toggleLayer = layer.gameObject;
+                            layer.gameObject.SetActive(false);
+                        }
+                    }
+
+                    if (toggleLayer == null)
+                    {
+                        throw new RuntimeException("No layer found that matches switch name: " + prop.m_Value);
+                    }
+                    newButton.GetComponentInChildren<Switch>().toggle = toggleLayer;
+                    break;
+            }
+        }
+
         Destroy(superObject.gameObject);
     }
 
