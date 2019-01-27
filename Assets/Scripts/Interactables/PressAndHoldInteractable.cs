@@ -1,4 +1,6 @@
+using System;
 using GameInput;
+using Interactables.Progress;
 using UnityEngine;
 
 namespace Interactables {
@@ -10,6 +12,11 @@ namespace Interactables {
             set { _timeToComplete = value; }
         }
 
+        private void Awake()
+        {
+            SuccessThreshold = _timeToComplete;
+        }
+
         public override void Interact(InputController interactee) {
             if (!_isInteracting) {
                 _isInteracting = true;
@@ -18,11 +25,12 @@ namespace Interactables {
                 OnInteract();
             }
         }
-
+        
         protected void Update() {
             if (_isInteracting) {
                 if (IsInteractButtonBeingHeld()) {
                     time -= Time.deltaTime;
+                    ProgressBarController.AddToSuccesses(Time.deltaTime);
                     if (time < 0) {
                         _isInteracting = false;
                         time = 0;
