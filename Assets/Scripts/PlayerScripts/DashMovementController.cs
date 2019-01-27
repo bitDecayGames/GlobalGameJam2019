@@ -31,7 +31,7 @@ namespace PlayerScripts {
         }
 
         private void Update() {
-            if (input.ControllerMapper.RunPressed()) {
+            if (input && input.ControllerMapper != null && input.ControllerMapper.RunPressed()) {
                 if (Dash()) {
                     // cloak.Ping();
                 }
