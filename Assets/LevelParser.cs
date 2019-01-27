@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Boo.Lang.Runtime;
 using SuperTiled2Unity;
 using UnityEngine;
+using PolishElements;
 
 public class LevelParser : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class LevelParser : MonoBehaviour
     public GameObject playerTemplate;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         var mapScript = FindObjectOfType<SuperMap>();
         if (mapScript == null)
@@ -30,6 +31,10 @@ public class LevelParser : MonoBehaviour
             if (ol.m_TiledName == "Object Layer 1")
             {
                 parseLevelObjects(ol);
+            }
+            if (ol.m_TiledName == "Game Objects")
+            {
+                parseGameObjects(ol);
             }
         }
     }
@@ -68,6 +73,17 @@ public class LevelParser : MonoBehaviour
                 }
             }
         }
+    }
+
+    void parseGameObjects(SuperObjectLayer objectLayer)
+    {
+        Debug.Log("We are parsing an object layer");
+        var objects = objectLayer.gameObject.GetComponentsInChildren<SuperObject>();
+        foreach (var superObject in objects)
+        {
+            superObject.gameObject.AddComponent<Shaker>();
+        }
+
     }
 
     void SpawnPlayer(SuperObject superObject, int playerNumber)
