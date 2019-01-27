@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Boo.Lang.Runtime;
 using Interactables;
 using PlayerScripts;
@@ -51,6 +52,7 @@ public class LevelParser : MonoBehaviour {
     void parseLevelObjects(SuperObjectLayer objLayer, SuperMap map) {
         var objects = objLayer.gameObject.GetComponentsInChildren<SuperObject>();
         Debug.Log("Parsing " + objects.Length + " object(s)");
+        var players = new List<PlayerObj>();
         foreach (var superObject in objects) {
             var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
             foreach (var prop in custProps.m_Properties) {
@@ -58,16 +60,16 @@ public class LevelParser : MonoBehaviour {
 //                    Debug.Log("Got: " + prop.m_Value);
                     switch (prop.m_Value) {
                         case "player1Spawn":
-                            SpawnPlayer(superObject, 1, false);
+                            players.Add(new PlayerObj(superObject, false));
                             break;
                         case "player2Spawn":
-                            SpawnPlayer(superObject, 2, false);
+                            players.Add(new PlayerObj(superObject, false));
                             break;
                         case "player3Spawn":
-                            SpawnPlayer(superObject, 3, false);
+                            players.Add(new PlayerObj(superObject, false));
                             break;
                         case "player4Spawn":
-                            SpawnPlayer(superObject, 4, true);
+                            players.Add(new PlayerObj(superObject, true));
                             break;
                         case "ladder":
                             var newLadder = Instantiate(ladderTemplate, superObject.transform.position, Quaternion.identity);
@@ -91,6 +93,12 @@ public class LevelParser : MonoBehaviour {
                     Debug.Log("Didn't understand prop name: " + prop.m_Name);
                 }
             }
+        }
+
+        Shuffle(players);
+        for (int i = 0; i < players.Count; i++) {
+            var playerObj = players[i];
+            SpawnPlayer(playerObj.obj, i, playerObj.isOwner);
         }
     }
 
@@ -229,6 +237,26 @@ public class LevelParser : MonoBehaviour {
         Destroy(superObject.gameObject);
     }
 
-    // Update is called once per frame
-    void Update() { }
+    public struct PlayerObj {
+        public SuperObject obj;
+        public bool isOwner;
+
+        public PlayerObj(SuperObject obj, bool isOwner) {
+            this.obj = obj;
+            this.isOwner = isOwner;
+        }
+    }
+    
+    private static System.Random rng = new System.Random();  
+    public static void Shuffle(List<PlayerObj> list)  
+    {  
+        int n = list.Count;  
+        while (n > 1) {  
+            n--;  
+            int k = rng.Next(n + 1);  
+            PlayerObj value = list[k];  
+            list[k] = list[n];  
+            list[n] = value;  
+        }  
+    }
 }
