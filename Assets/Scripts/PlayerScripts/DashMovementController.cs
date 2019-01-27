@@ -10,7 +10,7 @@ namespace PlayerScripts {
         private Rigidbody2D body;
 
 
-        public float Intensity = 50f;
+        public float Intensity = 10f;
         public float RefreshRate = 2f;
         public int MaxNumberOfDashes = 3;
 
