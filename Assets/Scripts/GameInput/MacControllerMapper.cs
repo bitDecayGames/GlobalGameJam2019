@@ -49,9 +49,5 @@ namespace GameInput {
 
             return false;
         }
-
-        public override float GetVerticalMovement() {
-            return base.GetVerticalMovement() * -1;
-        }
     }
 }
