@@ -10,6 +10,7 @@ public class LevelParser : MonoBehaviour
 {
 
     public GameObject playerTemplate;
+    public GameObject buttonTemplate;
 
     // Use this for initialization
     void Start()
@@ -66,9 +67,11 @@ public class LevelParser : MonoBehaviour
                             SpawnPlayer(superObject, 4, true);
                             break;
                         case "button":
+                            SpawnButton(superObject);
                             break;
                         default:
-                            throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Value + " found");
+                            //throw new RuntimeException("Unrecognized 'ObjectName' " + prop.m_Value + " found");
+                            break;
                     }
                 }
             }
@@ -84,6 +87,12 @@ public class LevelParser : MonoBehaviour
             superObject.gameObject.AddComponent<Shaker>();
         }
 
+    }
+
+    void SpawnButton(SuperObject superObject)
+    {
+        var newButton = Instantiate(buttonTemplate, superObject.transform.position, Quaternion.identity);
+        Destroy(superObject.gameObject);
     }
 
     void SpawnPlayer(SuperObject superObject, int playerNumber, bool isOwner)
