@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: b90e69a06665b7345a3ab40a81c492be
+ScriptedImporter:
+  fileIDToRecycleName:
+    2800000: Atlas_doorsVertical_1
+    11400000: _TilesetScriptObject
+    11400002: _superAsset
+    11400004: Tile_doorsVertical_1
+    11400006: Tile_doorsVertical_2
+    11400008: Tile_doorsVertical_3
+    11400010: Tile_doorsVertical_4
+    21300000: Sprite_doorsVertical_1
+    21300002: Sprite_doorsVertical_2
+    21300004: Sprite_doorsVertical_3
+    21300006: Sprite_doorsVertical_4
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 11
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048
