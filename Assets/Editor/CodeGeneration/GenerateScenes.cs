@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.RegularExpressions;
+using System.Text;
 using UnityEditor;
-using UnityEditorInternal;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GenerateScenes : MonoBehaviour
 {
@@ -21,10 +20,10 @@ public class GenerateScenes : MonoBehaviour
         classDefinition += "{\n";
 
         List<string> sceneNamesList = new List<string>();
-        int sceneCount = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;   
+        int sceneCount = SceneManager.sceneCountInBuildSettings;   
         for( int i = 0; i < sceneCount; i++ )
         {            
-            sceneNamesList.Add(Path.GetFileNameWithoutExtension( UnityEngine.SceneManagement.SceneUtility.GetScenePathByBuildIndex( i )));
+            sceneNamesList.Add(Path.GetFileNameWithoutExtension( SceneUtility.GetScenePathByBuildIndex( i )));
         }
 
         classDefinition += string.Format("\tpublic const string {0} = \"{0}\";\n", "DontDestroyOnLoad");
@@ -38,7 +37,7 @@ public class GenerateScenes : MonoBehaviour
         
         foreach (string sceneName in sceneNamesList)
         {
-            byte[] sceneAsByteArray = System.Text.Encoding.UTF8.GetBytes(sceneName.ToCharArray());
+            byte[] sceneAsByteArray = Encoding.UTF8.GetBytes(sceneName.ToCharArray());
             byte sceneEnumByteValue = 0;
             foreach (byte b in sceneAsByteArray)
             {

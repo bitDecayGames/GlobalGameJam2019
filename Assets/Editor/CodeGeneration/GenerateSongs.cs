@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEditor;
 using UnityEngine;
 
@@ -24,7 +24,7 @@ public class GenerateSongs : MonoBehaviour
         
         foreach (string songName in songList.Songs)
         {
-            byte[] sceneAsByteArray = System.Text.Encoding.UTF8.GetBytes(songName.ToCharArray());
+            byte[] sceneAsByteArray = Encoding.UTF8.GetBytes(songName.ToCharArray());
             byte songEnumByteValue = 0;
             foreach (byte b in sceneAsByteArray)
             {

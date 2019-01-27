@@ -49,3 +49,5 @@ sysinfo.txt
 
 Assets/StreamingAssets
 .vscode/
+
+build/

@@ -59,6 +59,13 @@ MonoBehaviour:
     Value: 32
   Plugins: []
   MasterBanks:
+  - C:\Users\shado\Desktop\Unity Projects\GlobalGameJam2019\Assets\FmodBanks\Desktop\Master
+    Bank
+  - Master Bank
+  - C:\Users\Luke\Desktop\Coding\GGJ2019\GlobalGameJam2019\Assets\FmodBanks\Desktop\Master
+    Bank
+  - Master Bank
   - Master Bank
   Banks:
+  - Master Bank
   - SFX
