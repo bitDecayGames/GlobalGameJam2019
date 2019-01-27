@@ -109,6 +109,12 @@ ScriptedImporter:
     100208: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (79)
     100210: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (80)
     100212: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (81)
+    100214: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (82)
+    100216: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (83)
+    100218: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (84)
+    100220: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (85)
+    100222: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (86)
+    100224: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (87)
     400000: _MapPrfab/TestLevel/Transform
     400002: _MapPrfab/TestLevel/Object Layer 1/Transform
     400004: _MapPrfab/TestLevel/Interactibles/Collision_Default/Transform
@@ -216,6 +222,12 @@ ScriptedImporter:
     400208: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (79)/Transform
     400210: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (80)/Transform
     400212: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (81)/Transform
+    400214: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (82)/Transform
+    400216: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (83)/Transform
+    400218: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (84)/Transform
+    400220: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (85)/Transform
+    400222: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (86)/Transform
+    400224: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (87)/Transform
     5000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Rigidbody2D
     6000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon/PolygonCollider2D
@@ -306,6 +318,12 @@ ScriptedImporter:
     6000170: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (79)/PolygonCollider2D
     6000172: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (80)/PolygonCollider2D
     6000174: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (81)/PolygonCollider2D
+    6000176: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (82)/PolygonCollider2D
+    6000178: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (83)/PolygonCollider2D
+    6000180: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (84)/PolygonCollider2D
+    6000182: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (85)/PolygonCollider2D
+    6000184: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (86)/PolygonCollider2D
+    6000186: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (87)/PolygonCollider2D
     6600000: _MapPrfab/TestLevel/Interactibles/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/TestLevel/FloorWalls/Collision_Default/CompositeCollider2D
     11400000: _MapPrfab/TestLevel/MonoBehaviour-SuperTiled2Unity.SuperMap
@@ -415,6 +433,12 @@ ScriptedImporter:
     11400208: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (79)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400210: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (80)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400212: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (81)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400214: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (82)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400216: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (83)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400218: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (84)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400220: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (85)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400222: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (86)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400224: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (87)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     21200000: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)/player1Spawn/SpriteRenderer
     21200002: _MapPrfab/TestLevel/Object Layer 1/player2Spawn (TRS)/player2Spawn (CF)/player2Spawn/SpriteRenderer
     21200004: _MapPrfab/TestLevel/Object Layer 1/player3Spawn (TRS)/player3Spawn (CF)/player3Spawn/SpriteRenderer
