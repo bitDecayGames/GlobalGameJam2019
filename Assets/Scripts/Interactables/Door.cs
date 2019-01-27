@@ -44,9 +44,9 @@ namespace Interactables {
 			switch (doorType) {
 				case DoorType.HORIZONTAL_LEFT_HINGE:
 					// This is to move the door sprite into the correct position for rotation stuff
-					var pos = sprite.transform.parent.localPosition;
-					pos.y = 0;
-					sprite.transform.parent.localPosition = pos;
+//					var pos = sprite.transform.parent.localPosition;
+//					pos.y = 0;
+//					sprite.transform.parent.localPosition = pos;
 					
 					break; 
 				case DoorType.HORIZONTAL_RIGHT_HINGE:
