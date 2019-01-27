@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114361078010466216}
   - component: {fileID: 114485756217212820}
   - component: {fileID: 114895044232467862}
+  - component: {fileID: 114570279327134330}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -60,7 +61,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -140,14 +141,26 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485957507649052}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f12c2ae8f1dd47fdb715a5a9c2191c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intensity: 50
+  Intensity: 7
   RefreshRate: 2
   MaxNumberOfDashes: 3
+--- !u!114 &114570279327134330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485957507649052}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9562b22373458cb961f3ff9f1659cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SprintSpeed: 50
 --- !u!114 &114895044232467862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c69b66460cfa42ebbd2406a3853040c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 4
+  MovementSpeed: 15
 --- !u!212 &212717768118118642
 SpriteRenderer:
   m_ObjectHideFlags: 1
