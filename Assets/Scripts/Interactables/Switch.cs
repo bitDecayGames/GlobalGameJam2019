@@ -8,6 +8,8 @@ namespace Interactables
 {
     public class Switch : PressAndHoldInteractable, IObjective
     {
+        public GameObject toggle;
+        
         private bool _isOn;
         public bool IsOn
         {
@@ -40,6 +42,7 @@ namespace Interactables
             {
                 sprite.sprite = onSprite;
                 _isOn = true;
+                toggle.SetActive(false);
             }
         }
 
@@ -49,6 +52,7 @@ namespace Interactables
             {
                 sprite.sprite = offSprite;
                 _isOn = false;
+                toggle.SetActive(true);
             }
         }
         
