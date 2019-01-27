@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.1" name="TEst" tilewidth="16" tileheight="16" tilecount="216" columns="12">
- <image source="Sprites/Test.png" width="192" height="288"/>
+<tileset version="1.2" tiledversion="1.2.1" name="TEst" tilewidth="16" tileheight="16" tilecount="240" columns="12">
+ <image source="Sprites/Test.png" width="192" height="320"/>
  <tile id="0">
   <properties>
    <property name="ObjectName" value=""/>
@@ -293,6 +293,71 @@
  <tile id="105">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="109">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="110">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="111">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="112">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="121">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="122">
+  <objectgroup draworder="index">
+   <object id="1" x="1" y="1" width="15" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="123">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="1" width="15" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="133">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="134">
+  <objectgroup draworder="index">
+   <object id="1" x="1" y="0" width="15" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="135">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="15" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="145">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="146">
+  <objectgroup draworder="index">
+   <object id="1" x="1" y="0" width="15" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="147">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="15" height="15"/>
   </objectgroup>
  </tile>
 </tileset>

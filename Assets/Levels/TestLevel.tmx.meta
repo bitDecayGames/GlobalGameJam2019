@@ -275,11 +275,6 @@ ScriptedImporter:
     100540: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63
     100542: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_1
     100544: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_2
-    100546: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)
-    100548: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)
-    100550: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64
-    100552: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_1
-    100554: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_2
     100556: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)
     100558: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)
     100560: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Object_65
@@ -336,6 +331,9 @@ ScriptedImporter:
     100662: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)
     100664: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Object_76
     100666: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Object_76/Object_1
+    100668: _MapPrfab/TestLevel/Game Objects/Object_417 (TRS)/Object_417 (CF)/Object_417/Object_1
+    100670: _MapPrfab/TestLevel/Game Objects/Object_418 (TRS)/Object_418 (CF)/Object_418/Object_1
+    100672: _MapPrfab/TestLevel/Game Objects/Object_419 (TRS)/Object_419 (CF)/Object_419/Object_1
     100674: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)
     100676: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Object_78 (CF)
     100678: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Object_78 (CF)/Object_78
@@ -368,6 +366,12 @@ ScriptedImporter:
     100732: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)
     100734: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Object_85
     100736: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Object_85/Object_1
+    100738: _MapPrfab/TestLevel/Game Objects/Object_420 (TRS)/Object_420 (CF)/Object_420/Object_1
+    100740: _MapPrfab/TestLevel/Game Objects/Object_421 (TRS)/Object_421 (CF)/Object_421/Object_1
+    100742: _MapPrfab/TestLevel/Game Objects/Object_422 (TRS)/Object_422 (CF)/Object_422/Object_1
+    100744: _MapPrfab/TestLevel/Game Objects/Object_428 (TRS)/Object_428 (CF)/Object_428/Object_1
+    100746: _MapPrfab/TestLevel/Game Objects/Object_429 (TRS)/Object_429 (CF)/Object_429/Object_1
+    100748: _MapPrfab/TestLevel/Game Objects/Object_430 (TRS)/Object_430 (CF)/Object_430/Object_1
     100750: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)
     100752: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Object_88 (CF)
     100754: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Object_88 (CF)/Object_88
@@ -388,6 +392,14 @@ ScriptedImporter:
     100784: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)
     100786: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92
     100788: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92/Object_1
+    100790: _MapPrfab/TestLevel/Game Objects/Object_431 (TRS)/Object_431 (CF)/Object_431/Object_1
+    100792: _MapPrfab/TestLevel/Game Objects/Object_432 (TRS)/Object_432 (CF)/Object_432/Object_1
+    100794: _MapPrfab/TestLevel/Game Objects/Object_435 (TRS)/Object_435 (CF)/Object_435/Object_1
+    100796: _MapPrfab/TestLevel/Game Objects/Object_436 (TRS)/Object_436 (CF)/Object_436/Object_1
+    100798: _MapPrfab/TestLevel/Game Objects/Object_439 (TRS)/Object_439 (CF)/Object_439/Object_1
+    100800: _MapPrfab/TestLevel/Game Objects/Object_440 (TRS)/Object_440 (CF)/Object_440/Object_1
+    100802: _MapPrfab/TestLevel/Game Objects/Object_442 (TRS)/Object_442 (CF)/Object_442/Object_1
+    100804: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)
     100806: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)
     100808: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)
     100810: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)/Object_95
@@ -400,6 +412,9 @@ ScriptedImporter:
     100824: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)
     100826: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97
     100828: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97/Object_1
+    100830: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)
+    100832: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459
+    100834: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459/Object_1
     100836: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)
     100838: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/Object_104 (CF)
     100840: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/Object_104 (CF)/Object_104
@@ -467,6 +482,9 @@ ScriptedImporter:
     100964: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)
     100966: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)/Object_183
     100968: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)/Object_183/Object_1
+    100970: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)
+    100972: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)
+    100974: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460
     100976: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)
     100978: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)
     100980: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)/player1Spawn
@@ -554,6 +572,9 @@ ScriptedImporter:
     101144: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)
     101146: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)/Object_139
     101148: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)/Object_139/Object_1
+    101150: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460/Object_1
+    101152: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)
+    101154: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)
     101156: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)
     101158: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/Object_145 (CF)
     101160: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/Object_145 (CF)/Object_145
@@ -579,6 +600,9 @@ ScriptedImporter:
     101200: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)
     101202: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Object_216
     101204: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Object_216/Object_1
+    101206: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461
+    101208: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461/Object_1
+    101210: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)
     101212: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)
     101214: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/Object_218 (CF)
     101216: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/Object_218 (CF)/Object_218
@@ -636,6 +660,9 @@ ScriptedImporter:
     101320: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)
     101322: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)/Object_234
     101324: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)/Object_234/Object_1
+    101326: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)
+    101328: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462
+    101330: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462/Object_1
     101332: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)
     101334: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/Object_236 (CF)
     101336: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/Object_236 (CF)/Object_236
@@ -644,6 +671,9 @@ ScriptedImporter:
     101342: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)
     101344: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)/Object_237
     101346: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)/Object_237/Object_1
+    101348: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)
+    101350: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)
+    101352: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463
     101354: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)
     101356: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/Object_239 (CF)
     101358: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/Object_239 (CF)/Object_239
@@ -1376,6 +1406,10 @@ ScriptedImporter:
     102812: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)
     102814: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Object_455
     102816: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Object_455/Object_1
+    102818: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463/Object_1
+    102820: _MapPrfab/TestLevel/Interactibles/Collision_Default
+    102822: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon
+    102824: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (1)
     400000: _MapPrfab/TestLevel/Transform
     400002: _MapPrfab/TestLevel/Object Layer 1/Transform
     400004: _MapPrfab/TestLevel/Game Objects/Object_115 (TRS)/Transform
@@ -1649,11 +1683,6 @@ ScriptedImporter:
     400540: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Transform
     400542: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_1/Transform
     400544: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_2/Transform
-    400546: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Transform
-    400548: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Transform
-    400550: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Transform
-    400552: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_1/Transform
-    400554: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_2/Transform
     400556: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Transform
     400558: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Transform
     400560: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Object_65/Transform
@@ -1710,6 +1739,9 @@ ScriptedImporter:
     400662: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Transform
     400664: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Object_76/Transform
     400666: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Object_76/Object_1/Transform
+    400668: _MapPrfab/TestLevel/Game Objects/Object_417 (TRS)/Object_417 (CF)/Object_417/Object_1/Transform
+    400670: _MapPrfab/TestLevel/Game Objects/Object_418 (TRS)/Object_418 (CF)/Object_418/Object_1/Transform
+    400672: _MapPrfab/TestLevel/Game Objects/Object_419 (TRS)/Object_419 (CF)/Object_419/Object_1/Transform
     400674: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Transform
     400676: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Object_78 (CF)/Transform
     400678: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Object_78 (CF)/Object_78/Transform
@@ -1742,6 +1774,12 @@ ScriptedImporter:
     400732: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Transform
     400734: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Object_85/Transform
     400736: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Object_85/Object_1/Transform
+    400738: _MapPrfab/TestLevel/Game Objects/Object_420 (TRS)/Object_420 (CF)/Object_420/Object_1/Transform
+    400740: _MapPrfab/TestLevel/Game Objects/Object_421 (TRS)/Object_421 (CF)/Object_421/Object_1/Transform
+    400742: _MapPrfab/TestLevel/Game Objects/Object_422 (TRS)/Object_422 (CF)/Object_422/Object_1/Transform
+    400744: _MapPrfab/TestLevel/Game Objects/Object_428 (TRS)/Object_428 (CF)/Object_428/Object_1/Transform
+    400746: _MapPrfab/TestLevel/Game Objects/Object_429 (TRS)/Object_429 (CF)/Object_429/Object_1/Transform
+    400748: _MapPrfab/TestLevel/Game Objects/Object_430 (TRS)/Object_430 (CF)/Object_430/Object_1/Transform
     400750: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Transform
     400752: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Object_88 (CF)/Transform
     400754: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Object_88 (CF)/Object_88/Transform
@@ -1762,6 +1800,14 @@ ScriptedImporter:
     400784: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Transform
     400786: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92/Transform
     400788: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92/Object_1/Transform
+    400790: _MapPrfab/TestLevel/Game Objects/Object_431 (TRS)/Object_431 (CF)/Object_431/Object_1/Transform
+    400792: _MapPrfab/TestLevel/Game Objects/Object_432 (TRS)/Object_432 (CF)/Object_432/Object_1/Transform
+    400794: _MapPrfab/TestLevel/Game Objects/Object_435 (TRS)/Object_435 (CF)/Object_435/Object_1/Transform
+    400796: _MapPrfab/TestLevel/Game Objects/Object_436 (TRS)/Object_436 (CF)/Object_436/Object_1/Transform
+    400798: _MapPrfab/TestLevel/Game Objects/Object_439 (TRS)/Object_439 (CF)/Object_439/Object_1/Transform
+    400800: _MapPrfab/TestLevel/Game Objects/Object_440 (TRS)/Object_440 (CF)/Object_440/Object_1/Transform
+    400802: _MapPrfab/TestLevel/Game Objects/Object_442 (TRS)/Object_442 (CF)/Object_442/Object_1/Transform
+    400804: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Transform
     400806: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Transform
     400808: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)/Transform
     400810: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)/Object_95/Transform
@@ -1774,6 +1820,9 @@ ScriptedImporter:
     400824: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Transform
     400826: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97/Transform
     400828: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97/Object_1/Transform
+    400830: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Transform
+    400832: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459/Transform
+    400834: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459/Object_1/Transform
     400836: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/Transform
     400838: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/Object_104 (CF)/Transform
     400840: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/Object_104 (CF)/Object_104/Transform
@@ -1841,6 +1890,9 @@ ScriptedImporter:
     400964: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)/Transform
     400966: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)/Object_183/Transform
     400968: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)/Object_183/Object_1/Transform
+    400970: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Transform
+    400972: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Transform
+    400974: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460/Transform
     400976: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/Transform
     400978: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)/Transform
     400980: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/player1Spawn (CF)/player1Spawn/Transform
@@ -1928,6 +1980,9 @@ ScriptedImporter:
     401144: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)/Transform
     401146: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)/Object_139/Transform
     401148: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)/Object_139/Object_1/Transform
+    401150: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460/Object_1/Transform
+    401152: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Transform
+    401154: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Transform
     401156: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/Transform
     401158: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/Object_145 (CF)/Transform
     401160: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/Object_145 (CF)/Object_145/Transform
@@ -1953,6 +2008,9 @@ ScriptedImporter:
     401200: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Transform
     401202: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Object_216/Transform
     401204: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Object_216/Object_1/Transform
+    401206: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461/Transform
+    401208: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461/Object_1/Transform
+    401210: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Transform
     401212: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/Transform
     401214: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/Object_218 (CF)/Transform
     401216: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/Object_218 (CF)/Object_218/Transform
@@ -2010,6 +2068,9 @@ ScriptedImporter:
     401320: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)/Transform
     401322: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)/Object_234/Transform
     401324: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)/Object_234/Object_1/Transform
+    401326: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Transform
+    401328: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462/Transform
+    401330: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462/Object_1/Transform
     401332: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/Transform
     401334: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/Object_236 (CF)/Transform
     401336: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/Object_236 (CF)/Object_236/Transform
@@ -2018,6 +2079,9 @@ ScriptedImporter:
     401342: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)/Transform
     401344: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)/Object_237/Transform
     401346: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)/Object_237/Object_1/Transform
+    401348: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Transform
+    401350: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Transform
+    401352: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463/Transform
     401354: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/Transform
     401356: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/Object_239 (CF)/Transform
     401358: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/Object_239 (CF)/Object_239/Transform
@@ -2750,6 +2814,11 @@ ScriptedImporter:
     402812: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Transform
     402814: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Object_455/Transform
     402816: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Object_455/Object_1/Transform
+    402818: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463/Object_1/Transform
+    402820: _MapPrfab/TestLevel/Interactibles/Collision_Default/Transform
+    402822: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon/Transform
+    402824: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (1)/Transform
+    5000000: _MapPrfab/TestLevel/Interactibles/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Rigidbody2D
     6000000: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (88)/PolygonCollider2D
     6000002: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (89)/PolygonCollider2D
@@ -2849,6 +2918,8 @@ ScriptedImporter:
     6000190: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (95)/PolygonCollider2D
     6000192: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (96)/PolygonCollider2D
     6000194: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (97)/PolygonCollider2D
+    6000196: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon/PolygonCollider2D
+    6000198: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (1)/PolygonCollider2D
     6100000: _MapPrfab/TestLevel/Game Objects/Object_11 (TRS)/Object_11 (CF)/Object_11/Object_1/BoxCollider2D
     6100002: _MapPrfab/TestLevel/Game Objects/Object_12 (TRS)/Object_12 (CF)/Object_12/Object_1/BoxCollider2D
     6100004: _MapPrfab/TestLevel/Game Objects/Object_12 (TRS)/Object_12 (CF)/Object_12/Object_2/BoxCollider2D
@@ -2904,8 +2975,6 @@ ScriptedImporter:
     6100104: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Object_216/Object_1/BoxCollider2D
     6100106: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_1/BoxCollider2D
     6100108: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_2/BoxCollider2D
-    6100110: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_1/BoxCollider2D
-    6100112: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_2/BoxCollider2D
     6100114: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Object_65/Object_1/BoxCollider2D
     6100116: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Object_65/Object_2/BoxCollider2D
     6100118: _MapPrfab/TestLevel/Game Objects/Object_66 (TRS)/Object_66 (CF)/Object_66/Object_1/BoxCollider2D
@@ -2939,6 +3008,8 @@ ScriptedImporter:
     6100174: _MapPrfab/TestLevel/Game Objects/Object_90 (TRS)/Object_90 (CF)/Object_90/Object_1/BoxCollider2D
     6100176: _MapPrfab/TestLevel/Game Objects/Object_91 (TRS)/Object_91 (CF)/Object_91/Object_1/BoxCollider2D
     6100178: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92/Object_1/BoxCollider2D
+    6100180: _MapPrfab/TestLevel/Game Objects/Object_417 (TRS)/Object_417 (CF)/Object_417/Object_1/BoxCollider2D
+    6100182: _MapPrfab/TestLevel/Game Objects/Object_418 (TRS)/Object_418 (CF)/Object_418/Object_1/BoxCollider2D
     6100184: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)/Object_95/Object_1/BoxCollider2D
     6100186: _MapPrfab/TestLevel/Game Objects/Object_96 (TRS)/Object_96 (CF)/Object_96/Object_1/BoxCollider2D
     6100188: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97/Object_1/BoxCollider2D
@@ -3158,6 +3229,26 @@ ScriptedImporter:
     6100616: _MapPrfab/TestLevel/Game Objects/Object_453 (TRS)/Object_453 (CF)/Object_453/Object_1/BoxCollider2D
     6100618: _MapPrfab/TestLevel/Game Objects/Object_454 (TRS)/Object_454 (CF)/Object_454/Object_1/BoxCollider2D
     6100620: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Object_455/Object_1/BoxCollider2D
+    6100622: _MapPrfab/TestLevel/Game Objects/Object_419 (TRS)/Object_419 (CF)/Object_419/Object_1/BoxCollider2D
+    6100624: _MapPrfab/TestLevel/Game Objects/Object_420 (TRS)/Object_420 (CF)/Object_420/Object_1/BoxCollider2D
+    6100626: _MapPrfab/TestLevel/Game Objects/Object_421 (TRS)/Object_421 (CF)/Object_421/Object_1/BoxCollider2D
+    6100628: _MapPrfab/TestLevel/Game Objects/Object_422 (TRS)/Object_422 (CF)/Object_422/Object_1/BoxCollider2D
+    6100630: _MapPrfab/TestLevel/Game Objects/Object_428 (TRS)/Object_428 (CF)/Object_428/Object_1/BoxCollider2D
+    6100632: _MapPrfab/TestLevel/Game Objects/Object_429 (TRS)/Object_429 (CF)/Object_429/Object_1/BoxCollider2D
+    6100634: _MapPrfab/TestLevel/Game Objects/Object_430 (TRS)/Object_430 (CF)/Object_430/Object_1/BoxCollider2D
+    6100636: _MapPrfab/TestLevel/Game Objects/Object_431 (TRS)/Object_431 (CF)/Object_431/Object_1/BoxCollider2D
+    6100638: _MapPrfab/TestLevel/Game Objects/Object_432 (TRS)/Object_432 (CF)/Object_432/Object_1/BoxCollider2D
+    6100640: _MapPrfab/TestLevel/Game Objects/Object_435 (TRS)/Object_435 (CF)/Object_435/Object_1/BoxCollider2D
+    6100642: _MapPrfab/TestLevel/Game Objects/Object_436 (TRS)/Object_436 (CF)/Object_436/Object_1/BoxCollider2D
+    6100644: _MapPrfab/TestLevel/Game Objects/Object_439 (TRS)/Object_439 (CF)/Object_439/Object_1/BoxCollider2D
+    6100646: _MapPrfab/TestLevel/Game Objects/Object_440 (TRS)/Object_440 (CF)/Object_440/Object_1/BoxCollider2D
+    6100648: _MapPrfab/TestLevel/Game Objects/Object_442 (TRS)/Object_442 (CF)/Object_442/Object_1/BoxCollider2D
+    6100650: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459/Object_1/BoxCollider2D
+    6100652: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460/Object_1/BoxCollider2D
+    6100654: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461/Object_1/BoxCollider2D
+    6100656: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462/Object_1/BoxCollider2D
+    6100658: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463/Object_1/BoxCollider2D
+    6600000: _MapPrfab/TestLevel/Interactibles/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/TestLevel/FloorWalls/Collision_Default/CompositeCollider2D
     11400000: _MapPrfab/TestLevel/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/TestLevel/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -3397,10 +3488,6 @@ ScriptedImporter:
     11400470: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400472: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400474: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400476: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400478: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400480: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400482: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400484: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400486: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400488: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Object_65/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3445,6 +3532,8 @@ ScriptedImporter:
     11400566: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400568: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400570: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Object_76/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400572: _MapPrfab/TestLevel/Game Objects/Object_417 (TRS)/Object_417 (CF)/Object_417/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400574: _MapPrfab/TestLevel/Game Objects/Object_418 (TRS)/Object_418 (CF)/Object_418/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400576: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400578: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400580: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Object_78 (CF)/Object_78/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3469,6 +3558,10 @@ ScriptedImporter:
     11400618: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400620: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400622: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Object_85/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400624: _MapPrfab/TestLevel/Game Objects/Object_419 (TRS)/Object_419 (CF)/Object_419/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400626: _MapPrfab/TestLevel/Game Objects/Object_420 (TRS)/Object_420 (CF)/Object_420/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400628: _MapPrfab/TestLevel/Game Objects/Object_421 (TRS)/Object_421 (CF)/Object_421/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400630: _MapPrfab/TestLevel/Game Objects/Object_422 (TRS)/Object_422 (CF)/Object_422/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400632: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400634: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400636: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Object_88 (CF)/Object_88/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3484,6 +3577,12 @@ ScriptedImporter:
     11400656: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400658: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400660: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400662: _MapPrfab/TestLevel/Game Objects/Object_428 (TRS)/Object_428 (CF)/Object_428/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400664: _MapPrfab/TestLevel/Game Objects/Object_429 (TRS)/Object_429 (CF)/Object_429/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400666: _MapPrfab/TestLevel/Game Objects/Object_430 (TRS)/Object_430 (CF)/Object_430/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400668: _MapPrfab/TestLevel/Game Objects/Object_431 (TRS)/Object_431 (CF)/Object_431/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400670: _MapPrfab/TestLevel/Game Objects/Object_432 (TRS)/Object_432 (CF)/Object_432/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400672: _MapPrfab/TestLevel/Game Objects/Object_435 (TRS)/Object_435 (CF)/Object_435/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400674: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400676: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400678: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)/Object_95/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3493,6 +3592,8 @@ ScriptedImporter:
     11400686: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400688: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400690: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400692: _MapPrfab/TestLevel/Game Objects/Object_436 (TRS)/Object_436 (CF)/Object_436/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400694: _MapPrfab/TestLevel/Game Objects/Object_439 (TRS)/Object_439 (CF)/Object_439/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400696: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400698: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400700: _MapPrfab/TestLevel/Game Objects/Object_104 (TRS)/Object_104 (CF)/Object_104/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3542,6 +3643,8 @@ ScriptedImporter:
     11400788: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400790: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400792: _MapPrfab/TestLevel/Object Layer 1/Object_183 (TRS)/Object_183 (CF)/Object_183/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400794: _MapPrfab/TestLevel/Game Objects/Object_440 (TRS)/Object_440 (CF)/Object_440/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400796: _MapPrfab/TestLevel/Game Objects/Object_442 (TRS)/Object_442 (CF)/Object_442/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400798: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400800: _MapPrfab/TestLevel/Object Layer 1/player1Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400802: _MapPrfab/TestLevel/Object Layer 1/player2Spawn (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -3600,6 +3703,8 @@ ScriptedImporter:
     11400908: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400910: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400912: _MapPrfab/TestLevel/Game Objects/Object_139 (TRS)/Object_139 (CF)/Object_139/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400914: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400916: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400918: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400920: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400922: _MapPrfab/TestLevel/Game Objects/Object_145 (TRS)/Object_145 (CF)/Object_145/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3618,6 +3723,8 @@ ScriptedImporter:
     11400948: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400950: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400952: _MapPrfab/TestLevel/Game Objects/Object_216 (TRS)/Object_216 (CF)/Object_216/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400954: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400956: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400958: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400960: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400962: _MapPrfab/TestLevel/Game Objects/Object_218 (TRS)/Object_218 (CF)/Object_218/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -3658,12 +3765,16 @@ ScriptedImporter:
     11401032: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11401034: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11401036: _MapPrfab/TestLevel/Game Objects/Object_234 (TRS)/Object_234 (CF)/Object_234/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401038: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11401040: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11401042: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11401044: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11401046: _MapPrfab/TestLevel/Game Objects/Object_236 (TRS)/Object_236 (CF)/Object_236/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11401048: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11401050: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11401052: _MapPrfab/TestLevel/Game Objects/Object_237 (TRS)/Object_237 (CF)/Object_237/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11401054: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11401056: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11401058: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11401060: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11401062: _MapPrfab/TestLevel/Game Objects/Object_239 (TRS)/Object_239 (CF)/Object_239/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -4219,6 +4330,15 @@ ScriptedImporter:
     11402162: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11402164: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11402166: _MapPrfab/TestLevel/Game Objects/Object_455 (TRS)/Object_455 (CF)/Object_455/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11402168: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11402170: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11402172: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11402174: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11402176: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11402178: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11402180: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11402182: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11402184: _MapPrfab/TestLevel/Interactibles/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     21200000: _MapPrfab/TestLevel/Object Layer 1/Object_43 (TRS)/Object_43 (CF)/Object_43/SpriteRenderer
     21200002: _MapPrfab/TestLevel/Object Layer 1/Object_44 (TRS)/Object_44 (CF)/Object_44/SpriteRenderer
     21200004: _MapPrfab/TestLevel/Object Layer 1/Object_45 (TRS)/Object_45 (CF)/Object_45/SpriteRenderer
@@ -4258,7 +4378,6 @@ ScriptedImporter:
     21200072: _MapPrfab/TestLevel/Game Objects/Object_152 (TRS)/Object_152 (CF)/Object_152/SpriteRenderer
     21200074: _MapPrfab/TestLevel/Game Objects/Object_153 (TRS)/Object_153 (CF)/Object_153/SpriteRenderer
     21200076: _MapPrfab/TestLevel/Game Objects/Object_63 (TRS)/Object_63 (CF)/Object_63/SpriteRenderer
-    21200078: _MapPrfab/TestLevel/Game Objects/Object_64 (TRS)/Object_64 (CF)/Object_64/SpriteRenderer
     21200080: _MapPrfab/TestLevel/Game Objects/Object_65 (TRS)/Object_65 (CF)/Object_65/SpriteRenderer
     21200082: _MapPrfab/TestLevel/Game Objects/Object_66 (TRS)/Object_66 (CF)/Object_66/SpriteRenderer
     21200084: _MapPrfab/TestLevel/Game Objects/Object_67 (TRS)/Object_67 (CF)/Object_67/SpriteRenderer
@@ -4271,6 +4390,7 @@ ScriptedImporter:
     21200098: _MapPrfab/TestLevel/Game Objects/Object_74 (TRS)/Object_74 (CF)/Object_74/SpriteRenderer
     21200100: _MapPrfab/TestLevel/Game Objects/Object_75 (TRS)/Object_75 (CF)/Object_75/SpriteRenderer
     21200102: _MapPrfab/TestLevel/Game Objects/Object_76 (TRS)/Object_76 (CF)/Object_76/SpriteRenderer
+    21200104: _MapPrfab/TestLevel/Game Objects/Object_459 (TRS)/Object_459 (CF)/Object_459/SpriteRenderer
     21200106: _MapPrfab/TestLevel/Game Objects/Object_78 (TRS)/Object_78 (CF)/Object_78/SpriteRenderer
     21200108: _MapPrfab/TestLevel/Game Objects/Object_79 (TRS)/Object_79 (CF)/Object_79/SpriteRenderer
     21200110: _MapPrfab/TestLevel/Game Objects/Object_80 (TRS)/Object_80 (CF)/Object_80/SpriteRenderer
@@ -4279,11 +4399,15 @@ ScriptedImporter:
     21200116: _MapPrfab/TestLevel/Game Objects/Object_83 (TRS)/Object_83 (CF)/Object_83/SpriteRenderer
     21200118: _MapPrfab/TestLevel/Game Objects/Object_84 (TRS)/Object_84 (CF)/Object_84/SpriteRenderer
     21200120: _MapPrfab/TestLevel/Game Objects/Object_85 (TRS)/Object_85 (CF)/Object_85/SpriteRenderer
+    21200122: _MapPrfab/TestLevel/Game Objects/Object_460 (TRS)/Object_460 (CF)/Object_460/SpriteRenderer
+    21200124: _MapPrfab/TestLevel/Game Objects/Object_461 (TRS)/Object_461 (CF)/Object_461/SpriteRenderer
     21200126: _MapPrfab/TestLevel/Game Objects/Object_88 (TRS)/Object_88 (CF)/Object_88/SpriteRenderer
     21200128: _MapPrfab/TestLevel/Game Objects/Object_89 (TRS)/Object_89 (CF)/Object_89/SpriteRenderer
     21200130: _MapPrfab/TestLevel/Game Objects/Object_90 (TRS)/Object_90 (CF)/Object_90/SpriteRenderer
     21200132: _MapPrfab/TestLevel/Game Objects/Object_91 (TRS)/Object_91 (CF)/Object_91/SpriteRenderer
     21200134: _MapPrfab/TestLevel/Game Objects/Object_92 (TRS)/Object_92 (CF)/Object_92/SpriteRenderer
+    21200136: _MapPrfab/TestLevel/Game Objects/Object_462 (TRS)/Object_462 (CF)/Object_462/SpriteRenderer
+    21200138: _MapPrfab/TestLevel/Game Objects/Object_463 (TRS)/Object_463 (CF)/Object_463/SpriteRenderer
     21200140: _MapPrfab/TestLevel/Game Objects/Object_95 (TRS)/Object_95 (CF)/Object_95/SpriteRenderer
     21200142: _MapPrfab/TestLevel/Game Objects/Object_96 (TRS)/Object_96 (CF)/Object_96/SpriteRenderer
     21200144: _MapPrfab/TestLevel/Game Objects/Object_97 (TRS)/Object_97 (CF)/Object_97/SpriteRenderer
@@ -4562,6 +4686,8 @@ ScriptedImporter:
   - Could not find tile 434. Your imported map will have holes until this is fixed.
   - Could not find tile 445. Your imported map will have holes until this is fixed.
   - Could not find tile 446. Your imported map will have holes until this is fixed.
+  - Could not find tile 457. Your imported map will have holes until this is fixed.
+  - Could not find tile 458. Your imported map will have holes until this is fixed.
   - Could not find tile 459. Your imported map will have holes until this is fixed.
   - Could not find tile 460. Your imported map will have holes until this is fixed.
   - Could not find tile 440. Your imported map will have holes until this is fixed.
