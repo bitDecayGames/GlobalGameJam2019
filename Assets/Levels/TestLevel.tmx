@@ -210,7 +210,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="3" name="Object Layer 1" visible="0">
+ <objectgroup id="3" name="Object Layer 1">
   <object id="6" name="player1Spawn" gid="229" x="784" y="1152" width="16" height="16"/>
   <object id="8" name="player2Spawn" gid="230" x="816" y="1152" width="16" height="16"/>
   <object id="9" name="player3Spawn" gid="231" x="847.667" y="1152.33" width="16" height="16">
