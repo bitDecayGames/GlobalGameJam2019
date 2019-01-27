@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DefenderWins.unity
     guid: c45492ae1cb424439b438405b57b58a9
+  - enabled: 1
+    path: Assets/Scenes/Splash Screen/BitdecaySplash.unity
+    guid: ba92940fb9202ac48a5b013179d2cf92
+  - enabled: 1
+    path: Assets/Scenes/Splash Screen/GameJamSplash.unity
+    guid: 907c37ab556c5064ea3a14dee3e5f853
   m_configObjects: {}
