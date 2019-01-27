@@ -21,9 +21,14 @@ namespace PlayerScripts {
 
         private void Update() {
             if (!IsFrozen) {
-                float moveLR = input.ControllerMapper.GetHorizontalMovement();
-                float moveUD = input.ControllerMapper.GetVerticalMovement();
+                float moveLR = 0;
+                float moveUD = 0;
 
+                if (input && input.ControllerMapper != null) {
+                    moveLR = input.ControllerMapper.GetHorizontalMovement();
+                    moveUD = input.ControllerMapper.GetVerticalMovement();
+                }
+                
                 float newFacing = FindDegree(moveLR, moveUD);
                 var dir = new Vector3(moveLR, moveUD);
                 if (dir.magnitude > input.deadzone) {

@@ -26,7 +26,7 @@ namespace PlayerScripts {
                 return;
             }
             
-            if (!input.ControllerMapper.RunDown()) {
+            if (input && input.ControllerMapper != null && !input.ControllerMapper.RunDown()) {
                 mover.MovementSpeed = SprintSpeed;
                 if (cloak.IsActive) cloak.IsActive = false;
             } else {

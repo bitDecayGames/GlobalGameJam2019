@@ -310,7 +310,6 @@ ScriptedImporter:
     100612: _MapPrfab/TestLevel/Game Objects/Object_70 (TRS)/Object_70 (CF)/Object_70/Object_1
     100614: _MapPrfab/TestLevel/Game Objects/Object_70 (TRS)/Object_70 (CF)/Object_70/Object_2
     100616: _MapPrfab/TestLevel/emptyRoom
-    100618: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (102)
     100620: _MapPrfab/TestLevel/garage
     100622: _MapPrfab/TestLevel/kidRoomLeft
     100624: _MapPrfab/TestLevel/kidRoomRight
@@ -2404,7 +2403,6 @@ ScriptedImporter:
     400612: _MapPrfab/TestLevel/Game Objects/Object_70 (TRS)/Object_70 (CF)/Object_70/Object_1/Transform
     400614: _MapPrfab/TestLevel/Game Objects/Object_70 (TRS)/Object_70 (CF)/Object_70/Object_2/Transform
     400616: _MapPrfab/TestLevel/emptyRoom/Transform
-    400618: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (102)/Transform
     400620: _MapPrfab/TestLevel/garage/Transform
     400622: _MapPrfab/TestLevel/kidRoomLeft/Transform
     400624: _MapPrfab/TestLevel/kidRoomRight/Transform
@@ -4289,7 +4287,6 @@ ScriptedImporter:
     6000190: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (95)/PolygonCollider2D
     6000192: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (96)/PolygonCollider2D
     6000194: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (97)/PolygonCollider2D
-    6000196: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (102)/PolygonCollider2D
     6000200: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (98)/PolygonCollider2D
     6000202: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (99)/PolygonCollider2D
     6000204: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (100)/PolygonCollider2D
@@ -4990,7 +4987,6 @@ ScriptedImporter:
     11400530: _MapPrfab/TestLevel/Game Objects/Object_70 (TRS)/Object_70 (CF)/Object_70/Object_2/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400532: _MapPrfab/TestLevel/emptyRoom/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400534: _MapPrfab/TestLevel/emptyRoom/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400536: _MapPrfab/TestLevel/FloorWalls/Collision_Default/Polygon (102)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400538: _MapPrfab/TestLevel/garage/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400540: _MapPrfab/TestLevel/Game Objects/Object_72 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400542: _MapPrfab/TestLevel/Game Objects/Object_72 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties

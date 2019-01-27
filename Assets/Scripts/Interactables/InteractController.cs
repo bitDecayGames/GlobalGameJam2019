@@ -38,7 +38,7 @@ public class InteractController : MonoBehaviour {
 
     void Update() {
         if (interactable) {
-            if (input.ControllerMapper.InteractPressed()) {
+            if (input && input.ControllerMapper != null && input.ControllerMapper.InteractPressed()) {
                 interactable.Interact(input);
             }
         }
