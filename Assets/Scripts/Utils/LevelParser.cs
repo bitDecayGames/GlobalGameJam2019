@@ -145,8 +145,9 @@ public class LevelParser : MonoBehaviour {
             }
         }
     }
+
     void SpawnButton(SuperObject superObject, SuperMap map) {
-        var newButton = Instantiate(buttonTemplate, superObject.transform.position, Quaternion.identity);
+        var newButton = Instantiate(buttonTemplate, superObject.transform.position, superObject.transform.localRotation);
         newButton.GetComponent<SpriteRenderer>().sprite = superObject.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
         
         var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
