@@ -197,6 +197,54 @@ ScriptedImporter:
     11400382: Tile_Test2_190
     11400384: Tile_Test2_191
     11400386: Tile_Test2_192
+    11400388: Tile_Test2_193
+    11400390: Tile_Test2_194
+    11400392: Tile_Test2_195
+    11400394: Tile_Test2_196
+    11400396: Tile_Test2_197
+    11400398: Tile_Test2_198
+    11400400: Tile_Test2_199
+    11400402: Tile_Test2_200
+    11400404: Tile_Test2_201
+    11400406: Tile_Test2_202
+    11400408: Tile_Test2_203
+    11400410: Tile_Test2_204
+    11400412: Tile_Test2_205
+    11400414: Tile_Test2_206
+    11400416: Tile_Test2_207
+    11400418: Tile_Test2_208
+    11400420: Tile_Test2_209
+    11400422: Tile_Test2_210
+    11400424: Tile_Test2_211
+    11400426: Tile_Test2_212
+    11400428: Tile_Test2_213
+    11400430: Tile_Test2_214
+    11400432: Tile_Test2_215
+    11400434: Tile_Test2_216
+    11400436: Tile_Test2_217
+    11400438: Tile_Test2_218
+    11400440: Tile_Test2_219
+    11400442: Tile_Test2_220
+    11400444: Tile_Test2_221
+    11400446: Tile_Test2_222
+    11400448: Tile_Test2_223
+    11400450: Tile_Test2_224
+    11400452: Tile_Test2_225
+    11400454: Tile_Test2_226
+    11400456: Tile_Test2_227
+    11400458: Tile_Test2_228
+    11400460: Tile_Test2_229
+    11400462: Tile_Test2_230
+    11400464: Tile_Test2_231
+    11400466: Tile_Test2_232
+    11400468: Tile_Test2_233
+    11400470: Tile_Test2_234
+    11400472: Tile_Test2_235
+    11400474: Tile_Test2_236
+    11400476: Tile_Test2_237
+    11400478: Tile_Test2_238
+    11400480: Tile_Test2_239
+    11400482: Tile_Test2_240
     21300000: Sprite_Test2_1
     21300002: Sprite_Test2_2
     21300004: Sprite_Test2_3
@@ -389,18 +437,67 @@ ScriptedImporter:
     21300378: Sprite_Test2_190
     21300380: Sprite_Test2_191
     21300382: Sprite_Test2_192
+    21300384: Sprite_Test2_193
+    21300386: Sprite_Test2_194
+    21300388: Sprite_Test2_195
+    21300390: Sprite_Test2_196
+    21300392: Sprite_Test2_197
+    21300394: Sprite_Test2_198
+    21300396: Sprite_Test2_199
+    21300398: Sprite_Test2_200
+    21300400: Sprite_Test2_201
+    21300402: Sprite_Test2_202
+    21300404: Sprite_Test2_203
+    21300406: Sprite_Test2_204
+    21300408: Sprite_Test2_205
+    21300410: Sprite_Test2_206
+    21300412: Sprite_Test2_207
+    21300414: Sprite_Test2_208
+    21300416: Sprite_Test2_209
+    21300418: Sprite_Test2_210
+    21300420: Sprite_Test2_211
+    21300422: Sprite_Test2_212
+    21300424: Sprite_Test2_213
+    21300426: Sprite_Test2_214
+    21300428: Sprite_Test2_215
+    21300430: Sprite_Test2_216
+    21300432: Sprite_Test2_217
+    21300434: Sprite_Test2_218
+    21300436: Sprite_Test2_219
+    21300438: Sprite_Test2_220
+    21300440: Sprite_Test2_221
+    21300442: Sprite_Test2_222
+    21300444: Sprite_Test2_223
+    21300446: Sprite_Test2_224
+    21300448: Sprite_Test2_225
+    21300450: Sprite_Test2_226
+    21300452: Sprite_Test2_227
+    21300454: Sprite_Test2_228
+    21300456: Sprite_Test2_229
+    21300458: Sprite_Test2_230
+    21300460: Sprite_Test2_231
+    21300462: Sprite_Test2_232
+    21300464: Sprite_Test2_233
+    21300466: Sprite_Test2_234
+    21300468: Sprite_Test2_235
+    21300470: Sprite_Test2_236
+    21300472: Sprite_Test2_237
+    21300474: Sprite_Test2_238
+    21300476: Sprite_Test2_239
+    21300478: Sprite_Test2_240
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
-  errors: []
+  errors:
+  - Invalid rectangle object Id '1' in tileset 'Test2' has zero width
   warnings: []
   missingSortingLayers: []
   missingLayers: []
   pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 387
+  numberOfObjectsImported: 483
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048
