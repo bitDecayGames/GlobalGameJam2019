@@ -7,7 +7,6 @@ namespace PolishElements {
 		private float time = 0;
 		private Vector3 curPos;
 		private float jitterAmount;
-		private Random rnd = new Random();
 
 		void Update() {
 			if (time > 0) {
@@ -22,11 +21,13 @@ namespace PolishElements {
 		}
 		
 		
-		public void Shake(float seconds = 0.1f, float intensity = 0.1f) {
-			curPos = transform.position;
-			isJiggling = true;
-			time = seconds;
-			jitterAmount = intensity;
+		public void Shake(float seconds = 0.1f, float intensity = 0.05f) {
+			if (!isJiggling) {
+				curPos = transform.position;
+				isJiggling = true;
+				time = seconds;
+				jitterAmount = intensity;
+			}
 		}
 	}
 }

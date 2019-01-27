@@ -91,6 +91,7 @@ public class LevelParser : MonoBehaviour {
 //        Debug.Log("Parsing " + objects.Length + " object(s)");
         foreach (var superObject in objects) {
             superObject.gameObject.AddComponent<Shaker>();
+            superObject.gameObject.layer = LayerMask.NameToLayer("Interactable");
             
             var custProps = superObject.gameObject.GetComponent<SuperCustomProperties>();
             foreach (var prop in custProps.m_Properties) {

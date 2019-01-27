@@ -14,7 +14,7 @@ namespace Interactables
             get { return _isOn; }
         }
 
-        private Rigidbody2D body;
+        private Collider2D body;
         private SpriteRenderer sprite;
         private Blinker blinker;
         public Sprite offSprite;
@@ -23,14 +23,14 @@ namespace Interactables
 
         void Start()
         {
-            body = GetComponentInChildren<Rigidbody2D>();
-            if (!body) throw new Exception("RigidBody2D is missing on this object");
+            body = GetComponentInChildren<Collider2D>();
+            if (!body) throw new Exception("Collider2D is missing on this object");
 
             sprite = GetComponentInChildren<SpriteRenderer>();
             if (!sprite) throw new Exception("Sprite is missing on this object");
 
             onSprite = sprite.sprite;
-            this.On();
+            On();
             GameStateManager.getLocalReference().Register(this);
         }
 
@@ -39,7 +39,6 @@ namespace Interactables
             if (!_isOn)
             {
                 sprite.sprite = onSprite;
-                body.collisionDetectionMode = CollisionDetectionMode2D.Discrete;
                 _isOn = true;
             }
         }
@@ -49,7 +48,6 @@ namespace Interactables
             if (_isOn)
             {
                 sprite.sprite = offSprite;
-                body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
                 _isOn = false;
             }
         }
