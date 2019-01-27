@@ -6,6 +6,7 @@ namespace PlayerScripts {
     public class GamePadMovementController : MonoBehaviour {
         private InputController input;
         private Rigidbody2D body;
+        private Animator animator;
 
         public float MovementSpeed = 0.2f;
         
@@ -17,6 +18,8 @@ namespace PlayerScripts {
             body = GetComponent<Rigidbody2D>();
             if (!body) throw new Exception("Rigidbody2D is missing from GamePadMovementController object");
             IsFrozen = false;
+            animator = GetComponent<Animator>();
+            if (!animator) throw new Exception("Animator is missing from GamePadMovementController object");
         }
 
         private void Update() {
@@ -32,6 +35,12 @@ namespace PlayerScripts {
                     var vel = dir * MovementSpeed * Time.deltaTime;
                     
                     body.AddForce(vel, ForceMode2D.Impulse);
+
+                    animator.Play("Walk");
+                }
+                else {
+                    Debug.Log("I'm stading, but Tanner is gay");
+                    animator.Play("Stand");
                 }
                 else
                 {                    
