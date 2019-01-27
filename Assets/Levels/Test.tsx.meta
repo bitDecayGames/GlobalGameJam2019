@@ -197,6 +197,30 @@ ScriptedImporter:
     11400382: Tile_TEst_190
     11400384: Tile_TEst_191
     11400386: Tile_TEst_192
+    11400388: Tile_TEst_193
+    11400390: Tile_TEst_194
+    11400392: Tile_TEst_195
+    11400394: Tile_TEst_196
+    11400396: Tile_TEst_197
+    11400398: Tile_TEst_198
+    11400400: Tile_TEst_199
+    11400402: Tile_TEst_200
+    11400404: Tile_TEst_201
+    11400406: Tile_TEst_202
+    11400408: Tile_TEst_203
+    11400410: Tile_TEst_204
+    11400412: Tile_TEst_205
+    11400414: Tile_TEst_206
+    11400416: Tile_TEst_207
+    11400418: Tile_TEst_208
+    11400420: Tile_TEst_209
+    11400422: Tile_TEst_210
+    11400424: Tile_TEst_211
+    11400426: Tile_TEst_212
+    11400428: Tile_TEst_213
+    11400430: Tile_TEst_214
+    11400432: Tile_TEst_215
+    11400434: Tile_TEst_216
     21300000: Sprite_TEst_1
     21300002: Sprite_TEst_2
     21300004: Sprite_TEst_3
@@ -389,6 +413,30 @@ ScriptedImporter:
     21300378: Sprite_TEst_190
     21300380: Sprite_TEst_191
     21300382: Sprite_TEst_192
+    21300384: Sprite_TEst_193
+    21300386: Sprite_TEst_194
+    21300388: Sprite_TEst_195
+    21300390: Sprite_TEst_196
+    21300392: Sprite_TEst_197
+    21300394: Sprite_TEst_198
+    21300396: Sprite_TEst_199
+    21300398: Sprite_TEst_200
+    21300400: Sprite_TEst_201
+    21300402: Sprite_TEst_202
+    21300404: Sprite_TEst_203
+    21300406: Sprite_TEst_204
+    21300408: Sprite_TEst_205
+    21300410: Sprite_TEst_206
+    21300412: Sprite_TEst_207
+    21300414: Sprite_TEst_208
+    21300416: Sprite_TEst_209
+    21300418: Sprite_TEst_210
+    21300420: Sprite_TEst_211
+    21300422: Sprite_TEst_212
+    21300424: Sprite_TEst_213
+    21300426: Sprite_TEst_214
+    21300428: Sprite_TEst_215
+    21300430: Sprite_TEst_216
   externalObjects: {}
   userData: 
   assetBundleName: 
@@ -400,7 +448,7 @@ ScriptedImporter:
   missingLayers: []
   pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 387
+  numberOfObjectsImported: 435
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048
