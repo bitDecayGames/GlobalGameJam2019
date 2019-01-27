@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - teleporter
+  - player
   layers:
   - Default
   - TransparentFX

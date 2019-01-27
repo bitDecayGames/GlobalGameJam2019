@@ -22,6 +22,10 @@ namespace PlayerScripts {
         }
 
         private void Update() {
+            if (!input) {
+                return;
+            }
+            
             if (!input.ControllerMapper.RunDown()) {
                 mover.MovementSpeed = SprintSpeed;
                 if (cloak.IsActive) cloak.IsActive = false;
