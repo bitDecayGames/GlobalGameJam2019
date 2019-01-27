@@ -41,9 +41,6 @@ namespace PlayerScripts {
                 else {
                     Debug.Log("I'm stading, but Tanner is gay");
                     animator.Play("Stand");
-                }
-                else
-                {                    
                     body.AddForce(-body.velocity, ForceMode2D.Impulse);
                 }
             }
