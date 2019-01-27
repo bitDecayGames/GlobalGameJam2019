@@ -3,14 +3,17 @@ using UnityEngine;
 
 namespace PlayerScripts
 {
-    public class Knockoutable : MonoBehaviour
-    {
+    public class Knockoutable : MonoBehaviour {
+        private const float KNOCKOUT_SPIN = 500;
+        
         public float KnockoutTime = 5f;
         
         private InvisibilityCloak cloak;
         private GamePadMovementController mover;
 
         private float time = 0;
+        
+        private float rotation = 0;
         
         void Start()
         {
@@ -25,6 +28,8 @@ namespace PlayerScripts
             if (time > 0)
             {
                 time -= Time.deltaTime;
+                rotation += Time.deltaTime * KNOCKOUT_SPIN;
+                SetRotation();
                 if (time < 0)
                 {
                     time = 0;
@@ -34,11 +39,15 @@ namespace PlayerScripts
             }
         }
 
-        public void KnockOut()
-        {
+        public void KnockOut() {
+            rotation = transform.localRotation.eulerAngles.z;
             time = KnockoutTime;
             cloak.IsActive = false;
             mover.IsFrozen = true;
+        }
+
+        private void SetRotation() {
+            transform.localRotation = Quaternion.Euler(0, 0, rotation);
         }
     }
 }

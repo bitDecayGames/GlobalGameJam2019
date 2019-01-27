@@ -22,7 +22,7 @@ namespace PlayerScripts {
         }
 
         private void Update() {
-            if (input.ControllerMapper.RunDown()) {
+            if (!input.ControllerMapper.RunDown()) {
                 mover.MovementSpeed = SprintSpeed;
                 if (cloak.IsActive) cloak.IsActive = false;
             } else {
