@@ -350,6 +350,8 @@ MonoBehaviour:
     type: 2}
   doorTemplate: {fileID: 114979203406203166, guid: a1b43577b9cb240e08469a80b212476b,
     type: 2}
+  redDoorTemplate: {fileID: 114336186678119726, guid: 04f365f27968b4a1687b5635aeaad6eb,
+    type: 2}
 --- !u!60 &473295872 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000156, guid: ff55711479d7f463db37e58682291b24,

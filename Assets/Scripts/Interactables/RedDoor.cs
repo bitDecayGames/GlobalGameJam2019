@@ -94,6 +94,7 @@ namespace Interactables {
 		}
 
 		public override void Trigger() {
+			base.Trigger();
 			if (_isOpen) Close();
 			else Open();
 			OnTrigger();
