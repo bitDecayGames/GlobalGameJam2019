@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour
 {
-    public EasyNavigator Navigator;
     public int winThreshold = 4;
     public bool isGameOver = false;
     public float gameTime = 30.0f;
@@ -55,18 +54,6 @@ public class GameStateManager : MonoBehaviour
         if (!isGameOver) {
             HUD.SetTimer(gameTime);
         }
-        else {
-            if (gameTime < -5) {
-                if (defenderWins)
-                {
-                    SceneManager.LoadScene("DefenderWins");                    
-                }
-                else
-                {
-                    SceneManager.LoadScene("DefenderLoses");
-                }
-            }
-        }
     }
 
     public void Register(IObjective comp)
@@ -94,6 +81,8 @@ public class GameStateManager : MonoBehaviour
         FMODMusicPlayer.Instance.SetParameter(FmodParameters.FmodParameterEnum.Lowpass.ToString(), 1);
 
         defenderWins = isOwnerTheWinner;
+
+        StartCoroutine(ChangeScenes(defenderWins));
         
         if (isOwnerTheWinner) {
             HUD.SetTimer(0);
@@ -110,5 +99,20 @@ public class GameStateManager : MonoBehaviour
             blinker.AddComponent<CanvasBlinker>();
         }
 
+    }
+
+    IEnumerator ChangeScenes(bool defenderWins)
+    {
+        yield return new WaitForSeconds(5f);
+        if (defenderWins)
+        {
+            SceneManager.LoadScene("DefenderWins");                    
+        }
+        else
+        {
+            SceneManager.LoadScene("DefenderLoses");
+        }
+        
+        yield return null;
     }
 }
